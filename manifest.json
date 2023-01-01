@@ -1,8 +1,8 @@
 {
   "plugins": [{
-    "name": "lsp-lua",
+    "name": "lsp_lua",
     "description": "LSP support for lua.",
-    "path": "plugins/lsp-lua.lua",
+    "path": "plugins/lsp_lua.lua",
     "files": [
       {
         "url": "https://github.com/sumneko/lua-language-server/releases/download/3.6.4/lua-language-server-3.6.4-darwin-x64.tar.gz",

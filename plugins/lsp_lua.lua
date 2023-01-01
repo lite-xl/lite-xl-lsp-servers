@@ -2,7 +2,7 @@
 
 local lspconfig = require "plugins.lsp.config"
 
-local installed_path = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp-lua"
+local installed_path = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp_lua"
 
 lspconfig.sumneko_lua.setup common.merge({
   command = {
@@ -17,4 +17,4 @@ lspconfig.sumneko_lua.setup common.merge({
       }
     }
   }
-}, config.plugins["lsp-lua"] or {})
+}, config.plugins.lsp_lua or {})
