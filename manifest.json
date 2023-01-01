@@ -12,12 +12,33 @@
       {
         "url": "https://github.com/sumneko/lua-language-server/releases/download/3.6.4/lua-language-server-3.6.4-linux-x64.tar.gz",
         "arch": "x86_64-linux",
-        "checksum": "4ba34404a20d75a867c1aef19f0f98696e138aebcadbd104bba7619107f140ab",
+        "checksum": "4ba34404a20d75a867c1aef19f0f98696e138aebcadbd104bba7619107f140ab"
       },
       {
         "url": "https://github.com/sumneko/lua-language-server/releases/download/3.6.4/lua-language-server-3.6.4-win32-x64.zip",
         "arch": "x86_64-windows",
         "checksum": "a545a12df97053aa1779cc7af2e0bd5609f62fa01e3138c35d2f8b8440eb0d33"
+      }
+    ]
+  }, {
+    "name": "lsp_c",
+    "description": "LSP support for C/C++ and Objective-C via clangd.",
+    "path": "plugins/lsp_c.lua",
+    "files": [
+      {
+        "url": "https://github.com/clangd/clangd/releases/download/15.0.6/clangd-linux-15.0.6.zip",
+        "arch": "x86_64-linux",
+        "checksum": "4d7a84ef98c0dfab9db5e574c3a8f1253a43924fcac91a669b1dcf47c70f2a80"
+      },
+      {
+        "url": "https://github.com/clangd/clangd/releases/download/15.0.6/clangd-mac-15.0.6.zip",
+        "arch": "x86_64-darwin",
+        "checksum": "208adf698e73174e35e582b00d6c6f811dd98b2adbba754eb7e8224f0d739415"
+      },
+      {
+        "url": "https://github.com/clangd/clangd/releases/download/15.0.6/clangd-windows-15.0.6.zip",
+        "arch": "x86_64-windows",
+        "checksum": "b0b39c862d1546856e7b9816bba791326aae81587b57fef31f1a098957f1eebc"
       }
     ]
   }]
