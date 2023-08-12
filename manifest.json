@@ -43,5 +43,28 @@
       }
     ],
     "dependencies": { "lsp": {} }
+  }, {
+    "id": "lsp_rust",
+    "description": "LSP support for Rust via rust-analyzer.",
+    "path": "plugins/lsp_rust.lua",
+    "version": "20230807",
+    "files": [
+      {
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-08-07/rust-analyzer-x86_64-unknown-linux-gnu.gz",
+        "arch": "x86_64-linux",
+        "checksum": "0437f9ba1801aaf975ddff484959bdaf66166a3d73030112cb8e2ce239b6a188"
+      },
+      {
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-08-07/rust-analyzer-x86_64-apple-darwin.gz",
+        "arch": "x86_64-darwin",
+        "checksum": "54082be4c2b50b90bace232338fb2d8b23b491f1d7d2bafe201e63e471df10f0"
+      },
+      {
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-08-07/rust-analyzer-x86_64-pc-windows-msvc.zip",
+        "arch": "x86_64-windows",
+        "checksum": "35d4e330968255f5a3bbf207ff0a3c57466c040913e095d055d05fddb2e2ff00"
+      }
+    ],
+    "dependencies": { "language_rust": {}, "lsp": {} }
   }]
 }
