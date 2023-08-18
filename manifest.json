@@ -3,21 +3,22 @@
     "id": "lsp_lua",
     "description": "LSP support for lua.",
     "path": "plugins/lsp_lua.lua",
+    "version": "3.6.25",
     "files": [
       {
-        "url": "https://github.com/sumneko/lua-language-server/releases/download/3.6.4/lua-language-server-3.6.4-darwin-x64.tar.gz",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.6.25/lua-language-server-3.6.25-darwin-x64.tar.gz",
         "arch": "x86_64-darwin",
-        "checksum": "d22c343d1dd97e016199c0d788adc078f4150bc15dc6486660447944c0872618"
+        "checksum": "fdbf094e07fb2133d7ee58f2bacdca2dd7b112bcf9b9c078abb496f845f72f5a"
       },
       {
-        "url": "https://github.com/sumneko/lua-language-server/releases/download/3.6.4/lua-language-server-3.6.4-linux-x64.tar.gz",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.6.25/lua-language-server-3.6.25-linux-x64.tar.gz",
         "arch": "x86_64-linux",
-        "checksum": "4ba34404a20d75a867c1aef19f0f98696e138aebcadbd104bba7619107f140ab"
+        "checksum": "88a0d15efd54742bae9464138f9fb657a07f40af105ffb5ce3466dd6c8269c5d"
       },
       {
-        "url": "https://github.com/sumneko/lua-language-server/releases/download/3.6.4/lua-language-server-3.6.4-win32-x64.zip",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.6.25/lua-language-server-3.6.25-win32-x64.zip",
         "arch": "x86_64-windows",
-        "checksum": "a545a12df97053aa1779cc7af2e0bd5609f62fa01e3138c35d2f8b8440eb0d33"
+        "checksum": "ce120a2e1f4f7f67cea4d965fbf5a7181fa7559c7f0994f235ce61946457f79e"
       }
     ],
     "dependencies": { "lsp": {} }
@@ -25,21 +26,22 @@
     "id": "lsp_c",
     "description": "LSP support for C/C++ and Objective-C via clangd.",
     "path": "plugins/lsp_c.lua",
+    "version": "16.0.2",
     "files": [
       {
-        "url": "https://github.com/clangd/clangd/releases/download/15.0.6/clangd-linux-15.0.6.zip",
+        "url": "https://github.com/clangd/clangd/releases/download/16.0.2/clangd-linux-16.0.2.zip",
         "arch": "x86_64-linux",
-        "checksum": "4d7a84ef98c0dfab9db5e574c3a8f1253a43924fcac91a669b1dcf47c70f2a80"
+        "checksum": "928f826340e322e3eed534f4b215e5c403c22e73dbfa66ae4fd8f44e22f4ca28"
       },
       {
-        "url": "https://github.com/clangd/clangd/releases/download/15.0.6/clangd-mac-15.0.6.zip",
+        "url": "https://github.com/clangd/clangd/releases/download/16.0.2/clangd-mac-16.0.2.zip",
         "arch": "x86_64-darwin",
-        "checksum": "208adf698e73174e35e582b00d6c6f811dd98b2adbba754eb7e8224f0d739415"
+        "checksum": "0c2d19e200e5a2ce1f10f7a7ade8e9c0ee57be306022a8b9eb0c79d0c8af1cdd"
       },
       {
-        "url": "https://github.com/clangd/clangd/releases/download/15.0.6/clangd-windows-15.0.6.zip",
+        "url": "https://github.com/clangd/clangd/releases/download/16.0.2/clangd-windows-16.0.2.zip",
         "arch": "x86_64-windows",
-        "checksum": "b0b39c862d1546856e7b9816bba791326aae81587b57fef31f1a098957f1eebc"
+        "checksum": "c7b90ad9c413c0270585b93962414e0bcc9f06a2ad3dd6e341e2719987eab34b"
       }
     ],
     "dependencies": { "lsp": {} }
