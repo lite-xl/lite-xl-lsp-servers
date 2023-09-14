@@ -11,7 +11,7 @@ if PLATFORM == "Windows" then
 elseif PLATFORM == "Mac OS X" then
   if ARCH == "aarch64-darwin" then
     filename = "rust-analyzer-aarch64-apple-darwin"
-  else 
+  else
     filename = "rust-analyzer-x86_64-apple-darwin"
   end
 else
