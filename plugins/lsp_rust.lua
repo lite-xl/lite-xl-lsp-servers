@@ -9,7 +9,11 @@ local filename
 if PLATFORM == "Windows" then
   filename = "rust-analyzer.exe"
 elseif PLATFORM == "Mac OS X" then
-  filename = "rust-analyzer-x86_64-apple-darwin"
+  if ARCH == "aarch64-darwin" then
+    filename = "rust-analyzer-aarch64-apple-darwin"
+  else 
+    filename = "rust-analyzer-x86_64-apple-darwin"
+  end
 else
   filename = "rust-analyzer-x86_64-unknown-linux-gnu"
 end
