@@ -11,6 +11,11 @@
         "checksum": "fdbf094e07fb2133d7ee58f2bacdca2dd7b112bcf9b9c078abb496f845f72f5a"
       },
       {
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.6.25/lua-language-server-3.6.25-darwin-arm64.tar.gz",
+        "arch": "aarch64-darwin",
+        "checksum": "SKIP"
+      },
+      {
         "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.6.25/lua-language-server-3.6.25-linux-x64.tar.gz",
         "arch": "x86_64-linux",
         "checksum": "88a0d15efd54742bae9464138f9fb657a07f40af105ffb5ce3466dd6c8269c5d"
@@ -35,7 +40,7 @@
       },
       {
         "url": "https://github.com/clangd/clangd/releases/download/16.0.2/clangd-mac-16.0.2.zip",
-        "arch": "x86_64-darwin",
+        "arch": ["x86_64-darwin","aarch64-darwin"],
         "checksum": "0c2d19e200e5a2ce1f10f7a7ade8e9c0ee57be306022a8b9eb0c79d0c8af1cdd"
       },
       {
@@ -55,6 +60,11 @@
         "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-08-14/rust-analyzer-x86_64-unknown-linux-gnu.gz",
         "arch": "x86_64-linux",
         "checksum": "1bdc7a7f67bf71530e679ce2af5788050084b1e9773aeb34561711126996647e"
+      },
+      {
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-08-14/rust-analyzer-aarch64-apple-darwin.gz",
+        "arch": "aarch64-darwin",
+        "checksum": "85dc478f4dd15b2a65fd5352dc641199fa2c39d67a3ca95f714d28586c1598d4"
       },
       {
         "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-08-14/rust-analyzer-x86_64-apple-darwin.gz",
