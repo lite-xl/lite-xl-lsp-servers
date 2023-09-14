@@ -13,7 +13,7 @@
       {
         "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.6.25/lua-language-server-3.6.25-darwin-arm64.tar.gz",
         "arch": "aarch64-darwin",
-        "checksum": "SKIP"
+        "checksum": "da1c9c529e27fc6152c93d3876cc014c3173b6c91b8c036aef3aff82086add50"
       },
       {
         "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.6.25/lua-language-server-3.6.25-linux-x64.tar.gz",
