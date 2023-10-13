@@ -3,27 +3,27 @@
     "id": "lsp_lua",
     "description": "LSP support for lua.",
     "path": "plugins/lsp_lua.lua",
-    "version": "3.6.25",
+    "version": "3.7.0",
     "files": [
       {
-        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.6.25/lua-language-server-3.6.25-darwin-x64.tar.gz",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.7.0/lua-language-server-3.7.0-darwin-x64.tar.gz",
         "arch": "x86_64-darwin",
-        "checksum": "fdbf094e07fb2133d7ee58f2bacdca2dd7b112bcf9b9c078abb496f845f72f5a"
+        "checksum": "30114cd9a2496f758d1ad7132cc82e814b0a61144c5cfb953b976a44fc54bc02"
       },
       {
-        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.6.25/lua-language-server-3.6.25-darwin-arm64.tar.gz",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.7.0/lua-language-server-3.7.0-darwin-arm64.tar.gz",
         "arch": "aarch64-darwin",
-        "checksum": "da1c9c529e27fc6152c93d3876cc014c3173b6c91b8c036aef3aff82086add50"
+        "checksum": "76e8bb30f25e8ceea8ef68d35eab4d6e70cd7147b177987a78480ceaf9f1dcf1"
       },
       {
-        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.6.25/lua-language-server-3.6.25-linux-x64.tar.gz",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.7.0/lua-language-server-3.7.0-linux-x64.tar.gz",
         "arch": "x86_64-linux",
-        "checksum": "88a0d15efd54742bae9464138f9fb657a07f40af105ffb5ce3466dd6c8269c5d"
+        "checksum": "4377e10e295adfd6864fdea2076f6061ae199b5563204fb04c0836f226d56141"
       },
       {
-        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.6.25/lua-language-server-3.6.25-win32-x64.zip",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.7.0/lua-language-server-3.7.0-win32-x64.zip",
         "arch": "x86_64-windows",
-        "checksum": "ce120a2e1f4f7f67cea4d965fbf5a7181fa7559c7f0994f235ce61946457f79e"
+        "checksum": "24b639216131e3e4363db8100f3d47903e5a23856958997c1041412f6f1b65be"
       }
     ],
     "dependencies": { "lsp": {} }
@@ -54,27 +54,27 @@
     "id": "lsp_rust",
     "description": "LSP support for Rust via rust-analyzer.",
     "path": "plugins/lsp_rust.lua",
-    "version": "20230814",
+    "version": "20231009",
     "files": [
       {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-08-14/rust-analyzer-x86_64-unknown-linux-gnu.gz",
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-10-09/rust-analyzer-x86_64-unknown-linux-gnu.gz",
         "arch": "x86_64-linux",
-        "checksum": "1bdc7a7f67bf71530e679ce2af5788050084b1e9773aeb34561711126996647e"
+        "checksum": "b5cfb12d86faa486ca30fe1a7e35f0466cf991426a4d809b7623a567c2e0afc8"
       },
       {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-08-14/rust-analyzer-aarch64-apple-darwin.gz",
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-10-09/rust-analyzer-aarch64-apple-darwin.gz",
         "arch": "aarch64-darwin",
-        "checksum": "85dc478f4dd15b2a65fd5352dc641199fa2c39d67a3ca95f714d28586c1598d4"
+        "checksum": "f0c4f1276964be09e8a47c09a15591d835ad1e43c929d5fd9d608fe89c3d7d98"
       },
       {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-08-14/rust-analyzer-x86_64-apple-darwin.gz",
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-10-09/rust-analyzer-x86_64-apple-darwin.gz",
         "arch": "x86_64-darwin",
-        "checksum": "695d95989ed6dfec8b0cfa7d832b1a6226075e19a3259f3b5d21f6c5e83c972e"
+        "checksum": "8f5e6e3f9e0a39f9196e8e6abc9fca2a5d9dabd11c476d426a83bbc057a04f42"
       },
       {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-08-14/rust-analyzer-x86_64-pc-windows-msvc.zip",
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-10-09/rust-analyzer-x86_64-pc-windows-msvc.zip",
         "arch": "x86_64-windows",
-        "checksum": "fa4d819d3521ce4697ee1d28edb761e7e7fac4f5d2d418b47d8b68ffdbb52c2d"
+        "checksum": "099c690e57fd4df28f8fdd70b78e0f42115d2473deab08ae63446c0011bf8427"
       }
     ],
     "dependencies": { "language_rust": {}, "lsp": {} }
