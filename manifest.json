@@ -87,22 +87,22 @@
       {
         "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-linux.tar.gz",
         "arch": "x86_64-linux",
-        "checksum": "7aeb34fb12813a13f41cb508d709a47e"
+        "checksum": "c4352982dfd5e2046c78da8a0cc229cf741a3ee6d5920cfddb2f8925c10bbcca"
       },
       {
         "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-aarch64-macos.tar.gz",
         "arch": "aarch64-darwin",
-        "checksum": "1dd9271e104433dba5206b6a84373123"
+        "checksum": "8096da4115bfe05f174ec579812ab9580f16f0eeda4f73abbd44474ee994fd15"
       },
       {
         "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-macos.tar.gz",
         "arch": "x86_64-darwin",
-        "checksum": "26085ffe753205d44eb9d2a4147a36d4"
+        "checksum": "cfcd171b0d977a22cb03a40e8913ae4890da296ed085aa0b81f76832062a66f2"
       },
       {
         "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-windows.zip",
         "arch": "x86_64-windows",
-        "checksum": "8d3713bf2b3ec129d5b9deb0e3c67c5c"
+        "checksum": "ef3ad6e9ec5efedba4f7f20d909fe70da89d2e302fbb06a72e989d54ac54f4b4"
       }
     ],
     "dependencies": { "language_zig": {}, "lsp": {} }
