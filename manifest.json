@@ -81,7 +81,7 @@
   },{
     "id": "lsp_zig",
     "description": "LSP support for Zig via zls.",
-    "path": "plugins/lsp_zls.lua",
+    "path": "plugins/lsp_zig.lua",
     "version": "0.11.0",
     "files": [
       {
