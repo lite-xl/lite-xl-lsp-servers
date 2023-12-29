@@ -78,5 +78,33 @@
       }
     ],
     "dependencies": { "language_rust": {}, "lsp": {} }
+  },{
+    "id": "lsp_zig",
+    "description": "LSP support for Zig via zls.",
+    "path": "plugins/lsp_zls.lua",
+    "version": "0.11.0",
+    "files": [
+      {
+        "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-linux.tar.gz",
+        "arch": "x86_64-linux",
+        "checksum": "7aeb34fb12813a13f41cb508d709a47e"
+      },
+      {
+        "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-aarch64-macos.tar.gz",
+        "arch": "aarch64-darwin",
+        "checksum": "1dd9271e104433dba5206b6a84373123"
+      },
+      {
+        "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-macos.tar.gz",
+        "arch": "x86_64-darwin",
+        "checksum": "26085ffe753205d44eb9d2a4147a36d4"
+      },
+      {
+        "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-windows.zip",
+        "arch": "x86_64-windows",
+        "checksum": "8d3713bf2b3ec129d5b9deb0e3c67c5c"
+      }
+    ],
+    "dependencies": { "language_zig": {}, "lsp": {} }
   }]
 }
