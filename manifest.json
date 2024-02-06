@@ -106,5 +106,33 @@
       }
     ],
     "dependencies": { "language_zig": {}, "lsp": {} }
+  },{
+    "id": "lsp_tex",
+    "description": "LSP support for TeX via texlab.",
+    "path": "plugins/lsp_tex.lua",
+    "version": "5.12.3",
+    "files": [
+      {
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.3/texlab-x86_64-linux.tar.gz",
+        "arch": "x86_64-linux",
+        "checksum": "47216c3356a9eaaac1d013b70b43f39f26cf76736885c63e5b65d1f3b0aec618"
+      },
+      {
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.3/texlab-aarch64-macos.tar.gz",
+        "arch": "aarch64-darwin",
+        "checksum": "bf73249a50d77badff06225548fc068153340d8d6bf030349d6bf50f582353f7"
+      },
+      {
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.3/texlab-x86_64-macos.tar.gz",
+        "arch": "x86_64-darwin",
+        "checksum": "654fa9311e38f83a7dedb99cb3e979bfaf34a3bf1a59b65e9dce552082663c2f"
+      },
+      {
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.3/texlab-x86_64-windows.zip",
+        "arch": "x86_64-windows",
+        "checksum": "120d60e1fb05bac2cbc214f26ee602675ae2f8705c3233a2da0b3ab36c9cc198"
+      }
+    ],
+    "dependencies": { "language_tex": {}, "lsp": {} }
   }]
 }
