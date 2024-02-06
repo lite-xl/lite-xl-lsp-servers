@@ -9,12 +9,6 @@ local installed_path = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp_tex"
 local texfile
 if PLATFORM == "Windows" then
   texfile = "texlab.exe"
-elseif PLATFORM == "Mac OS X" then
-  if ARCH == "aarch64-darwin" then
-    texfile = "texlab"
-  else
-    texfile = "texlab"
-  end
 else
   texfile = "texlab"
 end
