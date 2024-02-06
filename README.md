@@ -22,4 +22,4 @@ The following languages are supported, bundled with their particular language se
 | [lsp_c](/plugins/lsp_c.lua?raw=1)            | C, C++, Objective-C  | [clangd](https://github.com/clangd/clangd)                      | Linux, Mac, Windows
 | [lsp_rust](/plugins/lsp_rust.lua?raw=1)      | Rust                 | [rust-analyzer](https://github.com/rust-lang/rust-analyzer)     | Linux, Mac, Windows
 | [lsp_zig](/plugins/lsp_zig.lua?raw=1)        | Zig                  | [zls](https://github.com/zigtools/zls)                          | Linux, Mac, Windows
-| [lsp_java](/plugins/lsp_java.lua?raw=1)      | Java                 | [jdtls](https://github.com/eclipse-jdtls/eclipse.jdt.ls)        | Linux, Mac, Windows
+
