@@ -135,6 +135,34 @@
     ],
     "dependencies": { "language_tex": {}, "lsp": {} }
   },{
+    "id": "jdk",
+    "description": "Production and Early-Access OpenJDK Builds, from Oracle.",
+    "version": "21.0.2",
+    "type": "library",
+    "mod_version": "3",
+    "files": [
+      {
+        "url": "https://download.java.net/java/GA/jdk21.0.2/f2283984656d49d69e91c558476027ac/13/GPL/openjdk-21.0.2_linux-x64_bin.tar.gz",
+        "arch": ["x86_64-linux"],
+        "checksum": "a2def047a73941e01a73739f92755f86b895811afb1f91243db214cff5bdac3f"
+      },
+      {
+        "url": "https://download.java.net/java/GA/jdk21.0.2/f2283984656d49d69e91c558476027ac/13/GPL/openjdk-21.0.2_macos-aarch64_bin.tar.gz",
+        "arch": ["aarch64-darwin"],
+        "checksum": "b3d588e16ec1e0ef9805d8a696591bd518a5cea62567da8f53b5ce32d11d22e4"
+      },
+      {
+        "url": "https://download.java.net/java/GA/jdk21.0.2/f2283984656d49d69e91c558476027ac/13/GPL/openjdk-21.0.2_macos-x64_bin.tar.gz",
+        "arch": ["x86_64-darwin"],
+        "checksum": "8fd09e15dc406387a0aba70bf5d99692874e999bf9cd9208b452b5d76ac922d3"
+      },
+      {
+        "url": "https://download.java.net/java/GA/jdk21.0.2/f2283984656d49d69e91c558476027ac/13/GPL/openjdk-21.0.2_windows-x64_bin.zip",
+        "arch": ["x86_64-windows"],
+        "checksum": "b6c17e747ae78cdd6de4d7532b3164b277daee97c007d3eaa2b39cca99882664"
+      }
+    ]
+  },{
     "id": "lsp_java",
     "description": "LSP support for Java via jdtls.",
     "path": "plugins/lsp_java.lua",
@@ -143,9 +171,9 @@
       {
         "url": "https://download.eclipse.org/jdtls/milestones/1.30.1/jdt-language-server-1.30.1-202312071447.tar.gz",
         "arch": ["x86_64-linux", "x86_64-darwin","aarch64-darwin", "x86_64-windows"],
-        "checksum": ""
+        "checksum": "4c005ede9df73e60cfb8f611373808c9121286d3adbfb745384cced9f19b2de3"
       }
     ],
-    "dependencies": { "language_java": {}, "lsp": {} }
+    "dependencies": { "language_java": {}, "lsp": {}, "jdk": {} }
   }]
 }
