@@ -134,5 +134,18 @@
       }
     ],
     "dependencies": { "language_tex": {}, "lsp": {} }
+  },{
+    "id": "lsp_python",
+    "description": "LSP support for Python via Pyright.",
+    "path": "plugins/lsp_python.lua",
+    "version": "1.1.350",
+    "files": [
+      {
+        "url": "https://registry.npmjs.org/pyright/-/pyright-1.1.350.tgz",
+        "arch": ["x86_64-linux", "x86_64-windows", "x86_64-darwin", "aarch64-darwin"],
+        "checksum": "d3bc2b74950884c7e362df0f3728bb58c112f16f9a122d18ea177ba8c6845626"
+      }
+    ],
+    "dependencies": { "language_python": {}, "lsp": {} }
   }]
 }
