@@ -142,9 +142,9 @@
     "mod_version": "3",
     "files": [
       {
-        "url": "https://nodejs.org/dist/v20.11.0/node-v20.11.0-linux-x64.tar.xz",
+        "url": "https://nodejs.org/dist/v20.11.0/node-v20.11.0-linux-x64.tar.gz",
         "arch": ["x86_64-linux"],
-        "checksum": "822780369d0ea309e7d218e41debbd1a03f8cdf354ebf8a4420e89f39cc2e612"
+        "checksum": "9556262f6cd4c020af027782afba31ca6d1a37e45ac0b56cecd2d5a4daf720e0"
       },
       {
         "url": "https://nodejs.org/dist/v20.11.0/node-v20.11.0-darwin-arm64.tar.gz",
