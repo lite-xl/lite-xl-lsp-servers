@@ -135,6 +135,34 @@
     ],
     "dependencies": { "language_tex": {}, "lsp": {} }
   },{
+    "id": "node",
+    "description": "Official NodeJs builds.",
+    "version": "20.11.0",
+    "type": "library",
+    "mod_version": "3",
+    "files": [
+      {
+        "url": "https://nodejs.org/dist/v20.11.0/node-v20.11.0-linux-x64.tar.xz",
+        "arch": ["x86_64-linux"],
+        "checksum": "822780369d0ea309e7d218e41debbd1a03f8cdf354ebf8a4420e89f39cc2e612"
+      },
+      {
+        "url": "https://nodejs.org/dist/v20.11.0/node-v20.11.0-darwin-arm64.tar.gz",
+        "arch": ["aarch64-darwin"],
+        "checksum": "94e443d007e2882f8e5aecc85d978f7591520dc3b642adc7583b3cb0b3fc37d7"
+      },
+      {
+        "url": "https://nodejs.org/dist/v20.11.0/node-v20.11.0-darwin-x64.tar.gz",
+        "arch": ["x86_64-darwin"],
+        "checksum": "c0ba02c905814258bd99a362027f8d4d2cc738218a9cf1dce2620e8735e3a80e"
+      },
+      {
+        "url": "https://nodejs.org/dist/v20.11.0/node-v20.11.0-win-x64.zip",
+        "arch": ["x86_64-windows"],
+        "checksum": "893115cd92ad27bf178802f15247115e93c0ef0c753b93dca96439240d64feb5"
+      }
+    ]
+  },{
     "id": "lsp_python",
     "description": "LSP support for Python via Pyright.",
     "path": "plugins/lsp_python.lua",
@@ -146,6 +174,6 @@
         "checksum": "d3bc2b74950884c7e362df0f3728bb58c112f16f9a122d18ea177ba8c6845626"
       }
     ],
-    "dependencies": { "language_python": {}, "lsp": {} }
+    "dependencies": { "language_python": {}, "lsp": {}, "node": {} }
   }]
 }
