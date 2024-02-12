@@ -135,7 +135,7 @@
     ],
     "dependencies": { "language_tex": {}, "lsp": {} }
   },{
-    "id": "node",
+    "id": "nodejs",
     "description": "Official NodeJs builds.",
     "version": "20.11.0",
     "type": "library",
@@ -174,6 +174,6 @@
         "checksum": "d3bc2b74950884c7e362df0f3728bb58c112f16f9a122d18ea177ba8c6845626"
       }
     ],
-    "dependencies": { "language_python": {}, "lsp": {}, "node": {} }
+    "dependencies": { "language_python": {}, "lsp": {}, "nodejs": {} }
   }]
 }
