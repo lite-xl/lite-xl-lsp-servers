@@ -5,7 +5,7 @@ local common = require "core.common"
 local config = require "core.config"
 
 local installed_path_plugin = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp_python"
-local installed_path_library = USERDIR .. PATHSEP .. "libraries" .. PATHSEP .. "node"
+local installed_path_library = USERDIR .. PATHSEP .. "libraries" .. PATHSEP .. "nodejs"
 
 local server_path = installed_path_plugin .. PATHSEP .. "package" .. PATHSEP .. "langserver.index.js"
 
