@@ -137,7 +137,7 @@
   },{
     "id": "lsp_quicklintjs",
     "description": "LSP support for Javascript via quick-lint-js (Linting only).",
-    "path": "plugins/quicklintjs.lua",
+    "path": "plugins/lsp_quicklintjs.lua",
     "version": "3.1.0",
     "files": [
       {
