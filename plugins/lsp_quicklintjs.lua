@@ -4,7 +4,7 @@ local lsp = require "plugins.lsp"
 local common = require "core.common"
 local config = require "core.config"
 
-local installed_path = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp_quicklintjs" .. PATHSEP .. "bin"
+local installed_path = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp_quicklintjs" .. PATHSEP .. "quick-lint-js" .. PATHSEP .. "bin"
 
 local filename
 if PLATFORM == "Windows" then
