@@ -18,8 +18,8 @@ The following languages are supported, bundled with their particular language se
 
 | Plugin                                       | Language(s)          | Server                                                          | Platforms
 | :------------------------------------------- | :------------------- | :-------------------------------------------------------------- | :--------
-| [lsp_lua](/plugins/lsp_lua.lua?raw=1)        | lua                  | [sumneko_lua](https://github.com/sumneko/lua-language-server)   | Linux, Mac, Windows
 | [lsp_c](/plugins/lsp_c.lua?raw=1)            | C, C++, Objective-C  | [clangd](https://github.com/clangd/clangd)                      | Linux, Mac, Windows
+| [lsp_lua](/plugins/lsp_lua.lua?raw=1)        | lua                  | [sumneko_lua](https://github.com/sumneko/lua-language-server)   | Linux, Mac, Windows
 | [lsp_rust](/plugins/lsp_rust.lua?raw=1)      | Rust                 | [rust-analyzer](https://github.com/rust-lang/rust-analyzer)     | Linux, Mac, Windows
-| [lsp_zig](/plugins/lsp_zig.lua?raw=1)        | Zig                  | [zls](https://github.com/zigtools/zls)                          | Linux, Mac, Windows
 | [lsp_tex](/plugins/lsp_tex.lua?raw=1)        | TeX                  | [texlab](https://github.com/latex-lsp/texlab)                   | Linux, Mac, Windows
+| [lsp_zig](/plugins/lsp_zig.lua?raw=1)        | Zig                  | [zls](https://github.com/zigtools/zls)                          | Linux, Mac, Windows
