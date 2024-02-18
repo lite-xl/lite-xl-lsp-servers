@@ -135,7 +135,7 @@
     ],
     "dependencies": { "language_tex": {}, "lsp": {} }
   },{
-    "id": "quicklintjs",
+    "id": "lsp_quicklintjs",
     "description": "LSP support for Javascript via quick-lint-js (Linting only).",
     "path": "plugins/quicklintjs.lua",
     "version": "3.1.0",
