@@ -9,7 +9,7 @@ and depend on particular LSP servers functioning.
 ## Quickstart
 
 ```
-lpm add https://github.com/adamharrison/lite-xl-lsp-servers.git && lpm install lsp_c lsp_lua lsp_rust
+lpm add https://github.com/adamharrison/lite-xl-lsp-servers.git && lpm install <LSP Plugin>
 ```
 
 ## Languages Supported
@@ -22,4 +22,5 @@ The following languages are supported, bundled with their particular language se
 | [lsp_c](/plugins/lsp_c.lua?raw=1)            | C, C++, Objective-C  | [clangd](https://github.com/clangd/clangd)                      | Linux, Mac, Windows
 | [lsp_rust](/plugins/lsp_rust.lua?raw=1)      | Rust                 | [rust-analyzer](https://github.com/rust-lang/rust-analyzer)     | Linux, Mac, Windows
 | [lsp_zig](/plugins/lsp_zig.lua?raw=1)        | Zig                  | [zls](https://github.com/zigtools/zls)                          | Linux, Mac, Windows
+| [lsp_quicklintjs](/plugins/lsp_quicklintjs.lua?raw=1)        | Javascript                  | [quick-lint-js](https://quick-lint-js.com/)                          | Linux, Mac, Windows
 
