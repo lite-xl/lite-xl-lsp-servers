@@ -181,6 +181,6 @@
         "checksum": "933c977fed0460533890c83504d34e4d1fd312bcc0b2c8176adf3de02d6054e6"
       }
     ],
-    "dependencies": { "lsp": {} }
+    "dependencies": { "language_js": {}, "lsp": {} }
   }]
 }
