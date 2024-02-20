@@ -174,6 +174,54 @@
         "checksum": "4c005ede9df73e60cfb8f611373808c9121286d3adbfb745384cced9f19b2de3"
       }
     ],
-    "dependencies": { "language_java": {}, "lsp": {}, "jdk": { "optional": "true" } }
+    "dependencies": { "language_java": {}, "lsp": {}, "jdk": { "optional": "true" }
+  },{
+    "id": "lsp_quicklintjs",
+    "description": "LSP support for Javascript via quick-lint-js (Linting only).",
+    "path": "plugins/lsp_quicklintjs.lua",
+    "version": "3.1.0",
+    "files": [
+      {
+        "url": "https://c.quick-lint-js.com/releases/3.1.0/manual/linux.tar.gz",
+        "arch": "x86_64-linux",
+        "checksum": "92487d857e8f6ba2ae3b20420d32d3d58e66ddbb315a400ba3c891f62c28d6ae"
+      },
+      {
+        "url": "https://c.quick-lint-js.com/releases/3.1.0/manual/linux-aarch64.tar.gz",
+        "arch": "aarch64-linux",
+        "checksum": "69cb973946ba1af63d3e8febe5bd92a0a7f16dcfa3e9a23e48ffafafffe7da6e"
+      },
+      {
+        "url": "https://c.quick-lint-js.com/releases/3.1.0/manual/macos-aarch64.tar.gz",
+        "arch": "aarch64-darwin",
+        "checksum": "799cc2456de43d57458a464b0ee43f6f6d25e26ce34387cc7bb9ea843385c28a"
+      },
+      {
+        "url": "https://c.quick-lint-js.com/releases/3.1.0/manual/macos.tar.gz",
+        "arch": "x86_64-darwin",
+        "checksum": "587ec6f7f8e772518f14933542ff5106ca48ca3a2eca5541bfcef353204997ea"
+      },
+      {
+        "url": "https://c.quick-lint-js.com/releases/3.1.0/manual/windows.zip",
+        "arch": "x86_64-windows",
+        "checksum": "6595ab7b9955219f80b76e816153001f6ae2396b640e172a0674566ea9029be5"
+      },
+      {
+        "url": "https://c.quick-lint-js.com/releases/3.1.0/manual/windows-x86.zip",
+        "arch": "x86-windows",
+        "checksum": "9a73a0a55037994e78e52c42f676d7f9a9e6b2bc8a84b3d102444bc31d587977"
+      },
+      {
+        "url": "https://c.quick-lint-js.com/releases/3.1.0/manual/windows-arm64.zip",
+        "arch": "arm64-windows",
+        "checksum": "d1bed7adc17e0651489faeb6815abe0528bde63225c662cd73b63b2dcc9d4056"
+      },
+      {
+        "url": "https://c.quick-lint-js.com/releases/3.1.0/manual/windows-arm.zip",
+        "arch": "arm-windows",
+        "checksum": "933c977fed0460533890c83504d34e4d1fd312bcc0b2c8176adf3de02d6054e6"
+      }
+    ],
+    "dependencies": { "language_js": {}, "lsp": {} }
   }]
 }
