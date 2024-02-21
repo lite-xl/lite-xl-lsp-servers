@@ -24,6 +24,6 @@ else
   end
 end
 
-lspconfig.jdtls.setup(common.merge({
+lsp.add_server(common.merge({
   command = java_command
 }, config.plugins.lsp_java or {}))
