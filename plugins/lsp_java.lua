@@ -2,7 +2,7 @@
 
 local common = require "core.common"
 local config = require "core.config"
-local lspconfig = require "plugins.lsp.config"
+local lsp = require "plugins.lsp"
 
 local installed_path_plugin = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp_java"
 local installed_path_library = USERDIR .. PATHSEP .. "libraries" .. PATHSEP .. "jdk"
