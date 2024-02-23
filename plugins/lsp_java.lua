@@ -14,7 +14,7 @@ if PLATFORM == "Windows" then
   if system.get_file_info(java_home) == nil then
     java_command = installed_path_plugin .. PATHSEP .. "bin" .. PATHSEP .. "jdtls"
   else
-    java_command = ""
+    java_command = { string.format("JAVA_HOME= \"%s %s\"", java_home , installed_path_plugin .. PATHSEP .. "bin" .. PATHSEP .. "jdtls") }
   end
 else
   if system.get_file_info(java_home) == nil then
