@@ -19,7 +19,7 @@ end
 lsp.add_server(common.merge({
   name = "jdtls",
   language = "java",
-  file_patterns = { "%.java$", "%.mvn$", "%.gradle$" },
+  file_patterns = { "%.java$" },
   command = java_command,
   verbose = false
 }, config.plugins.lsp_java or {}))
