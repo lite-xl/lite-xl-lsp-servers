@@ -137,44 +137,45 @@
   },{
     "id": "nodejs",
     "description": "Official NodeJs builds.",
-    "version": "20.11.0",
+    "version": "20.11.1",
     "type": "library",
     "mod_version": "3",
+    "path": "libraries/nodejs.lua",
     "files": [
       {
-        "url": "https://nodejs.org/dist/v20.11.0/node-v20.11.0-linux-x64.tar.gz",
+        "url": "https://nodejs.org/dist/v20.11.1/node-v20.11.1-linux-x64.tar.gz",
         "arch": ["x86_64-linux"],
-        "checksum": "9556262f6cd4c020af027782afba31ca6d1a37e45ac0b56cecd2d5a4daf720e0"
+        "checksum": "bf3a779bef19452da90fb88358ec2c57e0d2f882839b20dc6afc297b6aafc0d7"
       },
       {
-        "url": "https://nodejs.org/dist/v20.11.0/node-v20.11.0-darwin-arm64.tar.gz",
+        "url": "https://nodejs.org/dist/v20.11.1/node-v20.11.1-darwin-arm64.tar.gz",
         "arch": ["aarch64-darwin"],
-        "checksum": "94e443d007e2882f8e5aecc85d978f7591520dc3b642adc7583b3cb0b3fc37d7"
+        "checksum": "e0065c61f340e85106a99c4b54746c5cee09d59b08c5712f67f99e92aa44995d"
       },
       {
-        "url": "https://nodejs.org/dist/v20.11.0/node-v20.11.0-darwin-x64.tar.gz",
+        "url": "https://nodejs.org/dist/v20.11.1/node-v20.11.1-darwin-x64.tar.gz",
         "arch": ["x86_64-darwin"],
-        "checksum": "c0ba02c905814258bd99a362027f8d4d2cc738218a9cf1dce2620e8735e3a80e"
+        "checksum": "c52e7fb0709dbe63a4cbe08ac8af3479188692937a7bd8e776e0eedfa33bb848"
       },
       {
-        "url": "https://nodejs.org/dist/v20.11.0/node-v20.11.0-win-x64.zip",
+        "url": "https://nodejs.org/dist/v20.11.1/node-v20.11.1-win-x64.zip",
         "arch": ["x86_64-windows"],
-        "checksum": "893115cd92ad27bf178802f15247115e93c0ef0c753b93dca96439240d64feb5"
+        "checksum": "bc032628d77d206ffa7f133518a6225a9c5d6d9210ead30d67e294ff37044bda"
       }
     ]
   },{
     "id": "lsp_python",
     "description": "LSP support for Python via Pyright.",
     "path": "plugins/lsp_python.lua",
-    "version": "1.1.350",
+    "version": "1.1.351",
     "files": [
       {
-        "url": "https://registry.npmjs.org/pyright/-/pyright-1.1.350.tgz",
+        "url": "https://registry.npmjs.org/pyright/-/pyright-1.1.351.tgz",
         "arch": ["x86_64-linux", "x86_64-windows", "x86_64-darwin", "aarch64-darwin"],
-        "checksum": "d3bc2b74950884c7e362df0f3728bb58c112f16f9a122d18ea177ba8c6845626"
+        "checksum": "a557e75b53fc851314c23ee9a167101fd0a9b9bf391f4a75f6315178b3f7760c"
       }
     ],
-    "dependencies": { "lsp": {}, "nodejs": {"optional": true} }
+    "dependencies": { "lsp": {}, "nodejs": {"optional": true}, "language_python": {} }
   },{
     "id": "lsp_quicklintjs",
     "description": "LSP support for Javascript via quick-lint-js (Linting only).",
