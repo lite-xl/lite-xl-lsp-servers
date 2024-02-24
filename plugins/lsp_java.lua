@@ -11,17 +11,9 @@ local java_home = installed_path_library .. PATHSEP .. "jdk-21.0.2"
 local java_command
 
 if PLATFORM == "Windows" then
-  if system.get_file_info(java_home) == nil then
-    java_command = installed_path_plugin .. PATHSEP .. "bin" .. PATHSEP .. "jdtls"
-  else
-    java_command = { string.format("JAVA_HOME \"%s %s\"", java_home , installed_path_plugin .. PATHSEP .. "bin" .. PATHSEP .. "jdtls") }
-  end
+  java_command = { string.format("JAVA_HOME \"%s %s\"", java_home , installed_path_plugin .. PATHSEP .. "bin" .. PATHSEP .. "jdtls") }
 else
-  if system.get_file_info(java_home) == nil then
-    java_command = { installed_path_plugin .. PATHSEP .. "bin" .. PATHSEP .. "jdtls" }
-  else
-    java_command = { "bash", "-c", string.format("JAVA_HOME=%s %s", java_home , installed_path_plugin .. PATHSEP .. "bin" .. PATHSEP .. "jdtls") }
-  end
+  java_command = { "bash", "-c", string.format("JAVA_HOME=%s %s", java_home , installed_path_plugin .. PATHSEP .. "bin" .. PATHSEP .. "jdtls") }
 end
 
 lsp.add_server(common.merge({
