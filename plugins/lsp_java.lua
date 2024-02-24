@@ -13,7 +13,7 @@ local java_command
 if PLATFORM == "Windows" then
   java_command = { string.format("JAVA_HOME \"%s %s\"", java_home , installed_path_plugin .. PATHSEP .. "bin" .. PATHSEP .. "jdtls") }
 else
-  java_command = { "bash", "-c", string.format("JAVA_HOME=%s %s", java_home , installed_path_plugin .. PATHSEP .. "bin" .. PATHSEP .. "jdtls") }
+  java_command = { "JAVA_HOME=" .. java_home , installed_path_plugin .. PATHSEP .. "bin" .. PATHSEP .. "jdtls" }
 end
 
 lsp.add_server(common.merge({
