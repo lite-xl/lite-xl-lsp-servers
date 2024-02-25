@@ -16,11 +16,11 @@ local final_command
 if ok then
   -- NodeJs installed with lpm, runs it.
   final_command = {node_info.path_bin, server_path, "--stdio"}
-  core.log("[lsp_python]: nodejs library found, using it to launch Pyright.")
+  core.log_quiet("[lsp_python]: nodejs library found, using it to launch Pyright.")
 else
   -- NodeJs not installed with lpm, tries to use the system path variable.
   final_command = {"node", server_path, "--stdio"}
-  core.log("[lsp_python]: nodejs library not found, trying to use the 'node' path variable.")
+  core.log_quiet("[lsp_python]: nodejs library not found, trying to use the 'node' path variable.")
 end
 
 
