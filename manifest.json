@@ -1,5 +1,5 @@
 {
-  "plugins": [{
+  "addons": [{
     "id": "lsp_lua",
     "description": "LSP support for lua.",
     "path": "plugins/lsp_lua.lua",
