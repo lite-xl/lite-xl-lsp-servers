@@ -1,5 +1,5 @@
 {
-  "plugins": [{
+  "addons": [{
     "id": "lsp_c",
     "description": "LSP support for C/C++ and Objective-C via clangd.",
     "path": "plugins/lsp_c.lua",
@@ -22,7 +22,7 @@
       }
     ],
     "dependencies": { "lsp": {} }    
-    },{
+  },{
     "id": "lsp_lua",
     "description": "LSP support for lua.",
     "path": "plugins/lsp_lua.lua",
