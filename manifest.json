@@ -1,5 +1,28 @@
 {
-  "plugins": [{
+  "addons": [{
+    "id": "lsp_c",
+    "description": "LSP support for C/C++ and Objective-C via clangd.",
+    "path": "plugins/lsp_c.lua",
+    "version": "16.0.2",
+    "files": [
+      {
+        "url": "https://github.com/clangd/clangd/releases/download/16.0.2/clangd-linux-16.0.2.zip",
+        "arch": "x86_64-linux",
+        "checksum": "928f826340e322e3eed534f4b215e5c403c22e73dbfa66ae4fd8f44e22f4ca28"
+      },
+      {
+        "url": "https://github.com/clangd/clangd/releases/download/16.0.2/clangd-mac-16.0.2.zip",
+        "arch": ["x86_64-darwin","aarch64-darwin"],
+        "checksum": "0c2d19e200e5a2ce1f10f7a7ade8e9c0ee57be306022a8b9eb0c79d0c8af1cdd"
+      },
+      {
+        "url": "https://github.com/clangd/clangd/releases/download/16.0.2/clangd-windows-16.0.2.zip",
+        "arch": "x86_64-windows",
+        "checksum": "c7b90ad9c413c0270585b93962414e0bcc9f06a2ad3dd6e341e2719987eab34b"
+      }
+    ],
+    "dependencies": { "lsp": {} }    
+  },{
     "id": "lsp_lua",
     "description": "LSP support for lua.",
     "path": "plugins/lsp_lua.lua",
@@ -27,113 +50,6 @@
       }
     ],
     "dependencies": { "lsp": {} }
-  }, {
-    "id": "lsp_c",
-    "description": "LSP support for C/C++ and Objective-C via clangd.",
-    "path": "plugins/lsp_c.lua",
-    "version": "16.0.2",
-    "files": [
-      {
-        "url": "https://github.com/clangd/clangd/releases/download/16.0.2/clangd-linux-16.0.2.zip",
-        "arch": "x86_64-linux",
-        "checksum": "928f826340e322e3eed534f4b215e5c403c22e73dbfa66ae4fd8f44e22f4ca28"
-      },
-      {
-        "url": "https://github.com/clangd/clangd/releases/download/16.0.2/clangd-mac-16.0.2.zip",
-        "arch": ["x86_64-darwin","aarch64-darwin"],
-        "checksum": "0c2d19e200e5a2ce1f10f7a7ade8e9c0ee57be306022a8b9eb0c79d0c8af1cdd"
-      },
-      {
-        "url": "https://github.com/clangd/clangd/releases/download/16.0.2/clangd-windows-16.0.2.zip",
-        "arch": "x86_64-windows",
-        "checksum": "c7b90ad9c413c0270585b93962414e0bcc9f06a2ad3dd6e341e2719987eab34b"
-      }
-    ],
-    "dependencies": { "lsp": {} }
-  }, {
-    "id": "lsp_rust",
-    "description": "LSP support for Rust via rust-analyzer.",
-    "path": "plugins/lsp_rust.lua",
-    "version": "20231009",
-    "files": [
-      {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-10-09/rust-analyzer-x86_64-unknown-linux-gnu.gz",
-        "arch": "x86_64-linux",
-        "checksum": "b5cfb12d86faa486ca30fe1a7e35f0466cf991426a4d809b7623a567c2e0afc8"
-      },
-      {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-10-09/rust-analyzer-aarch64-apple-darwin.gz",
-        "arch": "aarch64-darwin",
-        "checksum": "f0c4f1276964be09e8a47c09a15591d835ad1e43c929d5fd9d608fe89c3d7d98"
-      },
-      {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-10-09/rust-analyzer-x86_64-apple-darwin.gz",
-        "arch": "x86_64-darwin",
-        "checksum": "8f5e6e3f9e0a39f9196e8e6abc9fca2a5d9dabd11c476d426a83bbc057a04f42"
-      },
-      {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-10-09/rust-analyzer-x86_64-pc-windows-msvc.zip",
-        "arch": "x86_64-windows",
-        "checksum": "099c690e57fd4df28f8fdd70b78e0f42115d2473deab08ae63446c0011bf8427"
-      }
-    ],
-    "dependencies": { "language_rust": {}, "lsp": {} }
-  },{
-    "id": "lsp_zig",
-    "description": "LSP support for Zig via zls.",
-    "path": "plugins/lsp_zig.lua",
-    "version": "0.11.0",
-    "files": [
-      {
-        "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-linux.tar.gz",
-        "arch": "x86_64-linux",
-        "checksum": "c4352982dfd5e2046c78da8a0cc229cf741a3ee6d5920cfddb2f8925c10bbcca"
-      },
-      {
-        "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-aarch64-macos.tar.gz",
-        "arch": "aarch64-darwin",
-        "checksum": "8096da4115bfe05f174ec579812ab9580f16f0eeda4f73abbd44474ee994fd15"
-      },
-      {
-        "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-macos.tar.gz",
-        "arch": "x86_64-darwin",
-        "checksum": "cfcd171b0d977a22cb03a40e8913ae4890da296ed085aa0b81f76832062a66f2"
-      },
-      {
-        "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-windows.zip",
-        "arch": "x86_64-windows",
-        "checksum": "ef3ad6e9ec5efedba4f7f20d909fe70da89d2e302fbb06a72e989d54ac54f4b4"
-      }
-    ],
-    "dependencies": { "language_zig": {}, "lsp": {} }
-  },{
-    "id": "lsp_tex",
-    "description": "LSP support for TeX via texlab.",
-    "path": "plugins/lsp_tex.lua",
-    "version": "5.12.3",
-    "files": [
-      {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.3/texlab-x86_64-linux.tar.gz",
-        "arch": "x86_64-linux",
-        "checksum": "47216c3356a9eaaac1d013b70b43f39f26cf76736885c63e5b65d1f3b0aec618"
-      },
-      {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.3/texlab-aarch64-macos.tar.gz",
-        "arch": "aarch64-darwin",
-        "checksum": "bf73249a50d77badff06225548fc068153340d8d6bf030349d6bf50f582353f7"
-      },
-      {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.3/texlab-x86_64-macos.tar.gz",
-        "arch": "x86_64-darwin",
-        "checksum": "654fa9311e38f83a7dedb99cb3e979bfaf34a3bf1a59b65e9dce552082663c2f"
-      },
-      {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.3/texlab-x86_64-windows.zip",
-        "arch": "x86_64-windows",
-        "checksum": "120d60e1fb05bac2cbc214f26ee602675ae2f8705c3233a2da0b3ab36c9cc198"
-      }
-    ],
-    "dependencies": { "language_tex": {}, "lsp": {} }
   },{
     "id": "nodejs",
     "description": "Official NodeJs builds.",
@@ -224,5 +140,89 @@
       }
     ],
     "dependencies": { "language_js": {}, "lsp": {} }
+  },{
+    "id": "lsp_rust",
+    "description": "LSP support for Rust via rust-analyzer.",
+    "path": "plugins/lsp_rust.lua",
+    "version": "20231009",
+    "files": [
+      {
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-10-09/rust-analyzer-x86_64-unknown-linux-gnu.gz",
+        "arch": "x86_64-linux",
+        "checksum": "b5cfb12d86faa486ca30fe1a7e35f0466cf991426a4d809b7623a567c2e0afc8"
+      },
+      {
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-10-09/rust-analyzer-aarch64-apple-darwin.gz",
+        "arch": "aarch64-darwin",
+        "checksum": "f0c4f1276964be09e8a47c09a15591d835ad1e43c929d5fd9d608fe89c3d7d98"
+      },
+      {
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-10-09/rust-analyzer-x86_64-apple-darwin.gz",
+        "arch": "x86_64-darwin",
+        "checksum": "8f5e6e3f9e0a39f9196e8e6abc9fca2a5d9dabd11c476d426a83bbc057a04f42"
+      },
+      {
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-10-09/rust-analyzer-x86_64-pc-windows-msvc.zip",
+        "arch": "x86_64-windows",
+        "checksum": "099c690e57fd4df28f8fdd70b78e0f42115d2473deab08ae63446c0011bf8427"
+      }
+    ],
+    "dependencies": { "language_rust": {}, "lsp": {} }
+  },{
+    "id": "lsp_tex",
+    "description": "LSP support for TeX via texlab.",
+    "path": "plugins/lsp_tex.lua",
+    "version": "5.12.3",
+    "files": [
+      {
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.3/texlab-x86_64-linux.tar.gz",
+        "arch": "x86_64-linux",
+        "checksum": "47216c3356a9eaaac1d013b70b43f39f26cf76736885c63e5b65d1f3b0aec618"
+      },
+      {
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.3/texlab-aarch64-macos.tar.gz",
+        "arch": "aarch64-darwin",
+        "checksum": "bf73249a50d77badff06225548fc068153340d8d6bf030349d6bf50f582353f7"
+      },
+      {
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.3/texlab-x86_64-macos.tar.gz",
+        "arch": "x86_64-darwin",
+        "checksum": "654fa9311e38f83a7dedb99cb3e979bfaf34a3bf1a59b65e9dce552082663c2f"
+      },
+      {
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.3/texlab-x86_64-windows.zip",
+        "arch": "x86_64-windows",
+        "checksum": "120d60e1fb05bac2cbc214f26ee602675ae2f8705c3233a2da0b3ab36c9cc198"
+      }
+    ],
+    "dependencies": { "language_tex": {}, "lsp": {} }
+  },{
+    "id": "lsp_zig",
+    "description": "LSP support for Zig via zls.",
+    "path": "plugins/lsp_zig.lua",
+    "version": "0.11.0",
+    "files": [
+      {
+        "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-linux.tar.gz",
+        "arch": "x86_64-linux",
+        "checksum": "c4352982dfd5e2046c78da8a0cc229cf741a3ee6d5920cfddb2f8925c10bbcca"
+      },
+      {
+        "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-aarch64-macos.tar.gz",
+        "arch": "aarch64-darwin",
+        "checksum": "8096da4115bfe05f174ec579812ab9580f16f0eeda4f73abbd44474ee994fd15"
+      },
+      {
+        "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-macos.tar.gz",
+        "arch": "x86_64-darwin",
+        "checksum": "cfcd171b0d977a22cb03a40e8913ae4890da296ed085aa0b81f76832062a66f2"
+      },
+      {
+        "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-windows.zip",
+        "arch": "x86_64-windows",
+        "checksum": "ef3ad6e9ec5efedba4f7f20d909fe70da89d2e302fbb06a72e989d54ac54f4b4"
+      }
+    ],
+    "dependencies": { "language_zig": {}, "lsp": {} }
   }]
 }
