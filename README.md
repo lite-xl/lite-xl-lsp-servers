@@ -25,3 +25,11 @@ The following languages are supported, bundled with their particular language se
 | [lsp_rust](/plugins/lsp_rust.lua?raw=1)                      | Rust                 | [rust-analyzer](https://github.com/rust-lang/rust-analyzer)     | Linux, Mac, Windows
 | [lsp_tex](/plugins/lsp_tex.lua?raw=1)                        | TeX                  | [texlab](https://github.com/latex-lsp/texlab)                   | Linux, Mac, Windows
 | [lsp_zig](/plugins/lsp_zig.lua?raw=1)                        | Zig                  | [zls](https://github.com/zigtools/zls)                          | Linux, Mac, Windows
+
+## Additional libraries
+
+These libraries are dependencies of som language servers (automatic installation with `lpm`).
+
+| Library                                                      | Description                                 | Platforms
+| :----------------------------------------------------------- | :------------------------------------------ | :------------------
+| [nodejs](/libraries/nodejs.lua?raw=1)                        | NodeJs binaries for running javascript apps | Linux, Mac, Windows
