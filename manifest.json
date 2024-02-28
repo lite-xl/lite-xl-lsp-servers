@@ -197,6 +197,18 @@
     ],
     "dependencies": { "language_tex": {}, "lsp": {} }
   },{
+    "id": "lsp_typescript",
+    "description": "LSP support for Typescript and Javascript via typescript-language-server.",
+    "path": "plugins/lsp_typescript.lua",
+    "version": "4.3.3",
+    "files": [
+      {
+        "url": "https://github.com/adamharrison/lite-xl-lsp-servers/releases/download/typescript-language-server-4.3.3/tsserver-4.3.3.tar.gz",
+        "checksum": "37db90bad58ec61297cd81ce90f3ab17006b122bea4a787024b3f60d72a7e53e"
+      }
+    ],
+    "dependencies": { "language_ts": {}, "language_js": {}, "lsp": {}, "nodejs": {} }
+  },{
     "id": "lsp_zig",
     "description": "LSP support for Zig via zls.",
     "path": "plugins/lsp_zig.lua",
