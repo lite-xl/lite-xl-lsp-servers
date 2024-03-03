@@ -21,7 +21,7 @@
         "checksum": "c7b90ad9c413c0270585b93962414e0bcc9f06a2ad3dd6e341e2719987eab34b"
       }
     ],
-    "dependencies": { "lsp": {} }    
+    "dependencies": { "lsp": {} }
   },{
     "id": "lsp_lua",
     "description": "LSP support for lua.",
@@ -91,6 +91,48 @@
       }
     ],
     "dependencies": { "language_java": {}, "lsp": {}, "jdk": { "optional": "true" } }
+  },{
+    "id": "nodejs",
+    "description": "Official NodeJs builds.",
+    "version": "20.11.1",
+    "type": "library",
+    "mod_version": "3",
+    "path": "libraries/nodejs.lua",
+    "files": [
+      {
+        "url": "https://nodejs.org/dist/v20.11.1/node-v20.11.1-linux-x64.tar.gz",
+        "arch": ["x86_64-linux"],
+        "checksum": "bf3a779bef19452da90fb88358ec2c57e0d2f882839b20dc6afc297b6aafc0d7"
+      },
+      {
+        "url": "https://nodejs.org/dist/v20.11.1/node-v20.11.1-darwin-arm64.tar.gz",
+        "arch": ["aarch64-darwin"],
+        "checksum": "e0065c61f340e85106a99c4b54746c5cee09d59b08c5712f67f99e92aa44995d"
+      },
+      {
+        "url": "https://nodejs.org/dist/v20.11.1/node-v20.11.1-darwin-x64.tar.gz",
+        "arch": ["x86_64-darwin"],
+        "checksum": "c52e7fb0709dbe63a4cbe08ac8af3479188692937a7bd8e776e0eedfa33bb848"
+      },
+      {
+        "url": "https://nodejs.org/dist/v20.11.1/node-v20.11.1-win-x64.zip",
+        "arch": ["x86_64-windows"],
+        "checksum": "bc032628d77d206ffa7f133518a6225a9c5d6d9210ead30d67e294ff37044bda"
+      }
+    ]
+  },{
+    "id": "lsp_python",
+    "description": "LSP support for Python via Pyright.",
+    "path": "plugins/lsp_python.lua",
+    "version": "1.1.351",
+    "files": [
+      {
+        "url": "https://registry.npmjs.org/pyright/-/pyright-1.1.351.tgz",
+        "arch": ["x86_64-linux", "x86_64-windows", "x86_64-darwin", "aarch64-darwin"],
+        "checksum": "a557e75b53fc851314c23ee9a167101fd0a9b9bf391f4a75f6315178b3f7760c"
+      }
+    ],
+    "dependencies": { "lsp": {}, "nodejs": {"optional": true}, "language_python": {} }
   },{
     "id": "lsp_quicklintjs",
     "description": "LSP support for Javascript via quick-lint-js (Linting only).",
@@ -204,22 +246,26 @@
       {
         "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-linux.tar.gz",
         "arch": "x86_64-linux",
-        "checksum": "c4352982dfd5e2046c78da8a0cc229cf741a3ee6d5920cfddb2f8925c10bbcca"
+        "checksum": "c4352982dfd5e2046c78da8a0cc229cf741a3ee6d5920cfddb2f8925c10bbcca",
+        "extra": { "chmod_executable": ["/bin/zls"] }
       },
       {
         "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-aarch64-macos.tar.gz",
         "arch": "aarch64-darwin",
-        "checksum": "8096da4115bfe05f174ec579812ab9580f16f0eeda4f73abbd44474ee994fd15"
+        "checksum": "8096da4115bfe05f174ec579812ab9580f16f0eeda4f73abbd44474ee994fd15",
+        "extra": { "chmod_executable": ["/bin/zls"] }
       },
       {
         "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-macos.tar.gz",
         "arch": "x86_64-darwin",
-        "checksum": "cfcd171b0d977a22cb03a40e8913ae4890da296ed085aa0b81f76832062a66f2"
+        "checksum": "cfcd171b0d977a22cb03a40e8913ae4890da296ed085aa0b81f76832062a66f2",
+        "extra": { "chmod_executable": ["/bin/zls"] }
       },
       {
         "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-windows.zip",
         "arch": "x86_64-windows",
-        "checksum": "ef3ad6e9ec5efedba4f7f20d909fe70da89d2e302fbb06a72e989d54ac54f4b4"
+        "checksum": "ef3ad6e9ec5efedba4f7f20d909fe70da89d2e302fbb06a72e989d54ac54f4b4",
+        "extra": { "chmod_executable": ["/bin/zls.exe"] }
       }
     ],
     "dependencies": { "language_zig": {}, "lsp": {} }
