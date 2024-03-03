@@ -21,7 +21,7 @@
         "checksum": "c7b90ad9c413c0270585b93962414e0bcc9f06a2ad3dd6e341e2719987eab34b"
       }
     ],
-    "dependencies": { "lsp": {} }    
+    "dependencies": { "lsp": {} }
   },{
     "id": "lsp_lua",
     "description": "LSP support for lua.",
@@ -206,25 +206,25 @@
         "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-linux.tar.gz",
         "arch": "x86_64-linux",
         "checksum": "c4352982dfd5e2046c78da8a0cc229cf741a3ee6d5920cfddb2f8925c10bbcca",
-	"extra": { "chmod_executable": ["/bin/zls"] }
+        "extra": { "chmod_executable": ["/bin/zls"] }
       },
       {
         "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-aarch64-macos.tar.gz",
         "arch": "aarch64-darwin",
         "checksum": "8096da4115bfe05f174ec579812ab9580f16f0eeda4f73abbd44474ee994fd15",
-	"extra": { "chmod_executable": ["/bin/zls"] }
+        "extra": { "chmod_executable": ["/bin/zls"] }
       },
       {
         "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-macos.tar.gz",
         "arch": "x86_64-darwin",
         "checksum": "cfcd171b0d977a22cb03a40e8913ae4890da296ed085aa0b81f76832062a66f2",
-	"extra": { "chmod_executable": ["/bin/zls"] }
+        "extra": { "chmod_executable": ["/bin/zls"] }
       },
       {
         "url": "https://github.com/zigtools/zls/releases/download/0.11.0/zls-x86_64-windows.zip",
         "arch": "x86_64-windows",
         "checksum": "ef3ad6e9ec5efedba4f7f20d909fe70da89d2e302fbb06a72e989d54ac54f4b4",
-	"extra": { "chmod_executable": ["/bin/zls.exe"] }
+        "extra": { "chmod_executable": ["/bin/zls.exe"] }
       }
     ],
     "dependencies": { "language_zig": {}, "lsp": {} }
