@@ -90,7 +90,7 @@
         "checksum": "4c005ede9df73e60cfb8f611373808c9121286d3adbfb745384cced9f19b2de3"
       }
     ],
-    "dependencies": { "language_java": {}, "lsp": {}, "jdk": { "optional": "true" } }
+    "dependencies": { "language_java": {}, "lsp": {}, "jdk": {} }
   },{
     "id": "nodejs",
     "description": "Official NodeJs builds.",
