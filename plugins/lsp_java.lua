@@ -18,7 +18,7 @@ end
 
 local java_home = installed_path_library .. PATHSEP .. "jdk-21.0.2"
 local java_bin = java_home .. PATHSEP .. "bin" .. PATHSEP .. "java"
-local jdtls_data_path = system.absolute_path(".") .. PATHSEP .. ".jdtls"
+local jdtls_data_path = ".jdtls"
 local version_name  = "1.6.600.v20231106-1826"
 local jdtls_command = { java_bin,
                         "-Declipse.application=org.eclipse.jdt.ls.core.id1",
