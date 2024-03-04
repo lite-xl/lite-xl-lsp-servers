@@ -42,7 +42,7 @@ jobs:
       - name: Package
         run: |
           mkdir bundle
-          cp -r typescript-language-server-${VERSION}/{package.json,lib} bundle
+          cp -r typescript-language-server-${VERSION}/{package.json,lib,LICENSE} bundle
           mkdir -p bundle/node_modules/typescript
           cp -r package/* bundle/node_modules/typescript
           mv bundle tsserver
