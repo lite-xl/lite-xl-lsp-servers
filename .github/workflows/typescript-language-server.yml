@@ -1,11 +1,15 @@
 name: Package typescript-language-server
 
 on:
-  push:
-    tags:
-      - typescript-language-server-*
   workflow_dispatch:
-
+    inputs:
+      typescript-language-server_version:
+        type: string
+        required: true
+      tsserver_version:
+        type: string
+        required: false
+        default: "5.3.3"
 
 jobs:
   package_all:
@@ -13,16 +17,14 @@ jobs:
     runs-on: ubuntu-latest
     permissions: write-all
     env:
-      TS_VERSION: 5.3.3
+      VERSION: ${{ inputs.typescript-language-server_version }}
+      TS_VERSION: ${{ inputs.tsserver_version }}
     steps:
       - uses: actions/checkout@v3
       - name: Update Packages
         run: sudo apt-get update -y
       - name: Install Dependencies
         run: sudo apt-get install -y yarn
-      - name: Set version env
-        run: |
-          REF=${{ github.ref_name }}; echo "VERSION=${REF##*-}" >> "$GITHUB_ENV"
       - name: Get typescript-language-server
         run: |
           curl -L -o "v${VERSION}.tar.gz" "https://github.com/typescript-language-server/typescript-language-server/archive/refs/tags/v${VERSION}.tar.gz"
@@ -45,8 +47,8 @@ jobs:
           cp -r package/* bundle/node_modules/typescript
           mv bundle tsserver
           tar -zcvf tsserver-${VERSION}.tar.gz tsserver
-      - name: Create Release(s)
+      - name: Create Release
         env: { GITHUB_TOKEN: "${{ github.token }}" }
         run: |
-          gh release delete -y "${{ github.ref_name }}" || true
-          gh release create -t "${{ github.ref_name }}" "${{ github.ref_name }}" tsserver-${VERSION}.tar.gz
+          gh release delete -y "typescript-language-server-$VERSION" || true
+          gh release create -t "typescript-language-server-$VERSION" "typescript-language-server-$VERSION" "tsserver-${VERSION}.tar.gz"
