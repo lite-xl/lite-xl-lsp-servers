@@ -3,53 +3,53 @@
     "id": "lsp_c",
     "description": "LSP support for C/C++ and Objective-C via clangd.",
     "path": "plugins/lsp_c.lua",
-    "version": "16.0.2",
+    "version": "17.0.3",
     "files": [
       {
-        "url": "https://github.com/clangd/clangd/releases/download/16.0.2/clangd-linux-16.0.2.zip",
+        "url": "https://github.com/clangd/clangd/releases/download/17.0.3/clangd-linux-17.0.3.zip",
         "arch": "x86_64-linux",
-        "checksum": "928f826340e322e3eed534f4b215e5c403c22e73dbfa66ae4fd8f44e22f4ca28"
+        "checksum": "cdfce9650d7bf705bea60b71075e5f6ffa26b8c42146e20731e87de4c98246d4"
       },
       {
-        "url": "https://github.com/clangd/clangd/releases/download/16.0.2/clangd-mac-16.0.2.zip",
+        "url": "https://github.com/clangd/clangd/releases/download/17.0.3/clangd-mac-17.0.3.zip",
         "arch": ["x86_64-darwin","aarch64-darwin"],
-        "checksum": "0c2d19e200e5a2ce1f10f7a7ade8e9c0ee57be306022a8b9eb0c79d0c8af1cdd"
+        "checksum": "7c311297ad28dd516ebcc3f902652cb729bbe34840806d2d5b1bebed1a9bba17"
       },
       {
-        "url": "https://github.com/clangd/clangd/releases/download/16.0.2/clangd-windows-16.0.2.zip",
+        "url": "https://github.com/clangd/clangd/releases/download/17.0.3/clangd-windows-17.0.3.zip",
         "arch": "x86_64-windows",
-        "checksum": "c7b90ad9c413c0270585b93962414e0bcc9f06a2ad3dd6e341e2719987eab34b"
+        "checksum": "be2e387544df97a36cdba9325562a9695c22af7a8abcbcb0dec0e73ed9ad8127"
       }
     ],
-    "dependencies": { "lsp": {} }
+    "dependencies": { "language_c": {}, "lsp": {} }
   },{
     "id": "lsp_lua",
     "description": "LSP support for lua.",
     "path": "plugins/lsp_lua.lua",
-    "version": "3.7.0",
+    "version": "3.7.4",
     "files": [
       {
-        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.7.0/lua-language-server-3.7.0-darwin-x64.tar.gz",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.7.4/lua-language-server-3.7.4-darwin-x64.tar.gz",
         "arch": "x86_64-darwin",
-        "checksum": "30114cd9a2496f758d1ad7132cc82e814b0a61144c5cfb953b976a44fc54bc02"
+        "checksum": "fafd3b593533d6370e9e86e93f62c3123b2022565472b1bb03bf97d1fd5fa285"
       },
       {
-        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.7.0/lua-language-server-3.7.0-darwin-arm64.tar.gz",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.7.4/lua-language-server-3.7.4-darwin-arm64.tar.gz",
         "arch": "aarch64-darwin",
-        "checksum": "76e8bb30f25e8ceea8ef68d35eab4d6e70cd7147b177987a78480ceaf9f1dcf1"
+        "checksum": "59c97c74c1b6d9083dab9b08f87a565ef85603edd540981abc2e7f75a02ceb05"
       },
       {
-        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.7.0/lua-language-server-3.7.0-linux-x64.tar.gz",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.7.4/lua-language-server-3.7.4-linux-x64.tar.gz",
         "arch": "x86_64-linux",
-        "checksum": "4377e10e295adfd6864fdea2076f6061ae199b5563204fb04c0836f226d56141"
+        "checksum": "e8aaabfa3b94b9afa51245d4ca73fe8196ac31625653b8dd83f6027183f596a5"
       },
       {
-        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.7.0/lua-language-server-3.7.0-win32-x64.zip",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.7.4/lua-language-server-3.7.4-win32-x64.zip",
         "arch": "x86_64-windows",
-        "checksum": "24b639216131e3e4363db8100f3d47903e5a23856958997c1041412f6f1b65be"
+        "checksum": "061eed23905384436ad7816a4abf5292b7a10c310f466d375e4cd12510aa21eb"
       }
     ],
-    "dependencies": { "lsp": {} }
+    "dependencies": { "language_lua": {}, "lsp": {} }
   },{
     "id": "nodejs",
     "description": "Official NodeJs builds.",
@@ -83,12 +83,12 @@
     "id": "lsp_python",
     "description": "LSP support for Python via Pyright.",
     "path": "plugins/lsp_python.lua",
-    "version": "1.1.351",
+    "version": "1.1.352",
     "files": [
       {
-        "url": "https://registry.npmjs.org/pyright/-/pyright-1.1.351.tgz",
+        "url": "https://registry.npmjs.org/pyright/-/pyright-1.1.352.tgz",
         "arch": ["x86_64-linux", "x86_64-windows", "x86_64-darwin", "aarch64-darwin"],
-        "checksum": "a557e75b53fc851314c23ee9a167101fd0a9b9bf391f4a75f6315178b3f7760c"
+        "checksum": "ef78138a907f21518082441b691f296850a938d33e6a17e5a6bf9a0d453a9bfe"
       }
     ],
     "dependencies": { "lsp": {}, "nodejs": {"optional": true}, "language_python": {} }
@@ -96,47 +96,47 @@
     "id": "lsp_quicklintjs",
     "description": "LSP support for Javascript via quick-lint-js (Linting only).",
     "path": "plugins/lsp_quicklintjs.lua",
-    "version": "3.1.0",
+    "version": "3.2.0",
     "files": [
       {
-        "url": "https://c.quick-lint-js.com/releases/3.1.0/manual/linux.tar.gz",
+        "url": "https://c.quick-lint-js.com/releases/3.2.0/manual/linux.tar.gz",
         "arch": "x86_64-linux",
-        "checksum": "92487d857e8f6ba2ae3b20420d32d3d58e66ddbb315a400ba3c891f62c28d6ae"
+        "checksum": "449c05de1bbe5026adfabf82ac2a7f9d382e67f44a63624905fa9ae4ee2b48ae"
       },
       {
-        "url": "https://c.quick-lint-js.com/releases/3.1.0/manual/linux-aarch64.tar.gz",
+        "url": "https://c.quick-lint-js.com/releases/3.2.0/manual/linux-aarch64.tar.gz",
         "arch": "aarch64-linux",
-        "checksum": "69cb973946ba1af63d3e8febe5bd92a0a7f16dcfa3e9a23e48ffafafffe7da6e"
+        "checksum": "d20b70570c45bdfa5ac703491a56e64a483cff871c539adf6eb58a3fe66473c1"
       },
       {
-        "url": "https://c.quick-lint-js.com/releases/3.1.0/manual/macos-aarch64.tar.gz",
+        "url": "https://c.quick-lint-js.com/releases/3.2.0/manual/macos-aarch64.tar.gz",
         "arch": "aarch64-darwin",
-        "checksum": "799cc2456de43d57458a464b0ee43f6f6d25e26ce34387cc7bb9ea843385c28a"
+        "checksum": "bad43995ce49e997bed7e9c5e8196731f247c02db5672839d461bdd40f48bfdc"
       },
       {
-        "url": "https://c.quick-lint-js.com/releases/3.1.0/manual/macos.tar.gz",
+        "url": "https://c.quick-lint-js.com/releases/3.2.0/manual/macos.tar.gz",
         "arch": "x86_64-darwin",
-        "checksum": "587ec6f7f8e772518f14933542ff5106ca48ca3a2eca5541bfcef353204997ea"
+        "checksum": "32b5403531da8a4a50d06f6039ebe712d558a23424e0ac5a88d0241c81c1737f"
       },
       {
-        "url": "https://c.quick-lint-js.com/releases/3.1.0/manual/windows.zip",
+        "url": "https://c.quick-lint-js.com/releases/3.2.0/manual/windows.zip",
         "arch": "x86_64-windows",
-        "checksum": "6595ab7b9955219f80b76e816153001f6ae2396b640e172a0674566ea9029be5"
+        "checksum": "aaf429fb9de9135b7f5f78e113fca6c6806617ec0015e107c97cfc1e062e7e87"
       },
       {
-        "url": "https://c.quick-lint-js.com/releases/3.1.0/manual/windows-x86.zip",
+        "url": "https://c.quick-lint-js.com/releases/3.2.0/manual/windows-x86.zip",
         "arch": "x86-windows",
-        "checksum": "9a73a0a55037994e78e52c42f676d7f9a9e6b2bc8a84b3d102444bc31d587977"
+        "checksum": "d98c251cc880ab208880c2cb1b45caa386999724ff1884e149d17fde6f3e4d2d"
       },
       {
-        "url": "https://c.quick-lint-js.com/releases/3.1.0/manual/windows-arm64.zip",
+        "url": "https://c.quick-lint-js.com/releases/3.2.0/manual/windows-arm64.zip",
         "arch": "arm64-windows",
-        "checksum": "d1bed7adc17e0651489faeb6815abe0528bde63225c662cd73b63b2dcc9d4056"
+        "checksum": "a31a10e6c983337a314d5ba8705a19d8cb5d206a061bc23d26e72713e8cf3474"
       },
       {
-        "url": "https://c.quick-lint-js.com/releases/3.1.0/manual/windows-arm.zip",
+        "url": "https://c.quick-lint-js.com/releases/3.2.0/manual/windows-arm.zip",
         "arch": "arm-windows",
-        "checksum": "933c977fed0460533890c83504d34e4d1fd312bcc0b2c8176adf3de02d6054e6"
+        "checksum": "b01c3155a9391cad31bff6960d783e964cface53ac390651d03b5939d4ffd555"
       }
     ],
     "dependencies": { "language_js": {}, "lsp": {} }
@@ -144,27 +144,27 @@
     "id": "lsp_rust",
     "description": "LSP support for Rust via rust-analyzer.",
     "path": "plugins/lsp_rust.lua",
-    "version": "20231009",
+    "version": "20240304",
     "files": [
       {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-10-09/rust-analyzer-x86_64-unknown-linux-gnu.gz",
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-03-04/rust-analyzer-x86_64-unknown-linux-gnu.gz",
         "arch": "x86_64-linux",
-        "checksum": "b5cfb12d86faa486ca30fe1a7e35f0466cf991426a4d809b7623a567c2e0afc8"
+        "checksum": "4bd359b486d6dcb879f043b545d0f1ae4af3af5e1ff2adb4453b17bfb1a020a0"
       },
       {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-10-09/rust-analyzer-aarch64-apple-darwin.gz",
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-03-04/rust-analyzer-aarch64-apple-darwin.gz",
         "arch": "aarch64-darwin",
-        "checksum": "f0c4f1276964be09e8a47c09a15591d835ad1e43c929d5fd9d608fe89c3d7d98"
+        "checksum": "7fac9364fbbb1f4a5f52edf8bac7c1489004831c1e76efde7b32763347c32cb8"
       },
       {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-10-09/rust-analyzer-x86_64-apple-darwin.gz",
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-03-04/rust-analyzer-x86_64-apple-darwin.gz",
         "arch": "x86_64-darwin",
-        "checksum": "8f5e6e3f9e0a39f9196e8e6abc9fca2a5d9dabd11c476d426a83bbc057a04f42"
+        "checksum": "20d8d58cf038a976ce1f23ff18b4bdbe6042bc966979995dde2c08e6c2654865"
       },
       {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-10-09/rust-analyzer-x86_64-pc-windows-msvc.zip",
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-03-04/rust-analyzer-x86_64-pc-windows-msvc.zip",
         "arch": "x86_64-windows",
-        "checksum": "099c690e57fd4df28f8fdd70b78e0f42115d2473deab08ae63446c0011bf8427"
+        "checksum": "edefd8fa877d4dfc12704fed93c9be1690be4dfa0ff355172bf2ad83cc55f816"
       }
     ],
     "dependencies": { "language_rust": {}, "lsp": {} }
@@ -172,27 +172,27 @@
     "id": "lsp_tex",
     "description": "LSP support for TeX via texlab.",
     "path": "plugins/lsp_tex.lua",
-    "version": "5.12.3",
+    "version": "5.12.4",
     "files": [
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.3/texlab-x86_64-linux.tar.gz",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.4/texlab-x86_64-linux.tar.gz",
         "arch": "x86_64-linux",
-        "checksum": "47216c3356a9eaaac1d013b70b43f39f26cf76736885c63e5b65d1f3b0aec618"
+        "checksum": "410f15dff908cdbf3e9f2aa0932433d185d54a4f77388b312f26f0e2c0fe9a26"
       },
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.3/texlab-aarch64-macos.tar.gz",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.4/texlab-aarch64-macos.tar.gz",
         "arch": "aarch64-darwin",
-        "checksum": "bf73249a50d77badff06225548fc068153340d8d6bf030349d6bf50f582353f7"
+        "checksum": "38e551cef577220420201c6a16c9e8e7c3e18e4f00f683dc672d7bdcff67e348"
       },
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.3/texlab-x86_64-macos.tar.gz",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.4/texlab-x86_64-macos.tar.gz",
         "arch": "x86_64-darwin",
-        "checksum": "654fa9311e38f83a7dedb99cb3e979bfaf34a3bf1a59b65e9dce552082663c2f"
+        "checksum": "90696066b876eb9b5781f5af0d2f122e8462688d6961b531f16c6141e6d1ebd0"
       },
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.3/texlab-x86_64-windows.zip",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.4/texlab-x86_64-windows.zip",
         "arch": "x86_64-windows",
-        "checksum": "120d60e1fb05bac2cbc214f26ee602675ae2f8705c3233a2da0b3ab36c9cc198"
+        "checksum": "e03ced0e2822dea2a94c28fedfdb443d34b1e0916bf65192de551ae92f33aae7"
       }
     ],
     "dependencies": { "language_tex": {}, "lsp": {} }
