@@ -34,8 +34,6 @@ local jdtls_command = { "java",
 
 local java_home = installed_path_library .. PATHSEP .. "jdk-21.0.2"
 
-local core = require "core"
-
 lsp.add_server(common.merge({
   name = "jdtls",
   language = "java",
