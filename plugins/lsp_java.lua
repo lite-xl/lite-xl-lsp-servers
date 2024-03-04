@@ -16,7 +16,7 @@ else
   platform = "linux"
 end
 
-local jdtls_data_path = system.absolute_path(".") .. PATHSEP .. ".jdtls"
+local jdtls_data_path = ".jdtls"
 system.mkdir(jdtls_data_path)
 local version_name  = "1.6.600.v20231106-1826"
 local jdtls_command = { "java",
