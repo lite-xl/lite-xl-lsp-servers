@@ -28,8 +28,8 @@ local jdtls_command = { "java",
                         "--add-modules=ALL-SYSTEM",
                         "--add-opens", "java.base/java.util=ALL-UNNAMED",
                         "--add-opens", "java.base/java.lang=ALL-UNNAMED",
-                        "-jar", string.format("./plugins/org.eclipse.equinox.launcher_%s.jar", version_name),
-                        "-configuration", string.format("./config_%s", platform),
+                        "-jar", string.format("%s/plugins/org.eclipse.equinox.launcher_%s.jar", installed_path_plugin, version_name),
+                        "-configuration", string.format("%s/config_%s", installed_path_plugin, platform),
                         "-data", string.format("%s", jdtls_data_path) }
 
 local java_home = installed_path_library .. PATHSEP .. "jdk-21.0.2"
