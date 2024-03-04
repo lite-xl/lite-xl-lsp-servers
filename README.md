@@ -29,7 +29,7 @@ The following languages are supported, bundled with their particular language se
 
 ## Additional libraries
 
-These libraries are dependencies of som language servers (automatic installation with `lpm`).
+These libraries are dependencies of some language servers (automatic installation with `lpm`).
 
 | Library                                                      | Description                                 | Platforms
 | :----------------------------------------------------------- | :------------------------------------------ | :------------------
