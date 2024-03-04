@@ -19,18 +19,18 @@ end
 local jdtls_data_path = system.absolute_path(".") .. PATHSEP .. ".jdtls"
 system.mkdir(jdtls_data_path)
 local version_name  = "1.6.600.v20231106-1826"
-local jdtls_command = { "java", " ",
-                        "-Declipse.application=org.eclipse.jdt.ls.core.id1", " ",
-                        "-Dosgi.bundles.defaultStartLevel=4", " ",
-                        "-Declipse.product=org.eclipse.jdt.ls.core.product", " ",
-                        "-Dlog.level=ALL", " ",
-                        "-Xmx1G", " ",
-                        "--add-modules=ALL-SYSTEM", " ",
-                        "--add-opens", "java.base/java.util=ALL-UNNAMED", " ",
-                        "--add-opens", "java.base/java.lang=ALL-UNNAMED", " ",
-                        "-jar", " ", string.format("./plugins/org.eclipse.equinox.launcher_%s.jar", version_name), " ",
-                        "-configuration", " ", string.format("./config_%s", platform), " ",
-                        "-data", " ", string.format("%s", jdtls_data_path) }
+local jdtls_command = { "java",
+                        "-Declipse.application=org.eclipse.jdt.ls.core.id1",
+                        "-Dosgi.bundles.defaultStartLevel=4",
+                        "-Declipse.product=org.eclipse.jdt.ls.core.product",
+                        "-Dlog.level=ALL",
+                        "-Xmx1G",
+                        "--add-modules=ALL-SYSTEM",
+                        "--add-opens", "java.base/java.util=ALL-UNNAMED",
+                        "--add-opens", "java.base/java.lang=ALL-UNNAMED",
+                        "-jar", string.format("./plugins/org.eclipse.equinox.launcher_%s.jar", version_name),
+                        "-configuration", string.format("./config_%s", platform),
+                        "-data", string.format("%s", jdtls_data_path) }
 
 local java_home = installed_path_library .. PATHSEP .. "jdk-21.0.2"
 
