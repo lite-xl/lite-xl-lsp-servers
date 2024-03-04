@@ -16,10 +16,11 @@ else
   platform = "linux"
 end
 
-local jdtls_data_path = ".jdtls"
-system.mkdir(jdtls_data_path)
+local java_home = installed_path_library .. PATHSEP .. "jdk-21.0.2"
+local java_bin = java_home .. PATHSEP .. "bin" .. PATHSEP .. "java"
+local jdtls_data_path = system.absolute_path(".") .. PATHSEP .. ".jdtls"
 local version_name  = "1.6.600.v20231106-1826"
-local jdtls_command = { "java",
+local jdtls_command = { java_bin,
                         "-Declipse.application=org.eclipse.jdt.ls.core.id1",
                         "-Dosgi.bundles.defaultStartLevel=4",
                         "-Declipse.product=org.eclipse.jdt.ls.core.product",
@@ -31,8 +32,6 @@ local jdtls_command = { "java",
                         "-jar", string.format("%s/plugins/org.eclipse.equinox.launcher_%s.jar", installed_path_plugin, version_name),
                         "-configuration", string.format("%s/config_%s", installed_path_plugin, platform),
                         "-data", string.format("%s", jdtls_data_path) }
-
-local java_home = installed_path_library .. PATHSEP .. "jdk-21.0.2"
 
 lsp.add_server(common.merge({
   name = "jdtls",
