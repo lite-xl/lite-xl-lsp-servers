@@ -1,0 +1,42 @@
+name: Package emmet-language-server
+
+on:
+  workflow_dispatch:
+    inputs:
+      emmet-language-server_version:
+        type: string
+        required: true
+
+jobs:
+  package_all:
+    name: Package Emmet Language Server
+    runs-on: ubuntu-latest
+    permissions: write-all
+    env:
+      VERSION: ${{ inputs.emmet-language-server_version }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Update Packages
+        run: sudo apt-get update -y
+      - name: Install Dependencies
+        run: sudo apt-get install -y npm nodejs
+      - name: Get emmet-language-server
+        run: |
+          curl -L -o "v${VERSION}.tar.gz" "https://github.com/olrtg/emmet-language-server/archive/refs/tags/v${VERSION}.tar.gz"
+      - name: Build emmet-language-server
+        run: |
+          tar -xzvf "v${VERSION}.tar.gz"
+          cd "emmet-language-server-${VERSION}"
+          npm i @vercel/ncc
+          node node_modules/@vercel/ncc/dist/ncc/cli.js build index.ts --license LICENSES
+      - name: Package
+        run: |
+          mkdir bundle
+          cp -r emmet-language-server-${VERSION}/{LICENSE,dist} bundle
+          mv bundle emmet-language-server
+          tar -zcvf emmet-language-server-${VERSION}.tar.gz emmet-language-server
+      - name: Create Release
+        env: { GITHUB_TOKEN: "${{ github.token }}" }
+        run: |
+          gh release delete -y "emmet-language-server-$VERSION" || true
+          gh release create -t "emmet-language-server-$VERSION" "emmet-language-server-$VERSION" "emmet-language-server-${VERSION}.tar.gz"
