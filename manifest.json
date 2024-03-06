@@ -23,6 +23,26 @@
     ],
     "dependencies": { "language_c": {}, "lsp": {} }
   },{
+    "id": "lsp_emmet",
+    "description": "LSP support for Emmet snippets via emmet-language-server.",
+    "path": "plugins/lsp_emmet.lua",
+    "version": "2.5.0",
+    "files": [
+      {
+        "url": "https://github.com/adamharrison/lite-xl-lsp-servers/releases/download/emmet-language-server-2.5.0/emmet-language-server-2.5.0.tar.gz",
+        "checksum": "035fcbfcfbf4e6a6ec1fe3b3db989cbb1a90a8208975c89f5e878f93040133a8"
+      }
+    ],
+    "dependencies": {
+      "language_html": {},
+      "language_xml": {},
+      "language_tsx": {},
+      "language_jsx": {},
+      "language_css": {},
+      "language_sass": {},
+      "lsp": {}, "nodejs": {}
+    }
+  },{
     "id": "lsp_lua",
     "description": "LSP support for lua.",
     "path": "plugins/lsp_lua.lua",
