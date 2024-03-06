@@ -6,7 +6,7 @@ local config = require "core.config"
 local lsp = require "plugins.lsp"
 
 local installed_path_plugin = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp_java"
-local ok, jdk_info = pcall(require, "libraries.jdk")
+local jdk_info = require "libraries.jdk"
 
 local platform
 if PLATFORM == "Windows" then
