@@ -1,0 +1,54 @@
+name: Package typescript-language-server
+
+on:
+  workflow_dispatch:
+    inputs:
+      typescript-language-server_version:
+        type: string
+        required: true
+      tsserver_version:
+        type: string
+        required: false
+        default: "5.3.3"
+
+jobs:
+  package_all:
+    name: Package Typescript Language Server
+    runs-on: ubuntu-latest
+    permissions: write-all
+    env:
+      VERSION: ${{ inputs.typescript-language-server_version }}
+      TS_VERSION: ${{ inputs.tsserver_version }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Update Packages
+        run: sudo apt-get update -y
+      - name: Install Dependencies
+        run: sudo apt-get install -y yarn
+      - name: Get typescript-language-server
+        run: |
+          curl -L -o "v${VERSION}.tar.gz" "https://github.com/typescript-language-server/typescript-language-server/archive/refs/tags/v${VERSION}.tar.gz"
+      - name: Build typescript-language-server
+        run: |
+          tar -xzvf "v${VERSION}.tar.gz"
+          cd "typescript-language-server-${VERSION}"
+          yarn
+          yarn build
+          rm lib/cli.mjs.map
+      - name: Get Typescript
+        run: |
+          curl -L -o "typescript-${TS_VERSION}.tgz" "https://github.com/microsoft/TypeScript/releases/download/v5.3.3/typescript-${TS_VERSION}.tgz"
+          tar -xzvf "typescript-${TS_VERSION}.tgz"
+      - name: Package
+        run: |
+          mkdir bundle
+          cp -r typescript-language-server-${VERSION}/{package.json,lib,LICENSE} bundle
+          mkdir -p bundle/node_modules/typescript
+          cp -r package/* bundle/node_modules/typescript
+          mv bundle tsserver
+          tar -zcvf tsserver-${VERSION}.tar.gz tsserver
+      - name: Create Release
+        env: { GITHUB_TOKEN: "${{ github.token }}" }
+        run: |
+          gh release delete -y "typescript-language-server-$VERSION" || true
+          gh release create -t "typescript-language-server-$VERSION" "typescript-language-server-$VERSION" "tsserver-${VERSION}.tar.gz"
