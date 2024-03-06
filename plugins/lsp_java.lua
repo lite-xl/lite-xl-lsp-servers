@@ -1,11 +1,12 @@
 -- mod-version:3 -- lite-xl 2.1
 
+local core = require "core"
 local common = require "core.common"
 local config = require "core.config"
 local lsp = require "plugins.lsp"
 
 local installed_path_plugin = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp_java"
-local installed_path_library = USERDIR .. PATHSEP .. "libraries" .. PATHSEP .. "jdk"
+local ok, jdk_info = pcall(require, "libraries.jdk")
 
 local platform
 if PLATFORM == "Windows" then
@@ -16,10 +17,11 @@ else
   platform = "linux"
 end
 
-local java_home = installed_path_library .. PATHSEP .. "jdk-21.0.2"
-local java_bin = java_home .. PATHSEP .. "bin" .. PATHSEP .. "java" .. (PLATFORM == "Windows" and ".exe" or "")
+local java_home = jdk_info.path_lib .. PATHSEP .. jdk_info.version
+local java_bin = jdk_info.path_bin
+
 local jdtls_data_path = ".jdtls"
-local version_name  = "1.6.600.v20231106-1826"
+local jdtls_version_name  = "1.6.600.v20231106-1826"
 local jdtls_command = { java_bin,
                         "-Declipse.application=org.eclipse.jdt.ls.core.id1",
                         "-Dosgi.bundles.defaultStartLevel=4",
@@ -29,7 +31,7 @@ local jdtls_command = { java_bin,
                         "--add-modules=ALL-SYSTEM",
                         "--add-opens", "java.base/java.util=ALL-UNNAMED",
                         "--add-opens", "java.base/java.lang=ALL-UNNAMED",
-                        "-jar", string.format("%s/plugins/org.eclipse.equinox.launcher_%s.jar", installed_path_plugin, version_name),
+                        "-jar", string.format("%s/plugins/org.eclipse.equinox.launcher_%s.jar", installed_path_plugin, jdtls_version_name),
                         "-configuration", string.format("%s/config_%s", installed_path_plugin, platform),
                         "-data", string.format("%s", jdtls_data_path) }
 

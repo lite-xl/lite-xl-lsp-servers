@@ -86,7 +86,6 @@
     "files": [
       {
         "url": "https://download.eclipse.org/jdtls/milestones/1.30.1/jdt-language-server-1.30.1-202312071447.tar.gz",
-        "arch": ["x86_64-linux", "aarch64-darwin", "x86_64-darwin", "x86_64-windows"],
         "checksum": "4c005ede9df73e60cfb8f611373808c9121286d3adbfb745384cced9f19b2de3"
       }
     ],
@@ -132,7 +131,7 @@
         "checksum": "a557e75b53fc851314c23ee9a167101fd0a9b9bf391f4a75f6315178b3f7760c"
       }
     ],
-    "dependencies": { "lsp": {}, "nodejs": {"optional": true}, "language_python": {} }
+    "dependencies": { "language_python": {}, "lsp": {}, "nodejs": {"optional": true} }
   },{
     "id": "lsp_quicklintjs",
     "description": "LSP support for Javascript via quick-lint-js (Linting only).",
