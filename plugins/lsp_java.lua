@@ -18,11 +18,10 @@ else
 end
 
 local java_home = jdk_info.path_lib .. PATHSEP .. jdk_info.version
-local java_bin = jdk_info.path_bin
 
 local jdtls_data_path = ".jdtls"
 local jdtls_version_name  = "1.6.600.v20231106-1826"
-local jdtls_command = { java_bin,
+local jdtls_command = { jdk_info.path_bin,
                         "-Declipse.application=org.eclipse.jdt.ls.core.id1",
                         "-Dosgi.bundles.defaultStartLevel=4",
                         "-Declipse.product=org.eclipse.jdt.ls.core.product",
