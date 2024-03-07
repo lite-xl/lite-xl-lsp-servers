@@ -16,8 +16,6 @@ else
   platform = "linux"
 end
 
-local java_home = jdk_info.path_lib .. PATHSEP .. jdk_info.version
-
 local jdtls_data_path = ".jdtls"
 local jdtls_version_name  = "1.6.600.v20231106-1826"
 local jdtls_command = { jdk_info.path_bin,
@@ -38,6 +36,6 @@ lsp.add_server(common.merge({
   language = "java",
   file_patterns = { "%.java$" },
   command = jdtls_command,
-  env = { ["JAVA_HOME"] = java_home },
+  env = { ["JAVA_HOME"] = jdk_info.path_lib },
   verbose = false
 }, config.plugins.lsp_java or {}))
