@@ -1,5 +1,3 @@
--- mod-version:3
-
 local info = {}
 
 info.path_lib = USERDIR .. PATHSEP .. "libraries" .. PATHSEP .. "nodejs"
