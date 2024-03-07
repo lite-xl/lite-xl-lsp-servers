@@ -17,7 +17,7 @@ else
 end
 
 local jdtls_data_path = ".jdtls"
-local jdtls_version_name  = "1.6.600.v20231106-1826"
+local jdtls_version_name  = "1.6.700.v20231214-2017"
 local jdtls_command = { jdk_info.path_bin,
                         "-Declipse.application=org.eclipse.jdt.ls.core.id1",
                         "-Dosgi.bundles.defaultStartLevel=4",
@@ -27,8 +27,8 @@ local jdtls_command = { jdk_info.path_bin,
                         "--add-modules=ALL-SYSTEM",
                         "--add-opens", "java.base/java.util=ALL-UNNAMED",
                         "--add-opens", "java.base/java.lang=ALL-UNNAMED",
-                        "-jar", string.format("%s/plugins/org.eclipse.equinox.launcher_%s.jar", installed_path_plugin, jdtls_version_name),
-                        "-configuration", string.format("%s/config_%s", installed_path_plugin, platform),
+                        "-jar", string.format("%s" .. PATHSEP .. "plugins" .. PATHSEP .. "org.eclipse.equinox.launcher_%s.jar", installed_path_plugin, jdtls_version_name),
+                        "-configuration", string.format("%s" .. PATHSEP .. "config_%s", installed_path_plugin, platform),
                         "-data", string.format("%s", jdtls_data_path) }
 
 lsp.add_server(common.merge({
