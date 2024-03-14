@@ -275,7 +275,7 @@
     "version": "0.27.0",
     "files": [
       {
-        "url": "https://www.eclipse.org/downloads/download.php?file=/lemminx/releases/0.27.0/org.eclipse.lemminx-uber.jar",
+        "url": "https://www.eclipse.org/downloads/download.php?file=/lemminx/releases/0.27.0/org.eclipse.lemminx-uber.jar&mirror_id=1190",
         "checksum": "e2cc7cd4f15532b3fca13c9d8ff24f57ed3a3c78fb7e7f2a264556e284599286"
       }
     ],
