@@ -1,0 +1,49 @@
+name: Package yaml-language-server
+
+on:
+  workflow_dispatch:
+    inputs:
+      yaml-language-server_version:
+        type: string
+        required: true
+
+jobs:
+  package_all:
+    name: Package YAML Language Server
+    runs-on: ubuntu-latest
+    permissions: write-all
+    env:
+      VERSION: ${{ inputs.yaml-language-server_version }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Update Packages
+        run: sudo apt-get update -y
+      - name: Install Dependencies
+        run: sudo apt-get install -y yarn nodejs
+      - name: Get yaml-language-server
+        run: |
+          curl -L -o "v${VERSION}.tar.gz" "https://github.com/redhat-developer/yaml-language-server/archive/refs/tags/${VERSION}.tar.gz"
+      - name: Build yaml-language-server
+        run: |
+          tar -xzvf "v${VERSION}.tar.gz"
+          cd "yaml-language-server-${VERSION}"
+          yarn add @vercel/ncc
+          # enable ** for globbing subdirs too
+          shopt -s globstar
+          # replace /umd/ with /esm/ in some require paths,
+          # as /umd/ files don't seem to get picked up by ncc
+          sed -i 's/\/umd\//\/esm\//g' src/**/*.ts
+          sed -i 's/\/umd\//\/esm\//g' node_modules/vscode-json-languageservice/package.json
+          node node_modules/@vercel/ncc/dist/ncc/cli.js build src/server.ts --license LICENSES
+          rm -rf dist/src dist/test
+      - name: Package
+        run: |
+          mkdir bundle
+          cp -r yaml-language-server-${VERSION}/{LICENSE,dist} bundle
+          mv bundle yaml-language-server
+          tar -zcvf yaml-language-server-${VERSION}.tar.gz yaml-language-server
+      - name: Create Release
+        env: { GITHUB_TOKEN: "${{ github.token }}" }
+        run: |
+          gh release delete -y "yaml-language-server-$VERSION" || true
+          gh release create -t "yaml-language-server-$VERSION" "yaml-language-server-$VERSION" "yaml-language-server-${VERSION}.tar.gz"
