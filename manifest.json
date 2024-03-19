@@ -29,7 +29,7 @@
     "version": "2.5.0",
     "files": [
       {
-        "url": "https://github.com/adamharrison/lite-xl-lsp-servers/releases/download/emmet-language-server-2.5.0/emmet-language-server-2.5.0.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/emmet-language-server-2.5.0/emmet-language-server-2.5.0.tar.gz",
         "checksum": "035fcbfcfbf4e6a6ec1fe3b3db989cbb1a90a8208975c89f5e878f93040133a8"
       }
     ],
@@ -263,7 +263,7 @@
     "version": "4.3.3",
     "files": [
       {
-        "url": "https://github.com/adamharrison/lite-xl-lsp-servers/releases/download/typescript-language-server-4.3.3/tsserver-4.3.3.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/typescript-language-server-4.3.3/tsserver-4.3.3.tar.gz",
         "checksum": "37db90bad58ec61297cd81ce90f3ab17006b122bea4a787024b3f60d72a7e53e"
       }
     ],
