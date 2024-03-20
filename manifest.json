@@ -237,22 +237,22 @@
       {
         "url": "https://github.com/latex-lsp/texlab/releases/download/v5.13.1/texlab-x86_64-linux.tar.gz",
         "arch": "x86_64-linux",
-        "checksum": "410f15dff908cdbf3e9f2aa0932433d185d54a4f77388b312f26f0e2c0fe9a26"
+        "checksum": "5fd5024aad7b56197d18c60852470d565f75d30e17bce90277c09a7db494f39a"
       },
       {
         "url": "https://github.com/latex-lsp/texlab/releases/download/v5.13.1/texlab-aarch64-macos.tar.gz",
         "arch": "aarch64-darwin",
-        "checksum": "38e551cef577220420201c6a16c9e8e7c3e18e4f00f683dc672d7bdcff67e348"
+        "checksum": "0d2d83d5b08bd1b8b0f01ac6efae00ae06623396279f263e574bee71c53033a8"
       },
       {
         "url": "https://github.com/latex-lsp/texlab/releases/download/v5.13.1/texlab-x86_64-macos.tar.gz",
         "arch": "x86_64-darwin",
-        "checksum": "90696066b876eb9b5781f5af0d2f122e8462688d6961b531f16c6141e6d1ebd0"
+        "checksum": "56ec44a906767e229505e803ea7d4c521d5977a67b5b76eae056e0c6bad488a0"
       },
       {
         "url": "https://github.com/latex-lsp/texlab/releases/download/v5.13.1/texlab-x86_64-windows.zip",
         "arch": "x86_64-windows",
-        "checksum": "e03ced0e2822dea2a94c28fedfdb443d34b1e0916bf65192de551ae92f33aae7"
+        "checksum": "04e5f78f57e56d9fc4e6efa154b8b9d0c50f14e202853ed37d627c9b4c030659"
       }
     ],
     "dependencies": { "language_tex": {}, "lsp": {} }
