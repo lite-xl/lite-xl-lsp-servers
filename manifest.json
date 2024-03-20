@@ -232,25 +232,25 @@
     "id": "lsp_tex",
     "description": "LSP support for TeX via texlab.",
     "path": "plugins/lsp_tex.lua",
-    "version": "5.12.4",
+    "version": "5.13.1",
     "files": [
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.4/texlab-x86_64-linux.tar.gz",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.13.1/texlab-x86_64-linux.tar.gz",
         "arch": "x86_64-linux",
         "checksum": "410f15dff908cdbf3e9f2aa0932433d185d54a4f77388b312f26f0e2c0fe9a26"
       },
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.4/texlab-aarch64-macos.tar.gz",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.13.1/texlab-aarch64-macos.tar.gz",
         "arch": "aarch64-darwin",
         "checksum": "38e551cef577220420201c6a16c9e8e7c3e18e4f00f683dc672d7bdcff67e348"
       },
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.4/texlab-x86_64-macos.tar.gz",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.13.1/texlab-x86_64-macos.tar.gz",
         "arch": "x86_64-darwin",
         "checksum": "90696066b876eb9b5781f5af0d2f122e8462688d6961b531f16c6141e6d1ebd0"
       },
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.12.4/texlab-x86_64-windows.zip",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.13.1/texlab-x86_64-windows.zip",
         "arch": "x86_64-windows",
         "checksum": "e03ced0e2822dea2a94c28fedfdb443d34b1e0916bf65192de551ae92f33aae7"
       }
