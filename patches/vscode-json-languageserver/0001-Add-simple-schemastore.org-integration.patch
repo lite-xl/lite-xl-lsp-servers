@@ -1,0 +1,86 @@
+From 8162419a8e3bbdec3007c6a4bc92385938fb51af Mon Sep 17 00:00:00 2001
+From: Guldoman <giulio.lettieri@gmail.com>
+Date: Wed, 20 Mar 2024 02:42:20 +0100
+Subject: [PATCH] Add simple schemastore.org integration
+
+---
+ .../server/src/jsonServer.ts                  | 35 +++++++++++++++++++
+ 1 file changed, 35 insertions(+)
+
+diff --git a/extensions/json-language-features/server/src/jsonServer.ts b/extensions/json-language-features/server/src/jsonServer.ts
+index 36ca0dc591d..eb60838b373 100644
+--- a/extensions/json-language-features/server/src/jsonServer.ts
++++ b/extensions/json-language-features/server/src/jsonServer.ts
+@@ -15,6 +15,7 @@ import { TextDocument, JSONDocument, JSONSchema, getLanguageService, DocumentLan
+ import { getLanguageModelCache } from './languageModelCache';
+ import { Utils, URI } from 'vscode-uri';
+ import * as l10n from '@vscode/l10n';
++import { xhr, XHRResponse } from 'request-light';
+ 
+ type ISchemaAssociations = Record<string, string[]>;
+ 
+@@ -135,6 +136,8 @@ export function startServer(connection: Connection, runtime: RuntimeEnvironment)
+ 	// in the passed params the rootPath of the workspace plus the client capabilities.
+ 	connection.onInitialize((params: InitializeParams): InitializeResult => {
+ 
++		setSchemaStoreSettingsIfNotSet();
++
+ 		const initializationOptions = params.initializationOptions as any || {};
+ 
+ 		const handledProtocols = initializationOptions?.handledSchemaProtocols;
+@@ -223,6 +226,7 @@ export function startServer(connection: Connection, runtime: RuntimeEnvironment)
+ 		schema?: JSONSchema;
+ 		folderUri?: string;
+ 	}
++	let schemaStoreSettings: SchemaConfiguration[] = [];
+ 
+ 
+ 
+@@ -266,6 +270,34 @@ export function startServer(connection: Connection, runtime: RuntimeEnvironment)
+ 		}
+ 	});
+ 
++	function setSchemaStoreSettingsIfNotSet(){
++		if(schemaStoreSettings.length === 0){
++			getSchemaStoreMatchingSchemas().then(schemaStore => {
++				schemaStoreSettings = schemaStore.schemas;
++				updateConfiguration();
++			});
++		}
++	}
++
++	function getSchemaStoreMatchingSchemas(){
++		return xhr({ url: "http://schemastore.org/api/json/catalog.json" }).then(response => {
++			let languageSettings = {
++				schemas: new Array<SchemaConfiguration>()
++			};
++
++			let schemas = JSON.parse(response.responseText);
++			for(let schemaIndex in schemas.schemas){
++				let schema = schemas.schemas[schemaIndex];
++				languageSettings.schemas.push({ uri: schema.url, fileMatch: schema.fileMatch || [] });
++			}
++
++			return languageSettings;
++		}, (error: XHRResponse) => {
++			throw error;
++		});
++
++	}
++
+ 	// The jsonValidation extension configuration has changed
+ 	connection.onNotification(SchemaAssociationNotification.type, associations => {
+ 		schemaAssociations = associations;
+@@ -350,6 +382,9 @@ export function startServer(connection: Connection, runtime: RuntimeEnvironment)
+ 				}
+ 			});
+ 		}
++		if(schemaStoreSettings){
++			languageSettings.schemas = languageSettings.schemas.concat(schemaStoreSettings);
++		}
+ 		languageService.configure(languageSettings);
+ 
+ 		diagnosticsSupport?.requestRefresh();
+-- 
+2.44.0
+
