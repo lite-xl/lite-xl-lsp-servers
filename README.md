@@ -9,7 +9,7 @@ and depend on particular LSP servers functioning.
 ## Quickstart
 
 ```
-lpm add https://github.com/adamharrison/lite-xl-lsp-servers.git && lpm install <LSP Plugin>
+lpm add https://github.com/lite-xl/lite-xl-lsp-servers.git && lpm install <LSP Plugin>
 ```
 
 ## Languages Supported
