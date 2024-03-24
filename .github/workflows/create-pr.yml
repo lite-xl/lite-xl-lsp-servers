@@ -6,7 +6,7 @@ jobs:
   create_pr:
     name: Create PR to lite-xl-plugins
     runs-on: ubuntu-latest
-    permissions: write
+    permissions: { pull-requests: write, contents: write }
     steps:
       - uses: actions/checkout@v3
       - name: Create PR
