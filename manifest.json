@@ -1,7 +1,7 @@
 {
   "addons": [{
     "id": "lsp_c",
-    "description": "LSP support for C/C++ and Objective-C via clangd.",
+    "description": "Automatic configuration/binary download for LSP completion for C/C++ with clangd.",
     "path": "plugins/lsp_c.lua",
     "version": "17.0.3",
     "files": [
@@ -24,7 +24,7 @@
     "dependencies": { "language_c": {}, "lsp": {} }
   },{
     "id": "lsp_emmet",
-    "description": "LSP support for Emmet snippets via emmet-language-server.",
+    "description": "Automatic configuration/binary download for LSP completion for Emmet with emmet-language-server.",
     "path": "plugins/lsp_emmet.lua",
     "version": "2.5.0",
     "files": [
@@ -44,7 +44,7 @@
     }
   },{
     "id": "lsp_lua",
-    "description": "LSP support for lua.",
+    "description": "Automatic configuration/binary download for LSP completion for Lua with lua-language-server (sumneko).",
     "path": "plugins/lsp_lua.lua",
     "version": "3.7.4",
     "files": [
@@ -100,7 +100,7 @@
     ]
   },{
     "id": "lsp_java",
-    "description": "LSP support for Java via jdtls.",
+    "description": "Automatic configuration/binary download for LSP completion for Java with jdtls.",
     "path": "plugins/lsp_java.lua",
     "version": "1.33.0",
     "files": [
@@ -141,7 +141,7 @@
     ]
   },{
     "id": "lsp_python",
-    "description": "LSP support for Python via Pyright.",
+    "description": "Automatic configuration/binary download for LSP completion for Python with Pyright.",
     "path": "plugins/lsp_python.lua",
     "version": "1.1.352",
     "files": [
@@ -154,7 +154,7 @@
     "dependencies": { "language_python": {}, "lsp": {}, "nodejs": {"optional": true} }
   },{
     "id": "lsp_quicklintjs",
-    "description": "LSP support for Javascript via quick-lint-js (Linting only).",
+    "description": "Automatic configuration/binary download for LSP linting for Javascript with quick-lint-js.",
     "path": "plugins/lsp_quicklintjs.lua",
     "version": "3.2.0",
     "files": [
@@ -202,7 +202,7 @@
     "dependencies": { "language_js": {}, "lsp": {} }
   },{
     "id": "lsp_rust",
-    "description": "LSP support for Rust via rust-analyzer.",
+    "description": "Automatic configuration/binary download for LSP completion for Rust with rust-analyzer.",
     "path": "plugins/lsp_rust.lua",
     "version": "20240304",
     "files": [
@@ -230,7 +230,7 @@
     "dependencies": { "language_rust": {}, "lsp": {} }
   },{
     "id": "lsp_tex",
-    "description": "LSP support for TeX via texlab.",
+    "description": "Automatic configuration/binary download for LSP completion for TeX with texlab.",
     "path": "plugins/lsp_tex.lua",
     "version": "5.13.1",
     "files": [
@@ -258,7 +258,7 @@
     "dependencies": { "language_tex": {}, "lsp": {} }
   },{
     "id": "lsp_typescript",
-    "description": "LSP support for Typescript and Javascript via typescript-language-server.",
+    "description": "Automatic configuration/binary download for LSP completion for Typescript and Javascript with typescript-language-server.",
     "path": "plugins/lsp_typescript.lua",
     "version": "4.3.3",
     "files": [
@@ -270,7 +270,7 @@
     "dependencies": { "language_ts": {}, "language_js": {}, "lsp": {}, "nodejs": {} }
   },{
     "id": "lsp_zig",
-    "description": "LSP support for Zig via zls.",
+    "description": "Automatic configuration/binary download for LSP completion for Zig via zls.",
     "path": "plugins/lsp_zig.lua",
     "version": "0.11.0",
     "files": [

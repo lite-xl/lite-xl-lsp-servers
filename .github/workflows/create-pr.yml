@@ -1,0 +1,15 @@
+
+name: Create PR to lite-xl-plugins
+on:
+  workflow_dispatch:
+jobs:
+  create_pr:
+    name: Create PR to lite-xl-plugins
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Create PR
+        env: { GITHUB_TOKEN: "${{ github.token }}" }
+        run: |
+          wget https://github.com/lite-xl/lite-xl-plugin-manager/releases/download/latest/lpm.x86_64-linux -O lpm && chmod +x lpm &&
+            ./lpm --plugin https://raw.githubusercontent.com/adamharrison/lite-xl-maintenance/latest/lpm-plugins/gh.lua create-addon-update-pr
