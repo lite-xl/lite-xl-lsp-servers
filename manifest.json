@@ -232,27 +232,27 @@
     "id": "lsp_tex",
     "description": "Automatic configuration/binary download for LSP completion for TeX with texlab.",
     "path": "plugins/lsp_tex.lua",
-    "version": "5.13.1",
+    "version": "5.14.0",
     "files": [
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.13.1/texlab-x86_64-linux.tar.gz",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.14.0/texlab-x86_64-linux.tar.gz",
         "arch": "x86_64-linux",
-        "checksum": "5fd5024aad7b56197d18c60852470d565f75d30e17bce90277c09a7db494f39a"
+        "checksum": "7f61c52c80de394c3ca1ef32a6a9e1d34eb21e6b04de3be77672a6f6beb45866"
       },
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.13.1/texlab-aarch64-macos.tar.gz",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.14.0/texlab-aarch64-macos.tar.gz",
         "arch": "aarch64-darwin",
-        "checksum": "0d2d83d5b08bd1b8b0f01ac6efae00ae06623396279f263e574bee71c53033a8"
+        "checksum": "8976a51717de4f926a44dba1e28a052ec746be954cbb44032006fb108275800c"
       },
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.13.1/texlab-x86_64-macos.tar.gz",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.14.0/texlab-x86_64-macos.tar.gz",
         "arch": "x86_64-darwin",
-        "checksum": "56ec44a906767e229505e803ea7d4c521d5977a67b5b76eae056e0c6bad488a0"
+        "checksum": "f0fdd6264e01e0a6fc413f86b079845465ed814e26db6c6d92b73be51fd4745c"
       },
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.13.1/texlab-x86_64-windows.zip",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.14.0/texlab-x86_64-windows.zip",
         "arch": "x86_64-windows",
-        "checksum": "04e5f78f57e56d9fc4e6efa154b8b9d0c50f14e202853ed37d627c9b4c030659"
+        "checksum": "0d7a74a3e4428f95a46207dda64c16d674f574519f5f2825327d1e509c966b1b"
       }
     ],
     "dependencies": { "language_tex": {}, "lsp": {} }
