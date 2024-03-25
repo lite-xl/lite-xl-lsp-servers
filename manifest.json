@@ -269,6 +269,21 @@
     ],
     "dependencies": { "language_ts": {}, "language_js": {}, "lsp": {}, "nodejs": {} }
   },{
+    "id": "lsp_yaml",
+    "description": "LSP support for YAML via yaml-language-server.",
+    "path": "plugins/lsp_yaml.lua",
+    "version": "1.14.0",
+    "files": [
+      {
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/yaml-language-server-1.14.0/yaml-language-server-1.14.0.tar.gz",
+        "checksum": "830531fce7f62f3b49d44844b7867f5e03d51e2e24ddf5fc2704d503b485b589"
+      }
+    ],
+    "dependencies": {
+      "language_yaml": {},
+      "lsp": {}, "nodejs": {}
+    }
+  },{
     "id": "lsp_zig",
     "description": "Automatic configuration/binary download for LSP completion for Zig via zls.",
     "path": "plugins/lsp_zig.lua",

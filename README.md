@@ -27,6 +27,7 @@ The following languages are supported, bundled with their particular language se
 | [lsp_rust](/plugins/lsp_rust.lua?raw=1)                      | Rust                           | [rust-analyzer](https://github.com/rust-lang/rust-analyzer)                                            | Linux, Mac, Windows
 | [lsp_tex](/plugins/lsp_tex.lua?raw=1)                        | TeX                            | [texlab](https://github.com/latex-lsp/texlab)                                                          | Linux, Mac, Windows
 | [lsp_typescript](/plugins/lsp_typescript.lua?raw=1)          | Javascript, Typescript         | [typescript-language-server](https://github.com/typescript-language-server/typescript-language-server) | Linux, Mac, Windows
+| [lsp_yaml](/plugins/lsp_yaml.lua?raw=1)                      | YAML                           | [yaml-language-server](https://github.com/redhat-developer/yaml-language-server)                       | Linux, Mac, Windows
 | [lsp_zig](/plugins/lsp_zig.lua?raw=1)                        | Zig                            | [zls](https://github.com/zigtools/zls)                                                                 | Linux, Mac, Windows
 
 ## Additional libraries
