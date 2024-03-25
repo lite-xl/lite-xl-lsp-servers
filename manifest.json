@@ -204,27 +204,27 @@
     "id": "lsp_rust",
     "description": "Automatic configuration/binary download for LSP completion for Rust with rust-analyzer.",
     "path": "plugins/lsp_rust.lua",
-    "version": "20240304",
+    "version": "20240325",
     "files": [
       {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-03-04/rust-analyzer-x86_64-unknown-linux-gnu.gz",
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-03-25/rust-analyzer-x86_64-unknown-linux-gnu.gz",
         "arch": "x86_64-linux",
-        "checksum": "4bd359b486d6dcb879f043b545d0f1ae4af3af5e1ff2adb4453b17bfb1a020a0"
+        "checksum": "8986910e5e6f20e437d0d472d0e98f9cab5fb2018468049b388619a767293c00"
       },
       {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-03-04/rust-analyzer-aarch64-apple-darwin.gz",
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-03-25/rust-analyzer-aarch64-apple-darwin.gz",
         "arch": "aarch64-darwin",
-        "checksum": "7fac9364fbbb1f4a5f52edf8bac7c1489004831c1e76efde7b32763347c32cb8"
+        "checksum": "6ec965c30512e2e96ab5761962d657dda8eebb631981b0e5110e845d1df26b0c"
       },
       {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-03-04/rust-analyzer-x86_64-apple-darwin.gz",
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-03-25/rust-analyzer-x86_64-apple-darwin.gz",
         "arch": "x86_64-darwin",
-        "checksum": "20d8d58cf038a976ce1f23ff18b4bdbe6042bc966979995dde2c08e6c2654865"
+        "checksum": "00e01dc43d0b43b2dcd0b8e24507d9c119e8d17192b2b5cf231e184d1a74a789"
       },
       {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-03-04/rust-analyzer-x86_64-pc-windows-msvc.zip",
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-03-25/rust-analyzer-x86_64-pc-windows-msvc.zip",
         "arch": "x86_64-windows",
-        "checksum": "edefd8fa877d4dfc12704fed93c9be1690be4dfa0ff355172bf2ad83cc55f816"
+        "checksum": "f7cfb947c9914b097bde6b9bbd850b45adbaa370a7df8080a937e90fd6208c79"
       }
     ],
     "dependencies": { "language_rust": {}, "lsp": {} }
