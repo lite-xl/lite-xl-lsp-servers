@@ -43,6 +43,21 @@
       "lsp": {}, "nodejs": {}
     }
   },{
+    "id": "lsp_json",
+    "description": "LSP support for JSON via vscode-json-languageserver with [additional patches](patches/vscode-json-languageserver) for increased functionality.",
+    "path": "plugins/lsp_json.lua",
+    "version": "1.87.2.0.1",
+    "files": [
+      {
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/vscode-json-languageserver-1.87.2-patch-0.1/vscode-json-languageserver-1.87.2-patch-0.1.tar.gz",
+        "checksum": "712b248613672e45577775292c5c328e69f4ec4a041597d93304b450801a9568"
+      }
+    ],
+    "dependencies": {
+      "language_json": {},
+      "lsp": {}, "nodejs": {}
+    }
+  },{
     "id": "lsp_lua",
     "description": "Automatic configuration/binary download for LSP completion for Lua with lua-language-server (sumneko).",
     "path": "plugins/lsp_lua.lua",
