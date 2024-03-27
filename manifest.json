@@ -143,12 +143,12 @@
     "id": "lsp_python",
     "description": "Automatic configuration/binary download for LSP completion for Python with Pyright.",
     "path": "plugins/lsp_python.lua",
-    "version": "1.1.352",
+    "version": "1.1.356",
     "files": [
       {
-        "url": "https://registry.npmjs.org/pyright/-/pyright-1.1.352.tgz",
+        "url": "https://registry.npmjs.org/pyright/-/pyright-1.1.356.tgz",
         "arch": ["x86_64-linux", "x86_64-windows", "x86_64-darwin", "aarch64-darwin"],
-        "checksum": "ef78138a907f21518082441b691f296850a938d33e6a17e5a6bf9a0d453a9bfe"
+        "checksum": "74900dbde1be64a405595d0332477c2f5040202cb0035a6ec30e07e7266caad7"
       }
     ],
     "dependencies": { "language_python": {}, "lsp": {}, "nodejs": {"optional": true} }
