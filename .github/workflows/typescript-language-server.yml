@@ -20,7 +20,7 @@ jobs:
       VERSION: ${{ inputs.typescript-language-server_version }}
       TS_VERSION: ${{ inputs.tsserver_version }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Update Packages
         run: sudo apt-get update -y
       - name: Install Dependencies
