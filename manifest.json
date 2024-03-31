@@ -227,9 +227,9 @@
         "checksum": "8986910e5e6f20e437d0d472d0e98f9cab5fb2018468049b388619a767293c00"
       },
       {
-	"url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-03-25/rust-analyzer-aarch64-unknown-linux-gnu.gz",
-	"arch": "aarch64-linux",
-	"checksum": "4b6438962b14d33009b69c6f421a039812582a553aade99e39fed9ac8e93e2da"
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-03-25/rust-analyzer-aarch64-unknown-linux-gnu.gz",
+        "arch": "aarch64-linux",
+        "checksum": "4b6438962b14d33009b69c6f421a039812582a553aade99e39fed9ac8e93e2da"
       },
       {
         "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-03-25/rust-analyzer-aarch64-apple-darwin.gz",
