@@ -11,5 +11,15 @@ lspconfig.sumneko_lua.setup(common.merge({
     installed_path .. "/bin/lua-language-server" .. (PLATFORM == "Windows" and ".exe" or ""),
     "-E",
     installed_path .. "/bin/main.lua"
+  },
+  settings = {
+    Lua = {
+      workspace = {
+        library = {
+          DATADIR,
+          USERDIR
+        }
+      }
+    }
   }
 }, config.plugins.lsp_lua or {}))
