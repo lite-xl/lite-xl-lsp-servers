@@ -31,20 +31,11 @@
       }
     },
     {
-      "id": "lsp_clojure",
-      "description": "Automatic configuration/binary download for LSP completion for clojure with clojure-lsp.",
-      "path": "plugins/lsp_clojure.lua",
-      "version": "2024.03.31-19.10.13",
       "files": [
         {
           "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-linux-aarch64.zip",
           "arch": "aarch64-linux",
           "checksum": "0715435335d09f03deebbe946275196cac400f3b379dfb0bd55a060fe46d49b4"
-        },
-        {
-          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-linux-amd64.zip",
-          "arch": "amd64-linux",
-          "checksum": "3d860d25e7c354198fa9c975ba01bfb27d1aba42d8e334f0e529bbfdc5c1a5e6"
         },
         {
           "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-linux-amd64.zip",
@@ -58,17 +49,12 @@
         },
         {
           "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-macos-amd64.zip",
-          "arch": "amd64-darwin",
+          "arch": "x86_64-darwin",
           "checksum": "ec8468a2aef17ee365c0d4f79a069f441c5fe9d466286929af012060dbf68a35"
         },
         {
           "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-windows-amd64.zip",
           "arch": "x86_64-windows",
-          "checksum": "c29acff1dc06f5810b055c67722e7109bcc8c80b80f24feac37998a8320930e0"
-        },
-        {
-          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-windows-amd64.zip",
-          "arch": "amd64-windows",
           "checksum": "c29acff1dc06f5810b055c67722e7109bcc8c80b80f24feac37998a8320930e0"
         }
       ],
