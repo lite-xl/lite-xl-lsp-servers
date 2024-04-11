@@ -23,6 +23,53 @@
     ],
     "dependencies": { "language_c": {}, "lsp": {} }
   },{
+  "addons": [{
+    "id": "lsp_clojure",
+    "description": "Automatic configuration/binary download for LSP completion for clojure with clojure-lsp.",
+    "path": "plugins/lsp_clojure.lua",
+    "version": "2024.03.31-19.10.13",
+    "files": [
+      {
+        "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-linux-aarch64.zip",
+        "arch": "aarch64-linux",
+        "checksum": "cdfce9650d7bf705bea60b71075e5f6ffa26b8c42146e20731e87de4c98246d4"
+      },
+      {
+        "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-static-linux-amd64.zip",
+        "arch": "amd64-linux",
+        "checksum": "cdfce9650d7bf705bea60b71075e5f6ffa26b8c42146e20731e87de4c98246d4"
+      },
+      {
+        "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-static-linux-amd64.zip",
+        "arch": "x86_64-linux",
+        "checksum": "cdfce9650d7bf705bea60b71075e5f6ffa26b8c42146e20731e87de4c98246d4"
+      },
+      {
+        "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-macos-aarch64.zip",
+        "arch": "aarch64-darwin",
+        "checksum": "7c311297ad28dd516ebcc3f902652cb729bbe34840806d2d5b1bebed1a9bba17"
+      },
+      {
+        "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-macos-amd64.zip",
+        "arch": "amd64-darwin",
+        "checksum": "7c311297ad28dd516ebcc3f902652cb729bbe34840806d2d5b1bebed1a9bba17"
+      },
+      {
+        "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-windows-amd64.zip",
+        "arch": "x86_64-windows",
+        "checksum": "be2e387544df97a36cdba9325562a9695c22af7a8abcbcb0dec0e73ed9ad8127"
+      },
+      {
+        "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-windows-amd64.zip",
+        "arch": "amd64-windows",
+        "checksum": "be2e387544df97a36cdba9325562a9695c22af7a8abcbcb0dec0e73ed9ad8127"
+      }
+    ],
+    "dependencies": { "language_clojure": {}, "lsp": {} }
+  }
+    
+    
+    ,{
     "id": "lsp_emmet",
     "description": "Automatic configuration/binary download for LSP completion for Emmet with emmet-language-server.",
     "path": "plugins/lsp_emmet.lua",
