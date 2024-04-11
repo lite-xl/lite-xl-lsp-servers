@@ -31,6 +31,10 @@
       }
     },
     {
+      "id": "lsp_clojure",
+      "description": "Automatic configuration/binary download for LSP completion for clojure with clojure-lsp.",
+      "path": "plugins/lsp_clojure.lua",
+      "version": "2024.03.31",
       "files": [
         {
           "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-linux-aarch64.zip",
