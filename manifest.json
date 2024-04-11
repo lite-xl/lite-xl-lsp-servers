@@ -52,7 +52,7 @@
       {
         "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-macos-amd64.zip",
         "arch": "amd64-darwin",
-        "checksum": "7c311297ad28dd516ebcc3f902652cb729bbe34840806d2d5b1bebed1a9bba17"
+        "checksum": "ec8468a2aef17ee365c0d4f79a069f441c5fe9d466286929af012060dbf68a35"
       },
       {
         "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-windows-amd64.zip",
