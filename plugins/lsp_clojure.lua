@@ -1,3 +1,5 @@
+-- Author: Rohan Vashisht: https://github.com/RohanVashisht1234
+
 -- mod-version:3
 
 local lspconfig = require "plugins.lsp.config"
