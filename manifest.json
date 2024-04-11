@@ -32,7 +32,7 @@
       {
         "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-linux-aarch64.zip",
         "arch": "aarch64-linux",
-        "checksum": "cdfce9650d7bf705bea60b71075e5f6ffa26b8c42146e20731e87de4c98246d4"
+        "checksum": "0715435335d09f03deebbe946275196cac400f3b379dfb0bd55a060fe46d49b4"
       },
       {
         "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-static-linux-amd64.zip",
