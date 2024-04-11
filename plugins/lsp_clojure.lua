@@ -9,5 +9,5 @@ local config = require "core.config"
 local installed_path = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp_clojure"
 
 lspconfig.clojure_lsp.setup(common.merge({
-  command = { installed_path .. PATHSEP .. filename }
+  command = { installed_path .. PATHSEP .. "clojure-lsp" }
 }, config.plugins.lsp_clojure or {}))
