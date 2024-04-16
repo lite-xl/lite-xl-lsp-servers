@@ -23,6 +23,42 @@
     ],
     "dependencies": { "language_c": {}, "lsp": {} }
   },{
+      "id": "lsp_clojure",
+      "description": "Automatic configuration/binary download for LSP completion for clojure with clojure-lsp.",
+      "path": "plugins/lsp_clojure.lua",
+      "version": "2024.03.31",
+      "files": [
+        {
+          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-linux-aarch64.zip",
+          "arch": "aarch64-linux",
+          "checksum": "0715435335d09f03deebbe946275196cac400f3b379dfb0bd55a060fe46d49b4"
+        },
+        {
+          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-static-linux-amd64.zip",
+          "arch": "x86_64-linux",
+          "checksum": "6c1b59e11322771ff3248286fcc99ba97605dba9a983f17360dd0b3ebc07695d"
+        },
+        {
+          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-macos-aarch64.zip",
+          "arch": "aarch64-darwin",
+          "checksum": "78ada7b23d604f1542efea29e283baa26f3e9011450929d876827cc148817f62"
+        },
+        {
+          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-macos-amd64.zip",
+          "arch": "x86_64-darwin",
+          "checksum": "ec8468a2aef17ee365c0d4f79a069f441c5fe9d466286929af012060dbf68a35"
+        },
+        {
+          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.03.31-19.10.13/clojure-lsp-native-windows-amd64.zip",
+          "arch": "x86_64-windows",
+          "checksum": "c29acff1dc06f5810b055c67722e7109bcc8c80b80f24feac37998a8320930e0"
+        }
+      ],
+      "dependencies": {
+        "language_clojure": {},
+        "lsp": {}
+      }
+    },{
     "id": "lsp_emmet",
     "description": "Automatic configuration/binary download for LSP completion for Emmet with emmet-language-server.",
     "path": "plugins/lsp_emmet.lua",
