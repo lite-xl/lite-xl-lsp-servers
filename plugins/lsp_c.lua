@@ -7,5 +7,5 @@ local config = require "core.config"
 local installed_path = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp_c"
 
 lspconfig.clangd.setup(common.merge({
-  command = { installed_path .. PATHSEP .. "clangd_17.0.3" .. PATHSEP .. "bin" .. PATHSEP .. "clangd" .. (PLATFORM == "Windows" and ".exe" or "") }
+  command = { installed_path .. PATHSEP .. "clangd_18.1.3" .. PATHSEP .. "bin" .. PATHSEP .. "clangd" .. (PLATFORM == "Windows" and ".exe" or "") }
 }, config.plugins.lsp_c or {}))
