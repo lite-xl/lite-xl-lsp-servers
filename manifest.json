@@ -340,6 +340,37 @@
       "lsp": {}, "nodejs": {}
     }
   },{
+      "id": "lsp_v",
+      "description": "Automatic configuration/binary download for LSP completion for v with v-lsp.",
+      "path": "plugins/lsp_v.lua",
+      "version": "0.0.4",
+      "files": [
+        {
+          "url": "https://github.com/vlang/v-analyzer/releases/download/0.0.4-beta.1/v-analyzer-linux-x86_64.zip",
+          "arch": "x86_64-linux",
+          "checksum": "25be4134b51ca747f132f16c64cdba49960757933899116f73adcbf764a13125"
+        },
+        {
+          "url": "https://github.com/vlang/v-analyzer/releases/download/0.0.4-beta.1/v-analyzer-darwin-arm64.zip",
+          "arch": "aarch64-darwin",
+          "checksum": "af7ae07c3681935afaf7a9dc3573765d05b71dc96cbd97dfb0c2fca1aedb6531"
+        },
+        {
+          "url": "https://github.com/vlang/v-analyzer/releases/download/0.0.4-beta.1/v-analyzer-darwin-x86_64.zip",
+          "arch": "x86_64-darwin",
+          "checksum": "9d87e2fb46aef2bdf7b9922842862fc4c22a495cd438c5510cee18b8c8f87f2b"
+        },
+        {
+          "url": "https://github.com/vlang/v-analyzer/releases/download/0.0.4-beta.1/v-analyzer-windows-x86_64.zip",
+          "arch": "x86_64-windows",
+          "checksum": "bd576a496f7848970b1361339bebe46e0eca1e075287571a467880211ab43ba1"
+        }
+      ],
+      "dependencies": {
+        "language_v": {},
+        "lsp": {}
+      }
+    },{
     "id": "lsp_zig",
     "description": "Automatic configuration/binary download for LSP completion for Zig via zls.",
     "path": "plugins/lsp_zig.lua",
