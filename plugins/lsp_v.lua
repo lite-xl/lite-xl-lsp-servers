@@ -8,6 +8,6 @@ local config = require "core.config"
 
 local installed_path = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp_v"
 
-lspconfig.v_lsp.setup(common.merge({
+lspconfig.v_analyzer.setup(common.merge({
   command = { installed_path .. PATHSEP .. "v-analyzer" .. (PLATFORM == "Windows" and ".exe" or "") }
 }, config.plugins.lsp_v or {}))
