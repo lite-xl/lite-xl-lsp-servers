@@ -4,7 +4,7 @@ local lspconfig = require "plugins.lsp.config"
 local common = require "core.common"
 local config = require "core.config"
 
-local installed_path = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp_zig" .. PATHSEP .. "bin"
+local installed_path = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp_zig"
 local zlsfile = "zls"
 
 if PLATFORM == "Windows" then
