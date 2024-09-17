@@ -1,4 +1,4 @@
--- mod-version:3 -- lite-xl 2.1
+-- mod-version:3
 
 local lspconfig = require "plugins.lsp.config"
 local common = require "core.common"
