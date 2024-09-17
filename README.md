@@ -41,4 +41,3 @@ These libraries are dependencies of some language servers (automatic installatio
 | :------------------------------------ | :------------------------------------------ | :------------------ |
 | [jdk](/libraries/jdk.lua?raw=1)       | JDK binaries for running java apps          | Linux, Mac, Windows |
 | [nodejs](/libraries/nodejs.lua?raw=1) | NodeJs binaries for running javascript apps | Linux, Mac, Windows |
-

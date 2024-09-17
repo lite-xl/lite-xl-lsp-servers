@@ -1,0 +1,38 @@
+name: Re-package zls
+
+on:
+  workflow_dispatch:
+    inputs:
+      zls_version:
+        type: string
+        required: true
+
+jobs:
+  package_all:
+    name: Package zls
+    runs-on: ubuntu-latest
+    permissions: write-all
+    env:
+      VERSION: ${{ inputs.zls_version }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update Packages
+        run: sudo apt-get update -y
+      - name: Install Dependencies
+        run: sudo apt-get install -y atool
+      - name: Get zls
+        run: |
+          for arch in aarch64-linux aarch64-macos x86-linux x86_64-linux x86_64-macos; do
+            curl -L -o "zls-${arch}.tar.xz" "https://github.com/zigtools/zls/releases/download/${VERSION}/zls-${arch}.tar.xz"
+          done
+      - name: Repack zls
+        run: |
+          arepack -F tar+gz -e *.tar.xz
+          for archive in *.tar.tar.gz; do
+            mv ${archive} ${archive/.tar.tar/.tar}
+          done
+      - name: Create Release
+        env: { GITHUB_TOKEN: "${{ github.token }}" }
+        run: |
+          gh release delete -y "zls-$VERSION" || true
+          gh release create -t "zls-$VERSION" "zls-$VERSION" zls-*.tar.gz

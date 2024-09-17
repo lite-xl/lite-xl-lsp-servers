@@ -17,7 +17,7 @@ else
 end
 
 local jdtls_data_path = ".jdtls"
-local jdtls_version_name  = "1.6.700.v20231214-2017"
+local jdtls_version_name  = "1.6.900.v20240613-2009"
 local jdtls_command = { jdk_info.path_bin,
                         "-Declipse.application=org.eclipse.jdt.ls.core.id1",
                         "-Dosgi.bundles.defaultStartLevel=4",
