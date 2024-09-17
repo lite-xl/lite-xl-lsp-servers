@@ -23,6 +23,29 @@
     ],
     "dependencies": { "language_c": {}, "lsp": {} }
   },{
+    "id": "lsp_d",
+    "description": "Automatic configuration/binary download for LSP completion for D with serve_d.",
+    "path": "plugins/lsp_d.lua",
+    "version": "0.7.6",
+    "files": [
+      {
+        "url": "https://github.com/Pure-D/serve-d/releases/download/v0.7.6/serve-d_0.7.6-linux-x86_64.tar.gz",
+        "arch": "x86_64-linux",
+        "checksum": "be41a43f4545b57bf31cabecfe9f1bb92ede778565e75b72bb249e19ddac23c0"
+      },
+      {
+        "url": "https://github.com/Pure-D/serve-d/releases/download/v0.7.6/serve-d_0.7.6-osx-x86_64.tar.gz",
+        "arch": "x86_64-darwin",
+        "checksum": "a4fb43fd6f9f904a4aa38d6fa597764629fdd9d91e3e5213259a0b36de4c5337"
+      },
+      {
+        "url": "https://github.com/Pure-D/serve-d/releases/download/v0.7.6/serve-d_0.7.6-windows-x86_64.zip",
+        "arch": "x86_64-windows",
+        "checksum": "7a8c9925e02462482a8108dcb442a7ce97d7e3c0d11819f52f294884b58e76f1"
+      }
+    ],
+    "dependencies": { "language_d": {}, "lsp": {} }
+  },{
     "id": "lsp_emmet",
     "description": "Automatic configuration/binary download for LSP completion for Emmet with emmet-language-server.",
     "path": "plugins/lsp_emmet.lua",
