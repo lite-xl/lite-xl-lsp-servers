@@ -32,7 +32,6 @@ The following languages are supported, bundled with their particular language se
 | [lsp_typescript](/plugins/lsp_typescript.lua?raw=1)   | Javascript, Typescript         | [typescript-language-server](https://github.com/typescript-language-server/typescript-language-server)                                                                             | Linux, Mac, Windows |
 | [lsp_yaml](/plugins/lsp_yaml.lua?raw=1)               | YAML                           | [yaml-language-server](https://github.com/redhat-developer/yaml-language-server)                                                                                                   | Linux, Mac, Windows |
 | [lsp_zig](/plugins/lsp_zig.lua?raw=1)                 | Zig                            | [zls](https://github.com/zigtools/zls)                                                                                                                                             | Linux, Mac, Windows |
-| [lsp_haxe](/plugins/lsp_haxe.lua?raw=1)               | Haxe                           | [haxe-language-server](https://github.com/vshaxe/haxe-language-server)                                                                                                             | Linux, Mac, Windows |
 
 ## Additional libraries
 

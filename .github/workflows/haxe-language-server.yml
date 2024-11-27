@@ -3,18 +3,16 @@ name: Package haxe-language-server
 on:
   workflow_dispatch:
     inputs:
-      haxe-language-server_version:
+      vshaxe_version:
         type: string
-        required: false
-        default: "1.0.0"
-
+        required: true
 jobs:
   package_all:
     name: Package haxe-language-server
     runs-on: ubuntu-latest
     permissions: write-all
     env:
-      VERSION: ${{ inputs.haxe-language-server_version }}
+      VERSION: ${{ inputs.vshaxe_version }}
     steps:
       - uses: actions/checkout@v4
       - name: Update Packages
@@ -22,18 +20,22 @@ jobs:
       - name: Install Dependencies
         run: sudo apt-get install -y npm nodejs git
       - name: Get haxe-language-server
-        run: git clone https://github.com/vshaxe/haxe-language-server
+        run: |
+          git clone --depth 1 --branch ${VERSION} https://github.com/vshaxe/vshaxe.git
+          cd vshaxe
+          git submodule update --init --recursive
+          cd ..
       - name: Build haxe-language-server
         run: |
-          cd haxe-language-server
+          cd vshaxe/server
           npm ci
           npx lix run vshaxe-build -t language-server
-          cd ..
+          cd ../..
       - name: Repack haxe-language-server
         run: |
           mkdir build
-          mv haxe-language-server/bin/server.js build/server.js
-          rm -fr haxe-language-server
+          mv vshaxe/server/bin/server.js build/server.js
+          rm -fr vshaxe
           mv build haxe-language-server
           tar -zcvf haxe-language-server-${VERSION}.tar.gz haxe-language-server
       - name: Create Release
