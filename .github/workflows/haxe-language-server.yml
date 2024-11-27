@@ -1,0 +1,43 @@
+name: Package haxe-language-server
+
+on:
+  workflow_dispatch:
+    inputs:
+      haxe-language-server_version:
+        type: string
+        required: false
+        default: "1.0.0"
+
+jobs:
+  package_all:
+    name: Package haxe-language-server
+    runs-on: ubuntu-latest
+    permissions: write-all
+    env:
+      VERSION: ${{ inputs.haxe-language-server_version }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update Packages
+        run: sudo apt-get update -y
+      - name: Install Dependencies
+        run: sudo apt-get install -y npm nodejs git
+      - name: Get haxe-language-server
+        run: git clone https://github.com/vshaxe/haxe-language-server
+      - name: Build haxe-language-server
+        run: |
+          cd haxe-language-server
+          npm ci
+          npx lix run vshaxe-build -t language-server
+          cd ..
+      - name: Repack haxe-language-server
+        run: |
+          mkdir build
+          mv haxe-language-server/bin/server.js build/server.js
+          rm -fr haxe-language-server
+          mv build haxe-language-server
+          tar -zcvf haxe-language-server-${VERSION}.tar.gz haxe-language-server
+      - name: Create Release
+        env: { GITHUB_TOKEN: "${{ github.token }}" }
+        run: |
+          gh release delete -y "haxe-language-server-$VERSION" || true
+          gh release create -t "haxe-language-server-$VERSION" "haxe-language-server-$VERSION" haxe-language-server-*.tar.gz
