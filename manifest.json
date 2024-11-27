@@ -414,7 +414,7 @@
     "files": [
       {
         "url": "https://github.com/SnakE-2024/lite-xl-lsp-servers/releases/download/haxe-language-server-1.0.0/haxe-language-server-1.0.0.tar.gz",
-        "checksum": "9e010ad0e30b08c1fd74403bfa28fdf28989d048085c7c4d87de8bfcb595b5dc"
+        "checksum": "dc30fcad429a7494613e2d24beb7dbbc4c00642994399ee7d3ebf58ebf9a85d2"
       }
     ],
     "dependencies": {
