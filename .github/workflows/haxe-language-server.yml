@@ -21,10 +21,7 @@ jobs:
         run: sudo apt-get install -y npm nodejs git
       - name: Get haxe-language-server
         run: |
-          git clone --depth 1 --branch ${VERSION} https://github.com/vshaxe/vshaxe.git
-          cd vshaxe
-          git submodule update --init --recursive
-          cd ..
+          git clone --depth 1 --branch ${VERSION} --recurse-submodules=server https://github.com/vshaxe/vshaxe.git
       - name: Build haxe-language-server
         run: |
           cd vshaxe/server
