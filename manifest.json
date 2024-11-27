@@ -413,7 +413,7 @@
     "version": "1.0.0",
     "files": [
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/haxe-language-server-1.0.0/haxe-language-server-1.0.0.tar.gz",
+        "url": "https://github.com/SnakE-2024/lite-xl-lsp-servers/releases/download/haxe-language-server-1.0.0/haxe-language-server-1.0.0.tar.gz",
         "checksum": "9e010ad0e30b08c1fd74403bfa28fdf28989d048085c7c4d87de8bfcb595b5dc"
       }
     ],
