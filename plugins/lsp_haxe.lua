@@ -7,11 +7,12 @@ local config = require("core.config")
 local core = require("core")
 
 local node = require("libraries.nodejs")
+local haxe = require("libraries.haxe")
 
 local installed_path = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp_haxe"
 local server_bin = installed_path .. PATHSEP .. "haxe-language-server" .. PATHSEP .. "server.js"
 
-lsp.add_server(common.merge({
+config.plugins.lsp_haxe = common.merge({
   name = "lsp_haxe",
   language = "haxe",
   command = { node.path_bin, server_bin, "--stdio" },
@@ -20,6 +21,19 @@ lsp.add_server(common.merge({
   settings = {
     haxe = {
       buildCompletionCache = true,
+      executable = haxe.path_bin
     },
   },
-}, config.plugins.lsp_haxe or {}))
+  config_spec = {
+    name = "Haxe LSP",
+    {
+      label = "Haxe language executable",
+      description = "Path to Haxe language executable",
+      path = "settings.haxe.executable",
+      type = "STRING",
+      default = haxe.path_bin
+    },
+  }
+}, config.plugins.lsp_haxe or {})
+
+lsp.add_server(config.plugins.lsp_haxe or {})
