@@ -405,5 +405,22 @@
       }
     ],
     "dependencies": { "language_zig": {}, "lsp": {} }
+  },
+  {
+    "id": "lsp_haxe",
+    "description": "Automatic configuration/binary download for LSP completion for Haxe with haxe-language-server.",
+    "path": "plugins/lsp_haxe.lua",
+    "version": "2.32.2",
+    "files": [
+      {
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/haxe-language-server-2.32.2/haxe-language-server-2.32.2.tar.gz",
+        "checksum": "f24d54229df9d717e7c19f5769d87c597000410e3c3af595939148af6d330cf1"
+      }
+    ],
+    "dependencies": {
+      "language_haxe": {},
+      "lsp": {},
+      "nodejs": {}
+    }
   }]
 }
