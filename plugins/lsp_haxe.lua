@@ -24,6 +24,9 @@ config.plugins.lsp_haxe = common.merge({
       executable = haxe.path_bin_haxelib
     }
   },
+  settings = {
+    haxe = { }
+  },
   config_spec = {
     name = "Haxe LSP",
     {
