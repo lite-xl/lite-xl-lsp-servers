@@ -102,6 +102,52 @@
       "lsp": {}, "nodejs": {}
     }
   },{
+    "id": "haxe",
+    "description": "Official Haxe builds.",
+    "version": "4.3.6",
+    "type": "library",
+    "mod_version": "3",
+    "path": "libraries/haxe.lua",
+    "files": [
+      {
+        "url": "https://github.com/HaxeFoundation/haxe/releases/download/4.3.6/haxe-4.3.6-linux64.tar.gz",
+        "arch": ["x86_64-linux"],
+        "checksum": "810e1752c8eb3065dbff54c050b20a712ce276f407741f0bf94696b454a597ad"
+      },
+      {
+        "url": "https://github.com/HaxeFoundation/haxe/releases/download/4.3.6/haxe-4.3.6-osx.tar.gz",
+        "arch": ["x86_64-darwin"],
+        "checksum": "4a705fc1a35e269480e733be53a660ab1d2093f79fe5518dfba8f6301c232bd6"
+      },
+      {
+        "url": "https://github.com/HaxeFoundation/haxe/releases/download/4.3.6/haxe-4.3.6-win64.zip",
+        "arch": ["x86_64-windows"],
+        "checksum": "336090b9c32d6cb9b674130794fea0e9c2240a72bceb7a5d6b44d37c796d1a9a"
+      },
+      {
+        "url": "https://github.com/HaxeFoundation/haxe/releases/download/4.3.6/haxe-4.3.6-win.zip",
+        "arch": ["x86-windows"],
+        "checksum": "82e49a9c747245bcc1934006700357e207fcfdc2ba02554a389fee0d35846258"
+      }
+    ]
+  },{
+    "id": "lsp_haxe",
+    "description": "Automatic configuration/binary download for LSP completion for Haxe with haxe-language-server.",
+    "path": "plugins/lsp_haxe.lua",
+    "version": "2.32.2",
+    "files": [
+      {
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/haxe-language-server-2.32.2/haxe-language-server-2.32.2.tar.gz",
+        "checksum": "f24d54229df9d717e7c19f5769d87c597000410e3c3af595939148af6d330cf1"
+      }
+    ],
+    "dependencies": {
+      "language_haxe": {},
+      "lsp": {},
+      "nodejs": {},
+      "haxe": {}
+    }
+  },{
     "id": "lsp_json",
     "description": "LSP support for JSON via vscode-json-languageserver with [additional patches](https://github.com/lite-xl/lite-xl-lsp-servers/tree/latest/patches/vscode-json-languageserver) for increased functionality.",
     "path": "plugins/lsp_json.lua",
