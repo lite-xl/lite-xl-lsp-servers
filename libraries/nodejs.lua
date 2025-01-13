@@ -1,7 +1,7 @@
 local info = {}
 
 info.path_lib = USERDIR .. PATHSEP .. "libraries" .. PATHSEP .. "nodejs"
-info.version = "node-v20.15.1"
+info.version = "node-v22.13.0"
 
 info.path_arch = {}
 info.path_arch["x86_64-linux"]   = info.version .. "-linux-x64"
