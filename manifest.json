@@ -26,32 +26,32 @@
       "id": "lsp_clojure",
       "description": "Automatic configuration/binary download for LSP completion for clojure with clojure-lsp.",
       "path": "plugins/lsp_clojure.lua",
-      "version": "2024.04.22",
+      "version": "2025.01.22",
       "files": [
         {
-          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.04.22-11.50.26/clojure-lsp-native-linux-aarch64.zip",
+          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.01.22-23.28.23/clojure-lsp-native-linux-aarch64.zip",
           "arch": "aarch64-linux",
-          "checksum": "2c3df0c38298425b45850b8f1381eb4c089c348c8d63b112aaee262bb6a79e69"
+          "checksum": "2b73edecf430a3b41ec2f8a27dcc989f9bfe9604e8d7173af35545789ab508dd"
         },
         {
-          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.04.22-11.50.26/clojure-lsp-native-static-linux-amd64.zip",
+          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.01.22-23.28.23/clojure-lsp-native-static-linux-amd64.zip",
           "arch": "x86_64-linux",
-          "checksum": "a93368b16d33ebe10eab1917ba7a4eae48e676b10ffa9e452922c7c252dc2c7f"
+          "checksum": "7d792c310ad9d617d78497a34d1fac3c383e2ca1b60493071ed68a780ac39496"
         },
         {
-          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.04.22-11.50.26/clojure-lsp-native-macos-aarch64.zip",
+          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.01.22-23.28.23/clojure-lsp-native-macos-aarch64.zip",
           "arch": "aarch64-darwin",
-          "checksum": "5fb902ff30e7f87626b5c6ae376ec9f278898abb01e12096923066471787641d"
+          "checksum": "08c0213c94fb1eb7978a20611b4c6bcfa862af1f8289b82c0e4dcf57fbe669c1"
         },
         {
-          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.04.22-11.50.26/clojure-lsp-native-macos-amd64.zip",
+          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.01.22-23.28.23/clojure-lsp-native-macos-amd64.zip",
           "arch": "x86_64-darwin",
-          "checksum": "bed83cbbc902cfd554a467da13acc37e4ec963827b212d45d0c8a05187d4191d"
+          "checksum": "c0fc46fcfa7e0e3a64ae4729ee6d4118f91295bbbdd1d934d553fd0eb3469e3f"
         },
         {
-          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2024.04.22-11.50.26/clojure-lsp-native-windows-amd64.zip",
+          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.01.22-23.28.23/clojure-lsp-native-windows-amd64.zip",
           "arch": "x86_64-windows",
-          "checksum": "e3ae0fe835db769cc0195b11808d4812307b536b30b3b3f99610de27b34eaff1"
+          "checksum": "bb04979ad39de28b404bedcd388611e243df70285e36b7a7d2600d730fe40032"
         }
       ],
       "dependencies": {
@@ -233,30 +233,30 @@
   },{
     "id": "nodejs",
     "description": "Official NodeJs builds.",
-    "version": "20.15.1",
+    "version": "22.13.0",
     "type": "library",
     "mod_version": "3",
     "path": "libraries/nodejs.lua",
     "files": [
       {
-        "url": "https://nodejs.org/dist/v20.15.1/node-v20.15.1-linux-x64.tar.gz",
+        "url": "https://nodejs.org/dist/v22.13.0/node-v22.13.0-linux-x64.tar.gz",
         "arch": ["x86_64-linux"],
-        "checksum": "a9db028c0a1c63e3aa0d97de24b0966bc507d8239b3aedc4e752eea6b0580665"
+        "checksum": "9a33e89093a0d946c54781dcb3ccab4ccf7538a7135286528ca41ca055e9b38f"
       },
       {
-        "url": "https://nodejs.org/dist/v20.15.1/node-v20.15.1-darwin-arm64.tar.gz",
+        "url": "https://nodejs.org/dist/v22.13.0/node-v22.13.0-darwin-arm64.tar.gz",
         "arch": ["aarch64-darwin"],
-        "checksum": "4743bc042f90ba5d9edf09403207290a9cdd2f6061bdccf7caaa0bbfd49f343e"
+        "checksum": "bc1e374e7393e2f4b20e5bbc157d02e9b1fb2c634b2f992136b38fb8ca2023b7"
       },
       {
-        "url": "https://nodejs.org/dist/v20.15.1/node-v20.15.1-darwin-x64.tar.gz",
+        "url": "https://nodejs.org/dist/v22.13.0/node-v22.13.0-darwin-x64.tar.gz",
         "arch": ["x86_64-darwin"],
-        "checksum": "f5379772ffae1404cfd1fcc8cf0c6c5971306b8fb2090d348019047306de39dc"
+        "checksum": "cfaaf5edde585a15547f858f5b3b62a292cf5929a23707b6f1e36c29a32487be"
       },
       {
-        "url": "https://nodejs.org/dist/v20.15.1/node-v20.15.1-win-x64.zip",
+        "url": "https://nodejs.org/dist/v22.13.0/node-v22.13.0-win-x64.zip",
         "arch": ["x86_64-windows"],
-        "checksum": "ba6c3711e2c3d0638c5f7cea3c234553808a73c52a5962a6cdb47b5210b70b04"
+        "checksum": "b0feb09ebf41328628e7383f7a092fb7342ce1e05c867a90cf8f1379205a8429"
       }
     ]
   },{
@@ -357,27 +357,27 @@
     "id": "lsp_tex",
     "description": "Automatic configuration/binary download for LSP completion for TeX with texlab.",
     "path": "plugins/lsp_tex.lua",
-    "version": "5.19.0",
+    "version": "5.22.0",
     "files": [
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.19.0/texlab-x86_64-linux.tar.gz",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.22.0/texlab-x86_64-linux.tar.gz",
         "arch": "x86_64-linux",
-        "checksum": "381233190e01e67099b8bf9b1d2742348e39056f39f9aa4b91d963c649fb6cd0"
+        "checksum": "1a0e3a3d17504e06c8648fb30d382bbd9195a486b81d8f24b1e1061b3db2972c"
       },
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.19.0/texlab-aarch64-macos.tar.gz",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.22.0/texlab-aarch64-macos.tar.gz",
         "arch": "aarch64-darwin",
-        "checksum": "cbbce64a0be76245581528c8d3ebdcf722b1eff15a3e79fafd6486aa240438d2"
+        "checksum": "0b829d26cb11ac8c35f3127e397a9de22e2fd102d6f735e4d5f5318d847aff74"
       },
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.19.0/texlab-x86_64-macos.tar.gz",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.22.0/texlab-x86_64-macos.tar.gz",
         "arch": "x86_64-darwin",
-        "checksum": "016194e120fd0bfcf0a0748dbfdc8acc6ce35ed9cf1466ee47e8453154852151"
+        "checksum": "2fc8fe327159a4859a6dcd95368b922b3dd2ef8abeae8e813d046bc64b4d9911"
       },
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.19.0/texlab-x86_64-windows.zip",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.22.0/texlab-x86_64-windows.zip",
         "arch": "x86_64-windows",
-        "checksum": "55753258c54f742842484191404602a85334b29e92a49da4ff132f8660a51115"
+        "checksum": "da1476dbe6410ee61019d854ad50ab98ac5cc47b8e1913acfa2d7b1257e88cc0"
       }
     ],
     "dependencies": { "language_tex": {}, "lsp": {} }
