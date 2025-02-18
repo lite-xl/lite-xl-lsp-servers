@@ -137,8 +137,8 @@
     "version": "2.34.1",
     "files": [
       {
-        "url": "https://github.com/SnakE-2024/lite-xl-lsp-servers/releases/download/haxe-language-server-2.34.1/haxe-language-server-2.34.1.tar.gz",
-        "checksum": "b28622d8e1e1b0d7cf1958565a8d7393e0c5e4ce98a6a357a555b0c802f19e6c"
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/haxe-language-server-2.34.1/haxe-language-server-2.34.1.tar.gz",
+        "checksum": "7d03456551fc7df766c8b9cdf00249cdb91f4d5c787b90ffe426779481059bea"
       }
     ],
     "dependencies": {
