@@ -85,11 +85,11 @@
     "id": "lsp_emmet",
     "description": "Automatic configuration/binary download for LSP completion for Emmet with emmet-language-server.",
     "path": "plugins/lsp_emmet.lua",
-    "version": "2.5.0",
+    "version": "2.6.1",
     "files": [
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/emmet-language-server-2.5.0/emmet-language-server-2.5.0.tar.gz",
-        "checksum": "035fcbfcfbf4e6a6ec1fe3b3db989cbb1a90a8208975c89f5e878f93040133a8"
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/emmet-language-server-2.6.1/emmet-language-server-2.6.1.tar.gz",
+        "checksum": "1f8733520d989cbbc038447c809f77f7445a840dff3fdcb883cd9911e7b6dba1"
       }
     ],
     "dependencies": {
