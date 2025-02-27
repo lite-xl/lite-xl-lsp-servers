@@ -26,32 +26,32 @@
       "id": "lsp_clojure",
       "description": "Automatic configuration/binary download for LSP completion for clojure with clojure-lsp.",
       "path": "plugins/lsp_clojure.lua",
-      "version": "2025.01.22",
+      "version": "2025.02.07",
       "files": [
         {
-          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.01.22-23.28.23/clojure-lsp-native-linux-aarch64.zip",
+          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.02.07-16.11.24/clojure-lsp-native-linux-aarch64.zip",
           "arch": "aarch64-linux",
-          "checksum": "2b73edecf430a3b41ec2f8a27dcc989f9bfe9604e8d7173af35545789ab508dd"
+          "checksum": "8ef542e196a0c8f136f65929bde1cc3439f1389726a1c4137ed56643d164dc6d"
         },
         {
-          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.01.22-23.28.23/clojure-lsp-native-static-linux-amd64.zip",
+          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.02.07-16.11.24/clojure-lsp-native-static-linux-amd64.zip",
           "arch": "x86_64-linux",
-          "checksum": "7d792c310ad9d617d78497a34d1fac3c383e2ca1b60493071ed68a780ac39496"
+          "checksum": "16d0938294718174efc19e7e92cd06bd97fd0ba7e62626b76011880d531f17b1"
         },
         {
-          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.01.22-23.28.23/clojure-lsp-native-macos-aarch64.zip",
+          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.02.07-16.11.24/clojure-lsp-native-macos-aarch64.zip",
           "arch": "aarch64-darwin",
-          "checksum": "08c0213c94fb1eb7978a20611b4c6bcfa862af1f8289b82c0e4dcf57fbe669c1"
+          "checksum": "e7fdd33d4148d52f6355fda3902c5d5923cac1355e5a60d22aabb95a8d710267"
         },
         {
-          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.01.22-23.28.23/clojure-lsp-native-macos-amd64.zip",
+          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.02.07-16.11.24/clojure-lsp-native-macos-amd64.zip",
           "arch": "x86_64-darwin",
-          "checksum": "c0fc46fcfa7e0e3a64ae4729ee6d4118f91295bbbdd1d934d553fd0eb3469e3f"
+          "checksum": "594247dfbdec3019e6935a975bf6ad76e33345600c6cf0bb2ed8d7e7bbe29455"
         },
         {
-          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.01.22-23.28.23/clojure-lsp-native-windows-amd64.zip",
+          "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.02.07-16.11.24/clojure-lsp-native-windows-amd64.zip",
           "arch": "x86_64-windows",
-          "checksum": "bb04979ad39de28b404bedcd388611e243df70285e36b7a7d2600d730fe40032"
+          "checksum": "07b5bbeb0df0cf14b9274e4f40f2019534bd5a0ca12a37f5d1a6d7e6414caa41"
         }
       ],
       "dependencies": {
