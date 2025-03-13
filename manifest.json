@@ -222,11 +222,11 @@
     "id": "lsp_java",
     "description": "Automatic configuration/binary download for LSP completion for Java with jdtls.",
     "path": "plugins/lsp_java.lua",
-    "version": "1.37.0",
+    "version": "1.45.0",
     "files": [
       {
-        "url": "https://download.eclipse.org/jdtls/milestones/1.37.0/jdt-language-server-1.37.0-202406271335.tar.gz",
-        "checksum": "d04cd9f4df45ce85ae9cf49530c72a1a324b14eee747af26e3374500e36b5bd0"
+        "url": "https://download.eclipse.org/jdtls/milestones/1.45.0/jdt-language-server-1.45.0-202502271238.tar.gz",
+        "checksum": "c09e79e958beb5ce41fb3b5097aec0455298bc88a14c8e41462b57edb2812797"
       }
     ],
     "dependencies": { "language_java": {}, "lsp": {}, "jdk": {} }
