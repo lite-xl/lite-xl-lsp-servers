@@ -1,0 +1,66 @@
+name: Package gopls
+
+on:
+  workflow_dispatch:
+    inputs:
+      gopls_version:
+        type: string
+        required: true
+      go_version:
+        type: string
+        required: true
+        default: "1.24.2"
+
+jobs:
+  package_all:
+    name: Package gopls
+    runs-on: ubuntu-latest
+    container:
+      image: golang:${{ inputs.go_version }}
+      env:
+        VERSION: ${{ inputs.gopls_version }}
+    strategy:
+      matrix:
+        arch: [amd64, arm64]
+        os: [linux, windows, darwin]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Get gopls
+        run: |
+          git clone --depth 1 --branch "gopls/v${VERSION}" https://github.com/golang/tools.git
+      - name: Build gopls
+        run: |
+          cd tools/gopls
+          export CGO_ENABLED=0
+          export GOOS=${{ matrix.os }}
+          export GOARCH=${{ matrix.arch }}
+          go build -buildmode=pie
+      - name: Pack gopls
+        run: |
+          cd tools/gopls
+          tar -zcvf gopls-${VERSION}-${{ matrix.arch }}-${{ matrix.os }}.tar.gz gopls*
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: gopls-${{ inputs.gopls_version }}-${{ matrix.arch }}-${{ matrix.os }}
+          path: |
+            tools/gopls/gopls-${{ inputs.gopls_version }}-${{ matrix.arch }}-${{ matrix.os }}.tar.gz
+  release_all:
+    needs: [package_all]
+    name: Create Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: gopls-*
+          merge-multiple: true
+          path: artifacts
+      - name: Create Release
+        env: { GITHUB_TOKEN: "${{ github.token }}" }
+        run: |
+          gh release delete -y "gopls-${{ inputs.gopls_version }}" || true
+          gh release create -t "gopls-${{ inputs.gopls_version }}" "gopls-${{ inputs.gopls_version }}" artifacts/gopls-*.tar.gz
