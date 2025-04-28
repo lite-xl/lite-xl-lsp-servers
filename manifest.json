@@ -102,6 +102,81 @@
       "lsp": {}, "nodejs": {}
     }
   },{
+    "id": "golang",
+    "description": "Official Go builds.",
+    "type": "library",
+    "mod_version": "3",
+    "path": "libraries/golang.lua",
+    "version": "1.24.2",
+    "files": [
+      {
+        "url": "https://go.dev/dl/go1.24.2.linux-amd64.tar.gz",
+        "arch": ["x86_64-linux"],
+        "checksum": "68097bd680839cbc9d464a0edce4f7c333975e27a90246890e9f1078c7e702ad"
+      },
+      {
+        "url": "https://go.dev/dl/go1.24.2.linux-arm64.tar.gz",
+        "arch": ["aarch64-linux"],
+        "checksum": "68097bd680839cbc9d464a0edce4f7c333975e27a90246890e9f1078c7e702ad11111"
+      },
+      {
+        "url": "https://go.dev/dl/go1.24.2.windows-amd64.zip",
+        "arch": ["x86_64-windows"],
+        "checksum": "29c553aabee0743e2ffa3e9fa0cda00ef3b3cc4ff0bc92007f31f80fd69892e1"
+      },
+      {
+        "url": "https://go.dev/dl/go1.24.2.darwin-arm64.tar.gz",
+        "arch": ["aarch64-darwin"],
+        "checksum": "b70f8b3c5b4ccb0ad4ffa5ee91cd38075df20fdbd953a1daedd47f50fbcff47a"
+      },
+      {
+        "url": "https://go.dev/dl/go1.24.2.darwin-amd64.tar.gz",
+        "arch": ["x86_64-darwin"],
+        "checksum": "238d9c065d09ff6af229d2e3b8b5e85e688318d69f4006fb85a96e41c216ea83"
+      }
+    ]
+  },{
+    "id": "lsp_go",
+    "description": "Automatic configuration/binary download for LSP completion for Go with gopls.",
+    "path": "plugins/lsp_go.lua",
+    "version": "0.18.1",
+    "files": [
+      {
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.18.1/gopls-0.18.1-amd64-darwin.tar.gz",
+        "arch": ["x86_64-darwin"],
+        "checksum": "9adc9a2e95db63e126a36ee5773e587f441be48cc5774b4a7894fdd78669406f"
+      },
+      {
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.18.1/gopls-0.18.1-amd64-linux.tar.gz",
+        "arch": ["x86_64-linux"],
+        "checksum": "40b16e4fee4a3d203ebb311de49acc14b298c62432d131218736b2ea5cd958fb"
+      },
+      {
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.18.1/gopls-0.18.1-amd64-windows.tar.gz",
+        "arch": ["x86_64-windows"],
+        "checksum": "320599fec313c423dd49ac795be6c7b5cd09df03e2e6d35b09fa88976deb91e4"
+      },
+      {
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.18.1/gopls-0.18.1-arm64-darwin.tar.gz",
+        "arch": ["aarch64-darwin"],
+        "checksum": "43c0d57a4b46ccad78302c47b76ba03db1916689c06946f7690368c10ea7f9d1"
+      },
+      {
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.18.1/gopls-0.18.1-arm64-linux.tar.gz",
+        "arch": ["aarch64-linux"],
+        "checksum": "45a114ae23d970b4162712c446c225890db6e74c82eefa175f3ee5a40c1502cc"
+      },
+      {
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.18.1/gopls-0.18.1-arm64-windows.tar.gz",
+        "arch": ["aarch64-windows"],
+        "checksum": "26481e34bedce47533301d17ea258fbf0b81ee1891ef823cd6803b90ccf36f9a"
+      }
+    ],
+    "dependencies": {
+      "language_go": {},
+      "lsp": {}, "golang": {}
+    }
+  },{
     "id": "haxe",
     "description": "Official Haxe builds.",
     "version": "4.3.6",
