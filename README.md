@@ -22,6 +22,7 @@ The following languages are supported, bundled with their particular language se
 | [lsp_clojure](/plugins/lsp_clojure.lua?raw=1)         | Clojure                        | [clojure-lsp](https://clojure-lsp.io/)                                                                                                                                             | Linux, Mac, Windows |
 | [lsp_d](/plugins/lsp_d.lua?raw=1)                     | D                              | [serve_d](https://github.com/Pure-D/serve-d)                                                                                                                                       | Linux, Mac, Windows |
 | [lsp_emmet](/plugins/lsp_emmet.lua?raw=1)             | JSX, TSX, HTML, XML, CSS, SCSS | [emmet-language-server](https://github.com/olrtg/emmet-language-server)                                                                                                            | Linux, Mac, Windows |
+| [lsp_haxe](/plugins/lsp_haxe.lua?raw=1)               | Haxe                           | [haxe-language-server](https://github.com/vshaxe/haxe-language-server)                                                                                                             | Linux, Mac, Windows |
 | [lsp_java](/plugins/lsp_java.lua?raw=1)               | Java                           | [jdtls](https://github.com/eclipse-jdtls/eclipse.jdt.ls)                                                                                                                           | Linux, Mac, Windows |
 | [lsp_json](/plugins/lsp_json.lua?raw=1)               | JSON                           | [vscode-json-languageserver](https://github.com/microsoft/vscode/tree/main/extensions/json-language-features/server) with [additional patches](patches/vscode-json-languageserver) | Linux, Mac, Windows |
 | [lsp_lua](/plugins/lsp_lua.lua?raw=1)                 | Lua                            | [sumneko_lua](https://github.com/sumneko/lua-language-server)                                                                                                                      | Linux, Mac, Windows |
@@ -32,7 +33,6 @@ The following languages are supported, bundled with their particular language se
 | [lsp_typescript](/plugins/lsp_typescript.lua?raw=1)   | Javascript, Typescript         | [typescript-language-server](https://github.com/typescript-language-server/typescript-language-server)                                                                             | Linux, Mac, Windows |
 | [lsp_yaml](/plugins/lsp_yaml.lua?raw=1)               | YAML                           | [yaml-language-server](https://github.com/redhat-developer/yaml-language-server)                                                                                                   | Linux, Mac, Windows |
 | [lsp_zig](/plugins/lsp_zig.lua?raw=1)                 | Zig                            | [zls](https://github.com/zigtools/zls)                                                                                                                                             | Linux, Mac, Windows |
-| [lsp_haxe](/plugins/lsp_haxe.lua?raw=1)               | Haxe                           | [haxe-language-server](https://github.com/vshaxe/haxe-language-server)                                                                                                             | Linux, Mac, Windows |
 
 ## Additional libraries
 
@@ -40,6 +40,6 @@ These libraries are dependencies of some language servers (automatic installatio
 
 | Library                               | Description                                 | Platforms           |
 | :------------------------------------ | :------------------------------------------ | :------------------ |
+| [haxe](/libraries/haxe.lua?raw=1)     | Haxe binaries for running haxe apps         | Linux, Mac, Windows |
 | [jdk](/libraries/jdk.lua?raw=1)       | JDK binaries for running java apps          | Linux, Mac, Windows |
 | [nodejs](/libraries/nodejs.lua?raw=1) | NodeJs binaries for running javascript apps | Linux, Mac, Windows |
-| [haxe](/libraries/haxe.lua?raw=1)     | Haxe binaries for running haxe apps         | Linux, Mac, Windows |
