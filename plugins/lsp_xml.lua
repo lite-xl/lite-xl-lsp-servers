@@ -13,7 +13,12 @@ local lemminx_command = { jdk_info.path_bin,
                           "-Xms1G",
                           string.format("-jar %s", lemminx_path) }
 
+-- FIX: may have to do with some hardcoded env var path ?
 lsp.add_server(common.merge({
+  name = "lemminx",
+  language = "xml",
+  file_patterns = { "%.xml$" },
   command = lemminx_command,
   env = { ["JAVA_HOME"] = jdk_info.path_lib },
+  verbose = true
 }, config.plugins.lsp_xml or {}))
