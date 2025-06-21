@@ -6,6 +6,9 @@ local lsp = require "plugins.lsp"
 
 local installed_path = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp_harper"
 
+-- Docs
+-- https://writewithharper.com/docs/integrations/language-server#Installation
+
 lsp.add_server(common.merge({
   name = "harper-ls",
   language = "",
