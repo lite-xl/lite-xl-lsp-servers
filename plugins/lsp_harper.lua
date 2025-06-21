@@ -12,6 +12,7 @@ local installed_path = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp_harper
 lsp.add_server(common.merge({
   name = "harper-ls",
   language = "",
+  -- FIX: use the new syntax: https://github.com/lite-xl/lite-xl-lsp
   file_patterns = {
     -- C
     "%.c$",
