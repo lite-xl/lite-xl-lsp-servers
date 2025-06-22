@@ -212,7 +212,7 @@
     "version": "0.44.0",
     "files": [
       {
-        "url": "https://github.com/Automattic/harper/releases/download/v0.44.0/harper-ls-x86_64-unknown-linux-gnu.tar.gz",
+        "url": "https://github.com/Automattic/harper/releases/download/v0.44.0/harper-ls-x86_64-unknown-linux-musl.tar.gz",
         "arch": ["x86_64-linux"],
         "checksum": "10dd1142f91b6fb7d04d71025a53f6f6d2e26501af367d4a69bf908ce59c1cff"
       },
@@ -227,7 +227,7 @@
         "checksum": "289421884af70b3b1d628aa0ff23b9e871fed413e2f58d115f47e203901bc715"
       },
       {
-        "url": "https://github.com/Automattic/harper/releases/download/v0.44.0/harper-ls-aarch64-unknown-linux-gnu.tar.gz",
+        "url": "https://github.com/Automattic/harper/releases/download/v0.44.0/harper-ls-aarch64-unknown-linux-musl.tar.gz",
         "arch": ["aarch64-linux"],
         "checksum": "11ad66f5316a4e027cdf0a4ec174cc8e49fbed0a5b9de51f508f12fa9478a52e"
       },
