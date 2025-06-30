@@ -4,7 +4,7 @@
     "description": "Automatic configuration/binary download for LSP completion for C/C++ with clangd.",
     "path": "plugins/lsp_c.lua",
     "version": "19.1.2",
-    "mod_version": "3",
+    "mod_version": "4",
     "files": [
       {
         "url": "https://github.com/clangd/clangd/releases/download/19.1.2/clangd-linux-19.1.2.zip",
@@ -28,7 +28,7 @@
     "description": "Automatic configuration/binary download for LSP completion for clojure with clojure-lsp.",
     "path": "plugins/lsp_clojure.lua",
     "version": "2025.03.07",
-    "mod_version": "3",
+    "mod_version": "4",
     "files": [
       {
         "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.03.07-17.42.36/clojure-lsp-native-linux-aarch64.zip",
@@ -65,7 +65,7 @@
     "description": "Automatic configuration/binary download for LSP completion for D with serve_d.",
     "path": "plugins/lsp_d.lua",
     "version": "0.7.6",
-    "mod_version": "3",
+    "mod_version": "4",
     "files": [
       {
         "url": "https://github.com/Pure-D/serve-d/releases/download/v0.7.6/serve-d_0.7.6-linux-x86_64.tar.gz",
@@ -89,7 +89,7 @@
     "description": "Automatic configuration/binary download for LSP completion for Emmet with emmet-language-server.",
     "path": "plugins/lsp_emmet.lua",
     "version": "2.6.1",
-    "mod_version": "3",
+    "mod_version": "4",
     "files": [
       {
         "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/emmet-language-server-2.6.1/emmet-language-server-2.6.1.tar.gz",
@@ -109,7 +109,7 @@
     "id": "golang",
     "description": "Official Go builds.",
     "type": "library",
-    "mod_version": "3",
+    "mod_version": "4",
     "path": "libraries/golang.lua",
     "version": "1.24.2",
     "files": [
@@ -144,7 +144,7 @@
     "description": "Automatic configuration/binary download for LSP completion for Go with gopls.",
     "path": "plugins/lsp_go.lua",
     "version": "0.18.1",
-    "mod_version": "3",
+    "mod_version": "4",
     "files": [
       {
         "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.18.1/gopls-0.18.1-amd64-darwin.tar.gz",
@@ -186,7 +186,7 @@
     "description": "Official Haxe builds.",
     "version": "4.3.6",
     "type": "library",
-    "mod_version": "3",
+    "mod_version": "4",
     "path": "libraries/haxe.lua",
     "files": [
       {
@@ -215,7 +215,7 @@
     "description": "Automatic configuration/binary download for LSP completion for Haxe with haxe-language-server.",
     "path": "plugins/lsp_haxe.lua",
     "version": "2.34.1",
-    "mod_version": "3",
+    "mod_version": "4",
     "files": [
       {
         "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/haxe-language-server-2.34.1/haxe-language-server-2.34.1.tar.gz",
@@ -233,7 +233,7 @@
     "description": "LSP support for JSON via vscode-json-languageserver with [additional patches](https://github.com/lite-xl/lite-xl-lsp-servers/tree/latest/patches/vscode-json-languageserver) for increased functionality.",
     "path": "plugins/lsp_json.lua",
     "version": "1.97.2.0.1",
-    "mod_version": "3",
+    "mod_version": "4",
     "files": [
       {
         "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/vscode-json-languageserver-1.97.2-patch-0.1/vscode-json-languageserver-1.97.2-patch-0.1.tar.gz",
@@ -249,7 +249,7 @@
     "description": "Automatic configuration/binary download for LSP completion for Lua with lua-language-server (sumneko).",
     "path": "plugins/lsp_lua.lua",
     "version": "3.13.9",
-    "mod_version": "3",
+    "mod_version": "4",
     "files": [
       {
         "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.13.9/lua-language-server-3.13.9-darwin-x64.tar.gz",
@@ -278,7 +278,7 @@
     "description": "Production and Early-Access OpenJDK Builds, from Oracle.",
     "version": "23.0.2",
     "type": "library",
-    "mod_version": "3",
+    "mod_version": "4",
     "files": [
       {
         "url": "https://download.java.net/java/GA/jdk23.0.2/6da2a6609d6e406f85c491fcb119101b/7/GPL/openjdk-23.0.2_linux-x64_bin.tar.gz",
@@ -306,7 +306,7 @@
     "description": "Automatic configuration/binary download for LSP completion for Java with jdtls.",
     "path": "plugins/lsp_java.lua",
     "version": "1.45.0",
-    "mod_version": "3",
+    "mod_version": "4",
     "files": [
       {
         "url": "https://download.eclipse.org/jdtls/milestones/1.45.0/jdt-language-server-1.45.0-202502271238.tar.gz",
@@ -319,7 +319,7 @@
     "description": "Official NodeJs builds.",
     "version": "22.13.0",
     "type": "library",
-    "mod_version": "3",
+    "mod_version": "4",
     "path": "libraries/nodejs.lua",
     "files": [
       {
@@ -348,7 +348,7 @@
     "description": "Automatic configuration/binary download for LSP completion for Python with Pyright.",
     "path": "plugins/lsp_python.lua",
     "version": "1.1.373",
-    "mod_version": "3",
+    "mod_version": "4",
     "files": [
       {
         "url": "https://registry.npmjs.org/pyright/-/pyright-1.1.373.tgz",
@@ -362,7 +362,7 @@
     "description": "Automatic configuration/binary download for LSP linting for Javascript with quick-lint-js.",
     "path": "plugins/lsp_quicklintjs.lua",
     "version": "3.2.0",
-    "mod_version": "3",
+    "mod_version": "4",
     "files": [
       {
         "url": "https://c.quick-lint-js.com/releases/3.2.0/manual/linux.tar.gz",
@@ -411,7 +411,7 @@
     "description": "Automatic configuration/binary download for LSP completion for Rust with rust-analyzer.",
     "path": "plugins/lsp_rust.lua",
     "version": "20240715",
-    "mod_version": "3",
+    "mod_version": "4",
     "files": [
       {
         "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-07-15/rust-analyzer-x86_64-unknown-linux-gnu.gz",
@@ -445,7 +445,7 @@
     "description": "Automatic configuration/binary download for LSP completion for TeX with texlab.",
     "path": "plugins/lsp_tex.lua",
     "version": "5.22.0",
-    "mod_version": "3",
+    "mod_version": "4",
     "files": [
       {
         "url": "https://github.com/latex-lsp/texlab/releases/download/v5.22.0/texlab-x86_64-linux.tar.gz",
@@ -474,7 +474,7 @@
     "description": "Automatic configuration/binary download for LSP completion for Typescript and Javascript with typescript-language-server.",
     "path": "plugins/lsp_typescript.lua",
     "version": "4.3.4",
-    "mod_version": "3",
+    "mod_version": "4",
     "files": [
       {
         "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/typescript-language-server-4.3.4/tsserver-4.3.4.tar.gz",
@@ -502,7 +502,7 @@
     "description": "Automatic configuration/binary download for LSP completion for Zig via zls.",
     "path": "plugins/lsp_zig.lua",
     "version": "0.13.0",
-    "mod_version": "3",
+    "mod_version": "4",
     "files": [
       {
         "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.13.0/zls-aarch64-linux.tar.gz",

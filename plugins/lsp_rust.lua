@@ -1,4 +1,4 @@
--- mod-version:3
+-- mod-version:4
 
 local lspconfig = require "plugins.lsp.config"
 local common = require "core.common"
