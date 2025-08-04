@@ -3,23 +3,23 @@
     "id": "lsp_c",
     "description": "Automatic configuration/binary download for LSP completion for C/C++ with clangd.",
     "path": "plugins/lsp_c.lua",
-    "version": "19.1.2",
+    "version": "20.1.8",
     "mod_version": "3",
     "files": [
       {
-        "url": "https://github.com/clangd/clangd/releases/download/19.1.2/clangd-linux-19.1.2.zip",
+        "url": "https://github.com/clangd/clangd/releases/download/20.1.8/clangd-linux-20.1.8.zip",
         "arch": "x86_64-linux",
-        "checksum": "7c09614eff857d590e4502ef516f035ff94cfb8b795de14ece5afbc53a206caf"
+        "checksum": "98493005e2c7532e69827987d909c46295e2ee997a48228606e7777547994490"
       },
       {
-        "url": "https://github.com/clangd/clangd/releases/download/19.1.2/clangd-mac-19.1.2.zip",
+        "url": "https://github.com/clangd/clangd/releases/download/20.1.8/clangd-mac-20.1.8.zip",
         "arch": ["x86_64-darwin","aarch64-darwin"],
-        "checksum": "d3b329b3f58602c57ca6501d255147af1bccad3691b1cb0c12c258fcd2da1be3"
+        "checksum": "c2303d0a83dcb31c08c4920e815586ad1b0c17ee8d1a484d605f33d784a31402"
       },
       {
-        "url": "https://github.com/clangd/clangd/releases/download/19.1.2/clangd-windows-19.1.2.zip",
+        "url": "https://github.com/clangd/clangd/releases/download/20.1.8/clangd-windows-20.1.8.zip",
         "arch": "x86_64-windows",
-        "checksum": "5b6ceb0f85d63fa0c2c9aab31c29bebd41dc11da1f160ef21bc2fea93270a20d"
+        "checksum": "717a0700fc660574647468b3d0b67e46a077d27e4da794d9d0c212add6ba6765"
       }
     ],
     "dependencies": { "language_c": {}, "lsp": {} }
@@ -27,33 +27,33 @@
     "id": "lsp_clojure",
     "description": "Automatic configuration/binary download for LSP completion for clojure with clojure-lsp.",
     "path": "plugins/lsp_clojure.lua",
-    "version": "2025.03.07",
+    "version": "2025.06.13",
     "mod_version": "3",
     "files": [
       {
-        "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.03.07-17.42.36/clojure-lsp-native-linux-aarch64.zip",
+        "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.06.13-20.45.44/clojure-lsp-native-linux-aarch64.zip",
         "arch": "aarch64-linux",
-        "checksum": "8da532ffcb1514e7abda43e5c34e4bcf7da45637b1d3148899837247b070ecfc"
+        "checksum": "dbf268628c3cf63069110a9ca2d36ab5870cc65490c34f06ec9818dc18002544"
       },
       {
-        "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.03.07-17.42.36/clojure-lsp-native-static-linux-amd64.zip",
+        "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.06.13-20.45.44/clojure-lsp-native-static-linux-amd64.zip",
         "arch": "x86_64-linux",
-        "checksum": "2cd065cc384119786f4c8b659e19c19278e09e28a4a0b5fe727936384716dd87"
+        "checksum": "b719fdd8a3b9a4e6ded6b61ddcc58ac405ddb4075d72e08f950326f24d4fe143"
       },
       {
-        "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.03.07-17.42.36/clojure-lsp-native-macos-aarch64.zip",
+        "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.06.13-20.45.44/clojure-lsp-native-macos-aarch64.zip",
         "arch": "aarch64-darwin",
-        "checksum": "0f9460101657303fe5c6ce4aa799999c01457f2bb740af3697442fbedbc75dd2"
+        "checksum": "6c26142191cc1c98118eb5207fb92277f8b3023530a28a8ba6d5c46aba767a36"
       },
       {
-        "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.03.07-17.42.36/clojure-lsp-native-macos-amd64.zip",
+        "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.06.13-20.45.44/clojure-lsp-native-macos-amd64.zip",
         "arch": "x86_64-darwin",
-        "checksum": "57f08d3ae9795f9e5abed86427f7051d44bd8e89e5c9b32afe17f119e2e53ec7"
+        "checksum": "4056a925abe03e60691ea311df3492eeb74ed5867a687f4c8ef33083f9192a32"
       },
       {
-        "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.03.07-17.42.36/clojure-lsp-native-windows-amd64.zip",
+        "url": "https://github.com/clojure-lsp/clojure-lsp/releases/download/2025.06.13-20.45.44/clojure-lsp-native-windows-amd64.zip",
         "arch": "x86_64-windows",
-        "checksum": "3ce49b9b1028b5739be212a17129bdd10ca2520a1dd8234c3e9d6854884e8050"
+        "checksum": "269f6e92ce3bb26f19d371be064e144f23c1332bc000c24ae8b1d9247e34165c"
       }
     ],
     "dependencies": {
@@ -88,12 +88,12 @@
     "id": "lsp_emmet",
     "description": "Automatic configuration/binary download for LSP completion for Emmet with emmet-language-server.",
     "path": "plugins/lsp_emmet.lua",
-    "version": "2.6.1",
+    "version": "2.7.0",
     "mod_version": "3",
     "files": [
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/emmet-language-server-2.6.1/emmet-language-server-2.6.1.tar.gz",
-        "checksum": "1f8733520d989cbbc038447c809f77f7445a840dff3fdcb883cd9911e7b6dba1"
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/emmet-language-server-2.7.0/emmet-language-server-2.7.0.tar.gz",
+        "checksum": "33dc096c6b381deda482005cc196d22f38ad34c7283a72399002bf1819dabde5"
       }
     ],
     "dependencies": {
@@ -111,70 +111,70 @@
     "type": "library",
     "mod_version": "3",
     "path": "libraries/golang.lua",
-    "version": "1.24.2",
+    "version": "1.24.5",
     "files": [
       {
-        "url": "https://go.dev/dl/go1.24.2.linux-amd64.tar.gz",
+        "url": "https://go.dev/dl/go1.24.5.linux-amd64.tar.gz",
         "arch": ["x86_64-linux"],
-        "checksum": "68097bd680839cbc9d464a0edce4f7c333975e27a90246890e9f1078c7e702ad"
+        "checksum": "10ad9e86233e74c0f6590fe5426895de6bf388964210eac34a6d83f38918ecdc"
       },
       {
-        "url": "https://go.dev/dl/go1.24.2.linux-arm64.tar.gz",
+        "url": "https://go.dev/dl/go1.24.5.linux-arm64.tar.gz",
         "arch": ["aarch64-linux"],
-        "checksum": "68097bd680839cbc9d464a0edce4f7c333975e27a90246890e9f1078c7e702ad11111"
+        "checksum": "10ad9e86233e74c0f6590fe5426895de6bf388964210eac34a6d83f38918ecdc11111"
       },
       {
-        "url": "https://go.dev/dl/go1.24.2.windows-amd64.zip",
+        "url": "https://go.dev/dl/go1.24.5.windows-amd64.zip",
         "arch": ["x86_64-windows"],
-        "checksum": "29c553aabee0743e2ffa3e9fa0cda00ef3b3cc4ff0bc92007f31f80fd69892e1"
+        "checksum": "658f432689106d4e0a401a2ebb522b1213f497bc8357142fe8def18d79f02957"
       },
       {
-        "url": "https://go.dev/dl/go1.24.2.darwin-arm64.tar.gz",
+        "url": "https://go.dev/dl/go1.24.5.darwin-arm64.tar.gz",
         "arch": ["aarch64-darwin"],
-        "checksum": "b70f8b3c5b4ccb0ad4ffa5ee91cd38075df20fdbd953a1daedd47f50fbcff47a"
+        "checksum": "92d30a678f306c327c544758f2d2fa5515aa60abe9dba4ca35fbf9b8bfc53212"
       },
       {
-        "url": "https://go.dev/dl/go1.24.2.darwin-amd64.tar.gz",
+        "url": "https://go.dev/dl/go1.24.5.darwin-amd64.tar.gz",
         "arch": ["x86_64-darwin"],
-        "checksum": "238d9c065d09ff6af229d2e3b8b5e85e688318d69f4006fb85a96e41c216ea83"
+        "checksum": "2fe5f3866b8fbcd20625d531f81019e574376b8a840b0a096d8a2180308b1672"
       }
     ]
   },{
     "id": "lsp_go",
     "description": "Automatic configuration/binary download for LSP completion for Go with gopls.",
     "path": "plugins/lsp_go.lua",
-    "version": "0.18.1",
+    "version": "0.19.1",
     "mod_version": "3",
     "files": [
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.18.1/gopls-0.18.1-amd64-darwin.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.19.1/gopls-0.19.1-amd64-darwin.tar.gz",
         "arch": ["x86_64-darwin"],
-        "checksum": "9adc9a2e95db63e126a36ee5773e587f441be48cc5774b4a7894fdd78669406f"
+        "checksum": "4b0614544b83443d11adfb25887fcbda8c0c716f0a1f66a09c13abe077a5b7b1"
       },
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.18.1/gopls-0.18.1-amd64-linux.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.19.1/gopls-0.19.1-amd64-linux.tar.gz",
         "arch": ["x86_64-linux"],
-        "checksum": "40b16e4fee4a3d203ebb311de49acc14b298c62432d131218736b2ea5cd958fb"
+        "checksum": "bb86502b11ff001a64169640ab4469512049cc0386a7a5735a6b05a438cf398b"
       },
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.18.1/gopls-0.18.1-amd64-windows.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.19.1/gopls-0.19.1-amd64-windows.tar.gz",
         "arch": ["x86_64-windows"],
-        "checksum": "320599fec313c423dd49ac795be6c7b5cd09df03e2e6d35b09fa88976deb91e4"
+        "checksum": "94060d17a8a33f4a6f879f36d4b5545f236784e2a5ed3faddd858b78a39de267"
       },
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.18.1/gopls-0.18.1-arm64-darwin.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.19.1/gopls-0.19.1-arm64-darwin.tar.gz",
         "arch": ["aarch64-darwin"],
-        "checksum": "43c0d57a4b46ccad78302c47b76ba03db1916689c06946f7690368c10ea7f9d1"
+        "checksum": "3d7fa8af0a1068de29eddbe462925ba867910da107b122f75104d51a7c745d76"
       },
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.18.1/gopls-0.18.1-arm64-linux.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.19.1/gopls-0.19.1-arm64-linux.tar.gz",
         "arch": ["aarch64-linux"],
-        "checksum": "45a114ae23d970b4162712c446c225890db6e74c82eefa175f3ee5a40c1502cc"
+        "checksum": "994f3a58e30e19e71c9189a8432faa4c7b127bce2c562fcc56e97a5b63293d54"
       },
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.18.1/gopls-0.18.1-arm64-windows.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/gopls-0.19.1/gopls-0.19.1-arm64-windows.tar.gz",
         "arch": ["aarch64-windows"],
-        "checksum": "26481e34bedce47533301d17ea258fbf0b81ee1891ef823cd6803b90ccf36f9a"
+        "checksum": "96c57956f6adf159a396e1cf669f3d6e375a1c51575a188fa4338ca652a89693"
       }
     ],
     "dependencies": {
@@ -184,30 +184,30 @@
   },{
     "id": "haxe",
     "description": "Official Haxe builds.",
-    "version": "4.3.6",
+    "version": "4.3.7",
     "type": "library",
     "mod_version": "3",
     "path": "libraries/haxe.lua",
     "files": [
       {
-        "url": "https://github.com/HaxeFoundation/haxe/releases/download/4.3.6/haxe-4.3.6-linux64.tar.gz",
+        "url": "https://github.com/HaxeFoundation/haxe/releases/download/4.3.7/haxe-4.3.7-linux64.tar.gz",
         "arch": ["x86_64-linux"],
-        "checksum": "810e1752c8eb3065dbff54c050b20a712ce276f407741f0bf94696b454a597ad"
+        "checksum": "a156b3d039daa572f1f9329870ee753e3c39b7514fe8c818069323579659acca"
       },
       {
-        "url": "https://github.com/HaxeFoundation/haxe/releases/download/4.3.6/haxe-4.3.6-osx.tar.gz",
+        "url": "https://github.com/HaxeFoundation/haxe/releases/download/4.3.7/haxe-4.3.7-osx.tar.gz",
         "arch": ["x86_64-darwin"],
-        "checksum": "4a705fc1a35e269480e733be53a660ab1d2093f79fe5518dfba8f6301c232bd6"
+        "checksum": "1d355cb28bc25784b33acce023caeb28d50ccb14e953134a62b889697947efdc"
       },
       {
-        "url": "https://github.com/HaxeFoundation/haxe/releases/download/4.3.6/haxe-4.3.6-win64.zip",
+        "url": "https://github.com/HaxeFoundation/haxe/releases/download/4.3.7/haxe-4.3.7-win64.zip",
         "arch": ["x86_64-windows"],
-        "checksum": "336090b9c32d6cb9b674130794fea0e9c2240a72bceb7a5d6b44d37c796d1a9a"
+        "checksum": "29f7acb0fb9fc66a2b9f6bd9453af3474ccb14ebd9fd0142f351d7311c4010c9"
       },
       {
-        "url": "https://github.com/HaxeFoundation/haxe/releases/download/4.3.6/haxe-4.3.6-win.zip",
+        "url": "https://github.com/HaxeFoundation/haxe/releases/download/4.3.7/haxe-4.3.7-win.zip",
         "arch": ["x86-windows"],
-        "checksum": "82e49a9c747245bcc1934006700357e207fcfdc2ba02554a389fee0d35846258"
+        "checksum": "e6c76c76f541f3786163f382b73273aebdc084341874cffc11ce40a6dac85af2"
       }
     ]
   },{
@@ -248,112 +248,112 @@
     "id": "lsp_lua",
     "description": "Automatic configuration/binary download for LSP completion for Lua with lua-language-server (sumneko).",
     "path": "plugins/lsp_lua.lua",
-    "version": "3.13.9",
+    "version": "3.15.0",
     "mod_version": "3",
     "files": [
       {
-        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.13.9/lua-language-server-3.13.9-darwin-x64.tar.gz",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.15.0/lua-language-server-3.15.0-darwin-x64.tar.gz",
         "arch": "x86_64-darwin",
-        "checksum": "14e4558a2b7bf27d81a78a0559f91113abe73f01fc6cde77b3ccca713e3e22a7"
+        "checksum": "01d28a31e264434e51662814a68f584af068393caecfa158c4df5f7fdc3ca2f7"
       },
       {
-        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.13.9/lua-language-server-3.13.9-darwin-arm64.tar.gz",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.15.0/lua-language-server-3.15.0-darwin-arm64.tar.gz",
         "arch": "aarch64-darwin",
-        "checksum": "2ac04c39457a3d339876e88e0e0baff8183f610c48a5bfae5c437a0aa2d3b289"
+        "checksum": "050f5f493f65112afc116e31281a9f73918546782d3696485dc052724838f58b"
       },
       {
-        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.13.9/lua-language-server-3.13.9-linux-x64.tar.gz",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.15.0/lua-language-server-3.15.0-linux-x64.tar.gz",
         "arch": "x86_64-linux",
-        "checksum": "17642b2154446c0a15c7f6d335242f071d6910ce1e76c7cd95a29b64dfae1348"
+        "checksum": "4877b874c52fb7587707898da9026cc3a6c854d9bbab115ef49ac4e6a1b88007"
       },
       {
-        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.13.9/lua-language-server-3.13.9-win32-x64.zip",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.15.0/lua-language-server-3.15.0-win32-x64.zip",
         "arch": "x86_64-windows",
-        "checksum": "27e1a8ee603f8ca0f7db2b585aee2a7720616b98a9107bd2631e9fc685ba3553"
+        "checksum": "76a10c05e8c947a448f00a61acead4240484cd1e2e8c66d54401c67d99b77535"
       }
     ],
     "dependencies": { "language_lua": {}, "lsp": {} }
   },{
     "id": "jdk",
     "description": "Production and Early-Access OpenJDK Builds, from Oracle.",
-    "version": "23.0.2",
+    "version": "24.0.2",
     "type": "library",
     "mod_version": "3",
     "files": [
       {
-        "url": "https://download.java.net/java/GA/jdk23.0.2/6da2a6609d6e406f85c491fcb119101b/7/GPL/openjdk-23.0.2_linux-x64_bin.tar.gz",
+        "url": "https://download.java.net/java/GA/jdk24.0.2/fdc5d0102fe0414db21410ad5834341f/12/GPL/openjdk-24.0.2_linux-x64_bin.tar.gz",
         "arch": ["x86_64-linux"],
-        "checksum": "017f4ed8e8234d85e5bc1e490bb86f23599eadb6cfc9937ee87007b977a7d762"
+        "checksum": "635050717feab0e4c283c8e90e79e944a2b65a3b6b21f1d37dcaadad4cc29548"
       },
       {
-        "url": "https://download.java.net/java/GA/jdk23.0.2/6da2a6609d6e406f85c491fcb119101b/7/GPL/openjdk-23.0.2_macos-aarch64_bin.tar.gz",
+        "url": "https://download.java.net/java/GA/jdk24.0.2/fdc5d0102fe0414db21410ad5834341f/12/GPL/openjdk-24.0.2_macos-aarch64_bin.tar.gz",
         "arch": ["aarch64-darwin"],
-        "checksum": "bff699bb27455c2bb51d6e8f2467b77a4833388412aa2d95ec1970ddfb0e7b6c"
+        "checksum": "d2bcbedc348978625e6ad03dda9f8f9993ce6918c34ec5328ec1c1dd2e71e0c7"
       },
       {
-        "url": "https://download.java.net/java/GA/jdk23.0.2/6da2a6609d6e406f85c491fcb119101b/7/GPL/openjdk-23.0.2_macos-x64_bin.tar.gz",
+        "url": "https://download.java.net/java/GA/jdk24.0.2/fdc5d0102fe0414db21410ad5834341f/12/GPL/openjdk-24.0.2_macos-x64_bin.tar.gz",
         "arch": ["x86_64-darwin"],
-        "checksum": "b4cc7d7b51520e99308e1b4d3f8467790072c42319b9d3838ec8cfd4f69f0bc1"
+        "checksum": "a2ce194209f0a1c311275cdbaadf586e48295303dbacee3ebdf57d17beecdbb2"
       },
       {
-        "url": "https://download.java.net/java/GA/jdk23.0.2/6da2a6609d6e406f85c491fcb119101b/7/GPL/openjdk-23.0.2_windows-x64_bin.zip",
+        "url": "https://download.java.net/java/GA/jdk24.0.2/fdc5d0102fe0414db21410ad5834341f/12/GPL/openjdk-24.0.2_windows-x64_bin.zip",
         "arch": ["x86_64-windows"],
-        "checksum": "f6d4d5674be54ab026781951512ad11832c9957538d06c20121ed5a4edde6b5a"
+        "checksum": "683aad49e0a146c725d922efeaffe877deb108e58ee270ac5529467cf9bdd7ec"
       }
     ]
   },{
     "id": "lsp_java",
     "description": "Automatic configuration/binary download for LSP completion for Java with jdtls.",
     "path": "plugins/lsp_java.lua",
-    "version": "1.45.0",
+    "version": "1.49.0",
     "mod_version": "3",
     "files": [
       {
-        "url": "https://download.eclipse.org/jdtls/milestones/1.45.0/jdt-language-server-1.45.0-202502271238.tar.gz",
-        "checksum": "c09e79e958beb5ce41fb3b5097aec0455298bc88a14c8e41462b57edb2812797"
+        "url": "https://download.eclipse.org/jdtls/milestones/1.49.0/jdt-language-server-1.49.0-202507311558.tar.gz",
+        "checksum": "a3f9fb5921f5273d0f8fe4365b363fbad1bdc2e86991db3149b2d76f1265bcd7"
       }
     ],
     "dependencies": { "language_java": {}, "lsp": {}, "jdk": {} }
   },{
     "id": "nodejs",
     "description": "Official NodeJs builds.",
-    "version": "22.13.0",
+    "version": "22.18.0",
     "type": "library",
     "mod_version": "3",
     "path": "libraries/nodejs.lua",
     "files": [
       {
-        "url": "https://nodejs.org/dist/v22.13.0/node-v22.13.0-linux-x64.tar.gz",
+        "url": "https://nodejs.org/dist/v22.18.0/node-v22.18.0-linux-x64.tar.gz",
         "arch": ["x86_64-linux"],
-        "checksum": "9a33e89093a0d946c54781dcb3ccab4ccf7538a7135286528ca41ca055e9b38f"
+        "checksum": "a2e703725d8683be86bb5da967bf8272f4518bdaf10f21389e2b2c9eaeae8c8a"
       },
       {
-        "url": "https://nodejs.org/dist/v22.13.0/node-v22.13.0-darwin-arm64.tar.gz",
+        "url": "https://nodejs.org/dist/v22.18.0/node-v22.18.0-darwin-arm64.tar.gz",
         "arch": ["aarch64-darwin"],
-        "checksum": "bc1e374e7393e2f4b20e5bbc157d02e9b1fb2c634b2f992136b38fb8ca2023b7"
+        "checksum": "2c12913cba67af77ded8a399df3fd91c2e7f8628c7079da40bb9ff33bf00dfc0"
       },
       {
-        "url": "https://nodejs.org/dist/v22.13.0/node-v22.13.0-darwin-x64.tar.gz",
+        "url": "https://nodejs.org/dist/v22.18.0/node-v22.18.0-darwin-x64.tar.gz",
         "arch": ["x86_64-darwin"],
-        "checksum": "cfaaf5edde585a15547f858f5b3b62a292cf5929a23707b6f1e36c29a32487be"
+        "checksum": "9c8aa1e5ff5780b38cc1134e2263d84e2f4308eb84c02515e3af33936ca02cdc"
       },
       {
-        "url": "https://nodejs.org/dist/v22.13.0/node-v22.13.0-win-x64.zip",
+        "url": "https://nodejs.org/dist/v22.18.0/node-v22.18.0-win-x64.zip",
         "arch": ["x86_64-windows"],
-        "checksum": "b0feb09ebf41328628e7383f7a092fb7342ce1e05c867a90cf8f1379205a8429"
+        "checksum": "c95d8a7e1c99e669cc08c9f1176e068c1f50847c37908fcb8c35b62482366511"
       }
     ]
   },{
     "id": "lsp_python",
     "description": "Automatic configuration/binary download for LSP completion for Python with Pyright.",
     "path": "plugins/lsp_python.lua",
-    "version": "1.1.373",
+    "version": "1.1.403",
     "mod_version": "3",
     "files": [
       {
-        "url": "https://registry.npmjs.org/pyright/-/pyright-1.1.373.tgz",
+        "url": "https://registry.npmjs.org/pyright/-/pyright-1.1.403.tgz",
         "arch": ["x86_64-linux", "x86_64-windows", "x86_64-darwin", "aarch64-darwin"],
-        "checksum": "78446d6cd4e925e4444ab46bc442cd76f6f9adeae3e986e883c2d9c4909f7264"
+        "checksum": "d62b36fcff0a5f67b8cfc25b5618bc232a8e0b714593e25a83cdbba3d47eec9d"
       }
     ],
     "dependencies": { "language_python": {}, "lsp": {}, "nodejs": {"optional": true} }
@@ -410,33 +410,33 @@
     "id": "lsp_rust",
     "description": "Automatic configuration/binary download for LSP completion for Rust with rust-analyzer.",
     "path": "plugins/lsp_rust.lua",
-    "version": "20240715",
+    "version": "20250804",
     "mod_version": "3",
     "files": [
       {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-07-15/rust-analyzer-x86_64-unknown-linux-gnu.gz",
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2025-08-04/rust-analyzer-x86_64-unknown-linux-gnu.gz",
         "arch": "x86_64-linux",
-        "checksum": "7b07af48b60f52a2eb921f30cc564a3b93237431608b6a9b9e9295926b663a85"
+        "checksum": "5666a05d0ad4928ed63734b4a918ad22011fec442df7b4fa5216dcbe0f4a3600"
       },
       {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-07-15/rust-analyzer-aarch64-unknown-linux-gnu.gz",
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2025-08-04/rust-analyzer-aarch64-unknown-linux-gnu.gz",
         "arch": "aarch64-linux",
-        "checksum": "21586bac1eb5663c8942b0891878ebed3c40e3d87ef5f12a4fb1a0022a6ecb39"
+        "checksum": "646b1ae60393f60a56e1b3c117272245ee9effbe7400513ec4aeb06a45986cfb"
       },
       {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-07-15/rust-analyzer-aarch64-apple-darwin.gz",
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2025-08-04/rust-analyzer-aarch64-apple-darwin.gz",
         "arch": "aarch64-darwin",
-        "checksum": "60254658a28871e47064940d35889f8eda4da99824beab9237a5a6c5f5e5d9be"
+        "checksum": "8fdf11cea66caf30b5a9947d5a373ae432664de95b152deb09b09aed5d5769a1"
       },
       {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-07-15/rust-analyzer-x86_64-apple-darwin.gz",
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2025-08-04/rust-analyzer-x86_64-apple-darwin.gz",
         "arch": "x86_64-darwin",
-        "checksum": "baebbfe3bba390afdf8e75aeaa40afa29e43725ec1f87aba6830387473a4e066"
+        "checksum": "22b4cb19c42a248f84e3beb465a63567bd8fdaa5be3681db578420a8deaa9d7e"
       },
       {
-        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-07-15/rust-analyzer-x86_64-pc-windows-msvc.zip",
+        "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2025-08-04/rust-analyzer-x86_64-pc-windows-msvc.zip",
         "arch": "x86_64-windows",
-        "checksum": "bffe759079a518a643ab5e663deb51d4a1742e5c653db623b1dbfbc508035aca"
+        "checksum": "beed0e69da3ab69e6af581fc6f37fc3ec5833fbf072301710ab58720deae16c6"
       }
     ],
     "dependencies": { "language_rust": {}, "lsp": {} }
@@ -444,28 +444,28 @@
     "id": "lsp_tex",
     "description": "Automatic configuration/binary download for LSP completion for TeX with texlab.",
     "path": "plugins/lsp_tex.lua",
-    "version": "5.22.0",
+    "version": "5.23.1",
     "mod_version": "3",
     "files": [
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.22.0/texlab-x86_64-linux.tar.gz",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.23.1/texlab-x86_64-linux.tar.gz",
         "arch": "x86_64-linux",
-        "checksum": "1a0e3a3d17504e06c8648fb30d382bbd9195a486b81d8f24b1e1061b3db2972c"
+        "checksum": "73655db906ec9885a550950b092801d3e8ab56f5f057f95698370295665db331"
       },
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.22.0/texlab-aarch64-macos.tar.gz",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.23.1/texlab-aarch64-macos.tar.gz",
         "arch": "aarch64-darwin",
-        "checksum": "0b829d26cb11ac8c35f3127e397a9de22e2fd102d6f735e4d5f5318d847aff74"
+        "checksum": "2796706119353d80354ef18859874d5ee566352eae102155557cbee83101eb92"
       },
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.22.0/texlab-x86_64-macos.tar.gz",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.23.1/texlab-x86_64-macos.tar.gz",
         "arch": "x86_64-darwin",
-        "checksum": "2fc8fe327159a4859a6dcd95368b922b3dd2ef8abeae8e813d046bc64b4d9911"
+        "checksum": "0b912afa7ea8c8a624e254b0a7bbcc41fd1837a5ee012773e73f1e1a0282c480"
       },
       {
-        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.22.0/texlab-x86_64-windows.zip",
+        "url": "https://github.com/latex-lsp/texlab/releases/download/v5.23.1/texlab-x86_64-windows.zip",
         "arch": "x86_64-windows",
-        "checksum": "da1476dbe6410ee61019d854ad50ab98ac5cc47b8e1913acfa2d7b1257e88cc0"
+        "checksum": "679e9df88579c755fb5bebf785b2a0783d4ac6e4e4163dab496c432202e53552"
       }
     ],
     "dependencies": { "language_tex": {}, "lsp": {} }
@@ -486,11 +486,11 @@
     "id": "lsp_yaml",
     "description": "LSP support for YAML via yaml-language-server.",
     "path": "plugins/lsp_yaml.lua",
-    "version": "1.15.0",
+    "version": "1.18.0",
     "files": [
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/yaml-language-server-1.15.0/yaml-language-server-1.15.0.tar.gz",
-        "checksum": "7699c6ff576b32e2475d201f3c6cdcc60b59a60ae291eb7b7080f27f8bb4bd24"
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/yaml-language-server-1.18.0/yaml-language-server-1.18.0.tar.gz",
+        "checksum": "2420a4cdf206ad0e078fab0cd643abf3d3004fbc4ce6d97fe835807be0cb52e7"
       }
     ],
     "dependencies": {
@@ -501,43 +501,43 @@
     "id": "lsp_zig",
     "description": "Automatic configuration/binary download for LSP completion for Zig via zls.",
     "path": "plugins/lsp_zig.lua",
-    "version": "0.13.0",
+    "version": "0.14.0",
     "mod_version": "3",
     "files": [
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.13.0/zls-aarch64-linux.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.14.0/zls-aarch64-linux.tar.gz",
         "arch": "aarch64-linux",
-        "checksum": "4b45ec12ff0f6924d0042dcbec46d3e6eb0d4189bc11d1c26a9a35bcddbd91a8"
+        "checksum": "0513bb3a8d7757d7da19256d1c1098dd6fcfad7fbd2ad8962a55c9660a34fd35"
       },
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.13.0/zls-x86-linux.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.14.0/zls-x86-linux.tar.gz",
         "arch": "x86-linux",
-        "checksum": "d4b581c670408884d0f601af0b4080b85c65f7ff33e380a2bc8ec1978ccc6d54"
+        "checksum": "ae8da8f6ab21055ad1971b0fd98e8fe7b36658f00cb0cb1d4584830b9ebf84cc"
       },
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.13.0/zls-x86_64-linux.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.14.0/zls-x86_64-linux.tar.gz",
         "arch": "x86_64-linux",
-        "checksum": "e3ff74f5fda6fdbaf431b055af3fbdebaa0752106015e2b361123e756c04fc50"
+        "checksum": "dce214ff67990156edb0d62acb45a8d918c2a536a45fa3c20fdd15ca9e1dd05e"
       },
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.13.0/zls-aarch64-macos.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.14.0/zls-aarch64-macos.tar.gz",
         "arch": "aarch64-darwin",
-        "checksum": "07a871e316dd0a81d0da8c7149d1e6a8a4f9731d3336dd2ffaf54335fa7c9d20"
+        "checksum": "35027c5cd1f7f0dc69f2d1bb7c29f9c92a05d16a97108f5cde50f7ab75613f62"
       },
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.13.0/zls-x86_64-macos.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.14.0/zls-x86_64-macos.tar.gz",
         "arch": "x86_64-darwin",
-        "checksum": "9c4e78755849e909bb8a74c93db1722f2b705749600cb0da6390cbde003476af"
+        "checksum": "a2365d286b23012475aca234d872b38cc4fa77833ad705c5212511870a8ec19d"
       },
       {
-        "url": "https://github.com/zigtools/zls/releases/download/0.13.0/zls-x86_64-windows.zip",
+        "url": "https://github.com/zigtools/zls/releases/download/0.14.0/zls-x86_64-windows.zip",
         "arch": "x86_64-windows",
-        "checksum": "d87ed0834df3c30feae976843f0c6640acd31af1f31c0917907f7bfebae5bd14"
+        "checksum": "10bb73102bab4d2fa9fd00ef48ad84ff2332b91e7fc449de751676367fe7dfd2"
       },
       {
-        "url": "https://github.com/zigtools/zls/releases/download/0.13.0/zls-x86-windows.zip",
+        "url": "https://github.com/zigtools/zls/releases/download/0.14.0/zls-x86-windows.zip",
         "arch": "x86-windows",
-        "checksum": "8d71f0fde1238082ee3b7fb5d9e361411183fad2d7a55a78b403ed7cd4fc2d13"
+        "checksum": "6c2d907830768f69a6296a6794da419597cb08d796243cf81e95452124649252"
       }
     ],
     "dependencies": { "language_zig": {}, "lsp": {} }

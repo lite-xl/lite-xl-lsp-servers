@@ -18,7 +18,7 @@ end
 
 local jdtls_data_path = ".jdtls"
 -- You can find this in /config_linux/config.ini, search for `:org.eclipse.equinox.launcher`, it's right next to it
-local jdtls_version_name  = "1.6.1000.v20250131-0606"
+local jdtls_version_name  = "1.7.0.v20250519-0528"
 local jdtls_command = { jdk_info.path_bin,
                         "-Declipse.application=org.eclipse.jdt.ls.core.id1",
                         "-Dosgi.bundles.defaultStartLevel=4",
