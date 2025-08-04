@@ -1,6 +1,6 @@
 local info = {}
 
-info.version = "go-1.24.2"
+info.version = "go-1.24.5"
 info.path_lib = USERDIR .. PATHSEP .. "libraries" .. PATHSEP .. "golang" .. PATHSEP .. "go"
 info.path_bindir = info.path_lib .. PATHSEP .. "bin"
 info.path_bin = info.path_bindir .. PATHSEP .. "go" .. (PLATFORM == "Windows" and ".exe" or "")
