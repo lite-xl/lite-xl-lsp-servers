@@ -232,12 +232,12 @@
     "id": "lsp_json",
     "description": "LSP support for JSON via vscode-json-languageserver with [additional patches](https://github.com/lite-xl/lite-xl-lsp-servers/tree/latest/patches/vscode-json-languageserver) for increased functionality.",
     "path": "plugins/lsp_json.lua",
-    "version": "1.97.2.0.1",
+    "version": "1.102.3.0.2",
     "mod_version": "3",
     "files": [
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/vscode-json-languageserver-1.97.2-patch-0.1/vscode-json-languageserver-1.97.2-patch-0.1.tar.gz",
-        "checksum": "9f009fdb87d781b1ee21192b779d14aa43246528f10f4695773c11ce88eecca0"
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/vscode-json-languageserver-1.102.3-patch-0.2/vscode-json-languageserver-1.102.3-patch-0.2.tar.gz",
+        "checksum": "c220554f3eb406c5322496221cc31780faf3ebd02181fcf034e6c2fd7679c672"
       }
     ],
     "dependencies": {
