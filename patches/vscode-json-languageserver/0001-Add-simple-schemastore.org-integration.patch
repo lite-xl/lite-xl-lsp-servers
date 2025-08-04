@@ -1,14 +1,14 @@
-From 8162419a8e3bbdec3007c6a4bc92385938fb51af Mon Sep 17 00:00:00 2001
+From c4007fb90457b42fdc2f2889085acd23c6af99a5 Mon Sep 17 00:00:00 2001
 From: Guldoman <giulio.lettieri@gmail.com>
-Date: Wed, 20 Mar 2024 02:42:20 +0100
+Date: Mon, 4 Aug 2025 15:17:01 +0200
 Subject: [PATCH] Add simple schemastore.org integration
 
 ---
- .../server/src/jsonServer.ts                  | 35 +++++++++++++++++++
- 1 file changed, 35 insertions(+)
+ .../server/src/jsonServer.ts                  | 34 +++++++++++++++++++
+ 1 file changed, 34 insertions(+)
 
 diff --git a/extensions/json-language-features/server/src/jsonServer.ts b/extensions/json-language-features/server/src/jsonServer.ts
-index 36ca0dc591d..eb60838b373 100644
+index 830ee8c4393..5fffb5b5c3b 100644
 --- a/extensions/json-language-features/server/src/jsonServer.ts
 +++ b/extensions/json-language-features/server/src/jsonServer.ts
 @@ -15,6 +15,7 @@ import { TextDocument, JSONDocument, JSONSchema, getLanguageService, DocumentLan
@@ -19,7 +19,7 @@ index 36ca0dc591d..eb60838b373 100644
  
  type ISchemaAssociations = Record<string, string[]>;
  
-@@ -135,6 +136,8 @@ export function startServer(connection: Connection, runtime: RuntimeEnvironment)
+@@ -141,6 +142,8 @@ export function startServer(connection: Connection, runtime: RuntimeEnvironment)
  	// in the passed params the rootPath of the workspace plus the client capabilities.
  	connection.onInitialize((params: InitializeParams): InitializeResult => {
  
@@ -28,15 +28,15 @@ index 36ca0dc591d..eb60838b373 100644
  		const initializationOptions = params.initializationOptions as any || {};
  
  		const handledProtocols = initializationOptions?.handledSchemaProtocols;
-@@ -223,6 +226,7 @@ export function startServer(connection: Connection, runtime: RuntimeEnvironment)
- 		schema?: JSONSchema;
+@@ -232,6 +235,7 @@ export function startServer(connection: Connection, runtime: RuntimeEnvironment)
  		folderUri?: string;
  	}
+ 
 +	let schemaStoreSettings: SchemaConfiguration[] = [];
  
  
- 
-@@ -266,6 +270,34 @@ export function startServer(connection: Connection, runtime: RuntimeEnvironment)
+ 	let jsonConfigurationSettings: JSONSchemaSettings[] | undefined = undefined;
+@@ -274,6 +278,33 @@ export function startServer(connection: Connection, runtime: RuntimeEnvironment)
  		}
  	});
  
@@ -65,22 +65,21 @@ index 36ca0dc591d..eb60838b373 100644
 +		}, (error: XHRResponse) => {
 +			throw error;
 +		});
-+
 +	}
 +
  	// The jsonValidation extension configuration has changed
  	connection.onNotification(SchemaAssociationNotification.type, associations => {
  		schemaAssociations = associations;
-@@ -350,6 +382,9 @@ export function startServer(connection: Connection, runtime: RuntimeEnvironment)
- 				}
- 			});
+@@ -369,6 +400,9 @@ export function startServer(connection: Connection, runtime: RuntimeEnvironment)
+ 		if (extraSchemas) {
+ 			languageSettings.schemas.push(...extraSchemas);
  		}
 +		if(schemaStoreSettings){
-+			languageSettings.schemas = languageSettings.schemas.concat(schemaStoreSettings);
++			languageSettings.schemas.push(...schemaStoreSettings);
 +		}
+ 
  		languageService.configure(languageSettings);
  
- 		diagnosticsSupport?.requestRefresh();
 -- 
-2.44.0
+2.50.1
 
