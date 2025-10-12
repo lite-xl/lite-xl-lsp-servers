@@ -25,7 +25,7 @@
     "dependencies": { "language_c": {}, "lsp": {} }
   },{
     "id": "lsp_clojure",
-    "description": "Automatic configuration/binary download for  completion for clojure with clojure-lsp.",
+    "description": "Automatic configuration/binary download for LSP completion for clojure with clojure-lsp.",
     "path": "plugins/lsp_clojure.lua",
     "version": "2025.06.13",
     "mod_version": "3",
