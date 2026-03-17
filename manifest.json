@@ -272,11 +272,11 @@
     "id": "lsp_xml",
     "description": "LSP support for XML via lemminx.",
     "path": "plugins/lsp_xml.lua",
-    "version": "0.27.0",
+    "version": "0.11.0",
     "files": [
       {
         "url": "",
-        "checksum": "0961215474496928775e1c140bcc32ca1bf303271d11dbe81cb7330205f9f426"
+        "checksum": ""
       }
     ],
     "dependencies": { "language_xml": {}, "lsp": {}, "jdk": {} }

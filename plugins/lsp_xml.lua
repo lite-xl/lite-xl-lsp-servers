@@ -8,10 +8,12 @@ local installed_path_plugin = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp
 local jdk_info = require "libraries.jdk"
 
 local lemminx_path = { installed_path_plugin .. PATHSEP .. "org.eclipse.lemminx-uber.jar" }
-local lemminx_command = { jdk_info.path_bin,
-                          "-noverify",
-                          "-Xms1G",
-                          string.format("-jar %s", lemminx_path) }
+local lemminx_command = {
+  jdk_info.path_bin,
+  "-noverify",
+  "-Xms1G",
+  string.format("-jar %s", lemminx_path)
+}
 
 -- FIX: may have to do with some hardcoded env var path ?
 lsp.add_server(common.merge({
