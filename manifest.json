@@ -501,43 +501,43 @@
     "id": "lsp_zig",
     "description": "Automatic configuration/binary download for LSP completion for Zig via zls.",
     "path": "plugins/lsp_zig.lua",
-    "version": "0.15.0",
+    "version": "0.16.0",
     "mod_version": "3",
     "files": [
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.15.0/zls-aarch64-linux.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.16.0/zls-aarch64-linux.tar.gz",
         "arch": "aarch64-linux",
-        "checksum": "26e18804591f58a6590f72b71ba7375c269728412ccb786c9f7790bdf288da6d"
+        "checksum": "e0abac315e3ec0a3660b83c0753cd7d04a9e4b0df086b14d1e3fa93af695aa6d"
       },
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.15.0/zls-x86-linux.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.16.0/zls-x86-linux.tar.gz",
         "arch": "x86-linux",
-        "checksum": "70d439086964215a7d3a83bd0f40d47c18f10a5ca1784ed0c76c9d33896e5510"
+        "checksum": "ef26cc3a2e102d2ecc24df3164a993b51eb15e61530d476307d7fa3ff195bdde"
       },
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.15.0/zls-x86_64-linux.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.16.0/zls-x86_64-linux.tar.gz",
         "arch": "x86_64-linux",
-        "checksum": "c5f5c45e01031c88d02c61d7164456ab8461127822175d81c317e47bfd1171aa"
+        "checksum": "efc78dfc8b52ed432d27bf60cd12cd8c7462fca8bd75c9bea8dad0e1aee76bc8"
       },
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.15.0/zls-aarch64-macos.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.16.0/zls-aarch64-macos.tar.gz",
         "arch": "aarch64-darwin",
-        "checksum": "541ed1c40d482c0539c133c9be54065153a508f80234366b076486418e8e1121"
+        "checksum": "12f1ef1c923c5a087814b053c3be6884811095037d4472f5b0f3a6671b3c5604"
       },
       {
-        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.15.0/zls-x86_64-macos.tar.gz",
+        "url": "https://github.com/lite-xl/lite-xl-lsp-servers/releases/download/zls-0.16.0/zls-x86_64-macos.tar.gz",
         "arch": "x86_64-darwin",
-        "checksum": "2e39af36a12281ee67bf914b85a2f341dff34085bec2fd285e7da35c26ff181f"
+        "checksum": "903d0f645265c83e8395a04a2b4fbf63351539588f2949d7b8eedba58ef315c3"
       },
       {
-        "url": "https://github.com/zigtools/zls/releases/download/0.15.0/zls-x86_64-windows.zip",
+        "url": "https://github.com/zigtools/zls/releases/download/0.16.0/zls-x86_64-windows.zip",
         "arch": "x86_64-windows",
-        "checksum": "5f5e6861d55e96cc9e480cf15fbccafd2c44dfe193d8f3f9d54489a50cd73d2d"
+        "checksum": "35cbb7163224e8cf92d21099c1b1391f2aba927f25d389f021b13a21d40b96dd"
       },
       {
-        "url": "https://github.com/zigtools/zls/releases/download/0.15.0/zls-x86-windows.zip",
+        "url": "https://github.com/zigtools/zls/releases/download/0.16.0/zls-x86-windows.zip",
         "arch": "x86-windows",
-        "checksum": "e2662425bce7edebc133dd957c1bab9036e9c86455fc66dead416c3f5f1a93b9"
+        "checksum": "ecb2870979b35143aa5e7ce92d3b69362a76fd7126c8f950a5f8a7f99a77416f"
       }
     ],
     "dependencies": { "language_zig": {}, "lsp": {} }
