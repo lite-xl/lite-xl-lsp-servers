@@ -483,6 +483,18 @@
     ],
     "dependencies": { "language_ts": {}, "language_js": {}, "lsp": {}, "nodejs": {} }
   },{
+    "id": "lsp_xml",
+    "description": "LSP support for XML via lemminx.",
+    "path": "plugins/lsp_xml.lua",
+    "version": "0.3.0",
+    "files": [
+      {
+        "url": "https://github.com/eclipse-lemminx/lemminx/releases/download/0.3.0/org.eclipse.lsp4xml-0.3.0-uber.jar",
+        "checksum": "cb253c10d0af4c1b38bd0f51edf76bb555ca64bb49f50717d8116b403c221835"
+      }
+    ],
+    "dependencies": { "language_xml": {}, "lsp": {}, "jdk": {} }
+  },{
     "id": "lsp_yaml",
     "description": "LSP support for YAML via yaml-language-server.",
     "path": "plugins/lsp_yaml.lua",
