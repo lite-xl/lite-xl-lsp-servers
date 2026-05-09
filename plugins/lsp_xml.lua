@@ -26,5 +26,5 @@ lsp.add_server(common.merge({
   },
   command = cmd,
   -- env = { ["JAVA_HOME"] = jdk.path_lib },
-  verbose = true
+  verbose = false
 }, config.plugins.lsp_xml or {}))
