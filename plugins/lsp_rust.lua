@@ -15,7 +15,11 @@ elseif PLATFORM == "Mac OS X" then
     filename = "rust-analyzer-x86_64-apple-darwin"
   end
 else
-  filename = "rust-analyzer-x86_64-unknown-linux-gnu"
+  if ARCH == "aarch64-linux" then
+    filename = "rust-analyzer-aarch64-unknown-linux-gnu"
+  else
+    filename = "rust-analyzer-x86_64-unknown-linux-gnu"
+  end
 end
 
 lspconfig.rust_analyzer.setup(common.merge({

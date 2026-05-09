@@ -9,7 +9,7 @@ on:
       tsserver_version:
         type: string
         required: false
-        default: "5.3.3"
+        default: "5.7.3"
 
 jobs:
   package_all:
@@ -20,7 +20,7 @@ jobs:
       VERSION: ${{ inputs.typescript-language-server_version }}
       TS_VERSION: ${{ inputs.tsserver_version }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Update Packages
         run: sudo apt-get update -y
       - name: Install Dependencies
@@ -37,7 +37,7 @@ jobs:
           rm lib/cli.mjs.map
       - name: Get Typescript
         run: |
-          curl -L -o "typescript-${TS_VERSION}.tgz" "https://github.com/microsoft/TypeScript/releases/download/v5.3.3/typescript-${TS_VERSION}.tgz"
+          curl -L -o "typescript-${TS_VERSION}.tgz" "https://github.com/microsoft/TypeScript/releases/download/v${TS_VERSION}/typescript-${TS_VERSION}.tgz"
           tar -xzvf "typescript-${TS_VERSION}.tgz"
       - name: Package
         run: |
