@@ -10,6 +10,6 @@ lsp.add_server(common.merge({
   name = "sqls",
   language = "sql",
   file_patterns = { "%.sql$" },
-  command = { installed_path .. PATHSEP .. 'sqls' },
+  command = { installed_path .. PATHSEP .. 'sqls' .. (PLATFORM == "Windows" and ".exe" or "") },
   verbose = false
 }, config.plugins.lsp_sql or {}))
