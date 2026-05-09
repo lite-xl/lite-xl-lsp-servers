@@ -106,6 +106,48 @@
       "lsp": {}, "nodejs": {}
     }
   },{
+    "id": "lsp_glsl",
+    "description": "Automatic configuration/binary download for LSP completion for the GLSL shader language with glsl_analyzer.",
+    "path": "plugins/lsp_glsl.lua",
+    "version": "1.7.1",
+    "mod_version": "3",
+    "files": [
+      {
+        "url": "https://github.com/nolanderc/glsl_analyzer/releases/download/v1.7.1/x86_64-linux-musl.zip",
+        "arch": ["x86_64-linux"],
+        "checksum": "7c929b304e0d34abf4305d07895c409861f054613c3ae4070baa7ca15c916e7a"
+      },
+      {
+        "url": "https://github.com/nolanderc/glsl_analyzer/releases/download/v1.7.1/x86_64-macos.zip",
+        "arch": ["x86_64-darwin"],
+        "checksum": "8025e8c765b3bd6ab1e08bf7fd096437827397d618c43de2d4e377cc3b1f16fe"
+      },
+      {
+        "url": "https://github.com/nolanderc/glsl_analyzer/releases/download/v1.7.1/x86_64-windows.zip",
+        "arch": ["x86_64-windows"],
+        "checksum": "117604ba20860abf0808fc5551a6e06d305066c1f4296d81a51f175a2cf2a38c"
+      },
+      {
+        "url": "https://github.com/nolanderc/glsl_analyzer/releases/download/v1.7.1/aarch64-linux-musl.zip",
+        "arch": ["aarch64-linux"],
+        "checksum": "dda05d727979c34333b86562bb706122ab95d17cd7298665e8afbaba79f76ea6"
+      },
+      {
+        "url": "https://github.com/nolanderc/glsl_analyzer/releases/download/v1.7.1/aarch64-macos.zip",
+        "arch": ["aarch64-darwin"],
+        "checksum": "7f78d98e762b241f7a39dde0fed81c9e4c58766cba5a8abcf20ce03790ee1678"
+      },
+      {
+        "url": "https://github.com/nolanderc/glsl_analyzer/releases/download/v1.7.1/aarch64-windows.zip",
+        "arch": ["aarch64-windows"],
+        "checksum": "762c396b77f1756237587f64bf25ecefe4e1ad79145a9507a58db7e82a6395c7"
+      }
+    ],
+    "dependencies": {
+      "language_glsl": {},
+      "lsp": {}
+    }
+  },{
     "id": "golang",
     "description": "Official Go builds.",
     "type": "library",
