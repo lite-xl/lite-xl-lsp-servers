@@ -9,5 +9,6 @@ local installed_path = USERDIR .. PATHSEP .. "plugins" .. PATHSEP .. "lsp_lua"
 lspconfig.sumneko_lua.setup(common.merge({
   command = {
     installed_path .. "/bin/lua-language-server" .. (PLATFORM == "Windows" and ".exe" or ""),
+    "--locale=en-us"
   }
 }, config.plugins.lsp_lua or {}))
