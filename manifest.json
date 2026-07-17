@@ -441,6 +441,30 @@
     ],
     "dependencies": { "language_rust": {}, "lsp": {} }
   },{
+    "id": "lsp_sql",
+    "description": "Automatic configuration/binary download for LSP completion for SQL with sqls.",
+    "path": "plugins/lsp_sql.lua",
+    "version": "0.2.48",
+    "mod_version": "3",
+    "files": [
+      {
+        "url": "https://github.com/sqls-server/sqls/releases/download/v0.2.48/sqls-linux-0.2.48.zip",
+        "arch": "x86_64-linux",
+        "checksum": "30047b92c41658c821b7803d2c2a3a1ce4e17ee769ceff6f24bb9e3daaf5d4dc"
+      },
+      {
+        "url": "https://github.com/sqls-server/sqls/releases/download/v0.2.48/sqls-darwin-0.2.48.zip",
+        "arch": "x86_64-darwin",
+        "checksum": "b44165ca597a4b4298d56657bc911aa3ca8a591befefde4e29566923c6229f3d"
+      },
+      {
+        "url": "https://github.com/sqls-server/sqls/releases/download/v0.2.48/sqls-windows-0.2.48.zip",
+        "arch": "x86_64-windows",
+        "checksum": "df6453b2ddcb4e748547d0288b826251a24af099749dc7a9ddea587aac3d4365"
+      }
+    ],
+    "dependencies": { "language_psql": {}, "lsp": {} }
+  },{
     "id": "lsp_tex",
     "description": "Automatic configuration/binary download for LSP completion for TeX with texlab.",
     "path": "plugins/lsp_tex.lua",
