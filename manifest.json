@@ -248,28 +248,28 @@
     "id": "lsp_lua",
     "description": "Automatic configuration/binary download for LSP completion for Lua with lua-language-server (sumneko).",
     "path": "plugins/lsp_lua.lua",
-    "version": "3.15.0",
+    "version": "3.19.1",
     "mod_version": "3",
     "files": [
       {
-        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.15.0/lua-language-server-3.15.0-darwin-x64.tar.gz",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.19.1/lua-language-server-3.19.1-darwin-x64.tar.gz",
         "arch": "x86_64-darwin",
-        "checksum": "01d28a31e264434e51662814a68f584af068393caecfa158c4df5f7fdc3ca2f7"
+        "checksum": "eb373c159cbe556711d7cd316315de2dce969bfd54b31edb7eb9cab2937f2cca"
       },
       {
-        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.15.0/lua-language-server-3.15.0-darwin-arm64.tar.gz",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.19.1/lua-language-server-3.19.1-darwin-arm64.tar.gz",
         "arch": "aarch64-darwin",
-        "checksum": "050f5f493f65112afc116e31281a9f73918546782d3696485dc052724838f58b"
+        "checksum": "0bc077f4447f076b4c92c14e9fd303f5b569eda2ec74b4dca2b55f75fae2e90c"
       },
       {
-        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.15.0/lua-language-server-3.15.0-linux-x64.tar.gz",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.19.1/lua-language-server-3.19.1-linux-x64.tar.gz",
         "arch": "x86_64-linux",
-        "checksum": "4877b874c52fb7587707898da9026cc3a6c854d9bbab115ef49ac4e6a1b88007"
+        "checksum": "e9235d2d72ef55bc41cf8c99cda2ed64777682024b4bb81f5dea425060c5cbb8"
       },
       {
-        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.15.0/lua-language-server-3.15.0-win32-x64.zip",
+        "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.19.1/lua-language-server-3.19.1-win32-x64.zip",
         "arch": "x86_64-windows",
-        "checksum": "76a10c05e8c947a448f00a61acead4240484cd1e2e8c66d54401c67d99b77535"
+        "checksum": "fdb9a59108cf62517813c97fa5549b0e16d1ef0688306bac728b08434db7e4cd"
       }
     ],
     "dependencies": { "language_lua": {}, "lsp": {} }
